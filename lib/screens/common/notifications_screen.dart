@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../app.dart';
+import '../../core/app_icons.dart';
 import '../../core/format.dart';
 import '../../models/models.dart';
 import '../../state/app_state.dart';
@@ -12,11 +13,11 @@ class NotificationsScreen extends StatelessWidget {
   const NotificationsScreen({super.key});
 
   static IconData iconFor(NotificationCategory c) => switch (c) {
-        NotificationCategory.loan => Icons.assignment_outlined,
-        NotificationCategory.newResource => Icons.menu_book_outlined,
-        NotificationCategory.study => Icons.event_note_outlined,
-        NotificationCategory.request => Icons.inbox_outlined,
-        NotificationCategory.system => Icons.info_outline,
+        NotificationCategory.loan => AppIcons.loans,
+        NotificationCategory.newResource => AppIcons.paper,
+        NotificationCategory.study => AppIcons.plan,
+        NotificationCategory.request => AppIcons.inbox,
+        NotificationCategory.system => AppIcons.info,
       };
 
   @override
@@ -31,9 +32,9 @@ class NotificationsScreen extends StatelessWidget {
             TextButton(onPressed: app.notifications.markAllRead, child: const Text('Mark all read')),
         ],
       ),
-      body: items.isEmpty
+      body: Readable(child: items.isEmpty
           ? const EmptyState(
-              icon: Icons.notifications_none,
+              icon: AppIcons.notifications,
               message: 'No notifications. Loan updates and study reminders appear here.',
             )
           : ListView.separated(
@@ -61,7 +62,7 @@ class NotificationsScreen extends StatelessWidget {
                   },
                 );
               },
-            ),
+            )),
     );
   }
 }
@@ -78,7 +79,7 @@ class NotificationsButton extends StatelessWidget {
       icon: Badge(
         isLabelVisible: count > 0,
         label: Text('$count'),
-        child: const Icon(Icons.notifications_outlined),
+        child: const Icon(AppIcons.notifications),
       ),
       onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const NotificationsScreen())),
     );

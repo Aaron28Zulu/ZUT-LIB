@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/errors.dart';
 import '../../core/rules.dart';
 import '../../core/theme.dart';
@@ -42,9 +43,9 @@ class _QuizSetupScreenState extends State<QuizSetupScreen> {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Practice quiz')),
-      body: courses.isEmpty
+      body: Readable(child: courses.isEmpty
           ? const EmptyState(
-              icon: Icons.quiz_outlined,
+              icon: AppIcons.quiz,
               message: 'None of your courses has practice questions yet. Add courses in your profile.',
             )
           : ListView(
@@ -105,7 +106,7 @@ class _QuizSetupScreenState extends State<QuizSetupScreen> {
                   child: const Text('Start quiz'),
                 ),
               ],
-            ),
+            )),
     );
   }
 }

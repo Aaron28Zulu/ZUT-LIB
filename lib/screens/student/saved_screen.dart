@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../state/app_state.dart';
 import '../../widgets/common.dart';
 import '../../widgets/resource_tile.dart';
@@ -16,9 +17,9 @@ class SavedScreen extends StatelessWidget {
     final recent = res.recentlyViewed();
     return Scaffold(
       appBar: AppBar(title: const Text('Saved papers')),
-      body: saved.isEmpty && recent.isEmpty
+      body: Readable(child: saved.isEmpty && recent.isEmpty
           ? const EmptyState(
-              icon: Icons.bookmark_border,
+              icon: AppIcons.bookmark,
               message: 'No saved papers. Tap the bookmark on a paper to save it.',
             )
           : ListView(
@@ -33,7 +34,7 @@ class SavedScreen extends StatelessWidget {
                   for (final r in recent) ResourceTile(r, showAvailability: false),
                 ],
               ],
-            ),
+            )),
     );
   }
 }

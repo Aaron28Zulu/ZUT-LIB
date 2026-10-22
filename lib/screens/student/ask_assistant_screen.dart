@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/theme.dart';
 import '../../state/app_state.dart';
 import '../../widgets/common.dart';
@@ -27,8 +28,8 @@ class _AskAssistantScreenState extends State<AskAssistantScreen> {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Ask the assistant')),
-      body: course == null
-          ? const EmptyState(icon: Icons.help_outline, message: 'Add courses to your profile to ask about them.')
+      body: Readable(child: course == null
+          ? const EmptyState(icon: AppIcons.assistant, message: 'Add courses to your profile to ask about them.')
           : ListView(
               padding: const EdgeInsets.only(bottom: Space.xl),
               children: [
@@ -44,7 +45,7 @@ class _AskAssistantScreenState extends State<AskAssistantScreen> {
                 ),
                 for (final q in study.assistantQuestions())
                   ListTile(
-                    leading: const Icon(Icons.chat_bubble_outline),
+                    leading: const Icon(AppIcons.chat),
                     title: Text(q.forCourse(course)),
                     onTap: () => setState(() => _answers.insert(0, (q.forCourse(course), study.ask(q.id, course.id)))),
                   ),
@@ -74,7 +75,7 @@ class _AskAssistantScreenState extends State<AskAssistantScreen> {
                   ),
                 ),
               ],
-            ),
+            )),
     );
   }
 }

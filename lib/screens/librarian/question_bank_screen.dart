@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
 import '../../state/app_state.dart';
@@ -26,7 +27,7 @@ class _QuestionBankScreenState extends State<QuestionBankScreen> {
     final courses = study.manageableCourses();
     _courseId ??= courses.firstOrNull?.id;
     if (_courseId == null) {
-      return const EmptyState(icon: Icons.quiz_outlined, message: 'Add a course first.');
+      return const EmptyState(icon: AppIcons.quiz, message: 'Add a course first.');
     }
     final questions = _cards ? <Question>[] : study.questionBank(_courseId!);
     final cards = _cards ? study.flashcards(_courseId!) : <Flashcard>[];
@@ -34,7 +35,7 @@ class _QuestionBankScreenState extends State<QuestionBankScreen> {
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
         heroTag: 'bank',
-        icon: const Icon(Icons.add),
+        icon: const Icon(AppIcons.add),
         label: Text(_cards ? 'Add flashcard' : 'Add question'),
         onPressed: () => Navigator.push(
           context,
@@ -45,7 +46,7 @@ class _QuestionBankScreenState extends State<QuestionBankScreen> {
           ),
         ),
       ),
-      body: Column(
+      body: Readable(child: Column(
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(Space.l, Space.l, Space.l, Space.s),
@@ -71,7 +72,7 @@ class _QuestionBankScreenState extends State<QuestionBankScreen> {
           Expanded(
             child: _cards
                 ? (cards.isEmpty
-                    ? const EmptyState(icon: Icons.style_outlined, message: 'No flashcards for this course.')
+                    ? const EmptyState(icon: AppIcons.flashcards, message: 'No flashcards for this course.')
                     : ListView(
                         padding: const EdgeInsets.only(bottom: 88),
                         children: [
@@ -85,7 +86,7 @@ class _QuestionBankScreenState extends State<QuestionBankScreen> {
                         ],
                       ))
                 : (questions.isEmpty
-                    ? const EmptyState(icon: Icons.quiz_outlined, message: 'No questions for this course.')
+                    ? const EmptyState(icon: AppIcons.quiz, message: 'No questions for this course.')
                     : ListView(
                         padding: const EdgeInsets.only(bottom: 88),
                         children: [
@@ -104,7 +105,7 @@ class _QuestionBankScreenState extends State<QuestionBankScreen> {
                       )),
           ),
         ],
-      ),
+      )),
     );
   }
 }
@@ -143,7 +144,7 @@ class _FlashcardEditorScreenState extends State<FlashcardEditorScreen> {
           if (widget.existing)
             IconButton(
               tooltip: 'Delete flashcard',
-              icon: const Icon(Icons.delete_outline),
+              icon: const Icon(AppIcons.delete),
               onPressed: () async {
                 if (await confirm(context, title: 'Delete this flashcard?', message: 'Students will no longer see it.', action: 'Delete', destructive: true) &&
                     context.mounted) {
@@ -154,7 +155,7 @@ class _FlashcardEditorScreenState extends State<FlashcardEditorScreen> {
             ),
         ],
       ),
-      body: ListView(
+      body: Readable(child: ListView(
         padding: const EdgeInsets.all(Space.l),
         children: [
           TextField(controller: _topic, decoration: InputDecoration(labelText: 'Topic', errorText: _errors['topic'])),
@@ -186,7 +187,7 @@ class _FlashcardEditorScreenState extends State<FlashcardEditorScreen> {
             child: const Text('Save'),
           ),
         ],
-      ),
+      )),
     );
   }
 }

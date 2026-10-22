@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/errors.dart';
 import '../../core/theme.dart';
 import '../../services/loan_service.dart';
@@ -66,8 +67,8 @@ class _ScanScreenState extends State<ScanScreen> {
       children: [
         SegmentedButton<_Mode>(
           segments: const [
-            ButtonSegment(value: _Mode.collect, label: Text('Collection'), icon: Icon(Icons.login)),
-            ButtonSegment(value: _Mode.giveBack, label: Text('Return'), icon: Icon(Icons.logout)),
+            ButtonSegment(value: _Mode.collect, label: Text('Collection'), icon: Icon(AppIcons.signIn)),
+            ButtonSegment(value: _Mode.giveBack, label: Text('Return'), icon: Icon(AppIcons.signOut)),
           ],
           selected: {_mode},
           onSelectionChanged: (s) => setState(() {
@@ -79,7 +80,7 @@ class _ScanScreenState extends State<ScanScreen> {
         const SizedBox(height: Space.l),
         if (_camera)
           ClipRRect(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: Radii.panelRadius,
             child: SizedBox(
               height: 280,
               child: MobileScanner(
@@ -92,7 +93,7 @@ class _ScanScreenState extends State<ScanScreen> {
           )
         else if (_cameraSupported)
           FilledButton.icon(
-            icon: const Icon(Icons.qr_code_scanner),
+            icon: const Icon(AppIcons.scan),
             label: Text(_mode == _Mode.collect ? 'Scan student\'s code' : 'Scan loan code'),
             onPressed: () => setState(() => _camera = true),
           ),
@@ -127,7 +128,7 @@ class _ScanScreenState extends State<ScanScreen> {
           Card(
             color: scheme.errorContainer,
             child: ListTile(
-              leading: Icon(Icons.error_outline, color: scheme.onErrorContainer),
+              leading: Icon(AppIcons.warning, color: scheme.onErrorContainer),
               title: Text(_error!, style: TextStyle(color: scheme.onErrorContainer)),
             ),
           ),
@@ -135,7 +136,7 @@ class _ScanScreenState extends State<ScanScreen> {
           Card(
             color: scheme.primaryContainer,
             child: ListTile(
-              leading: Icon(Icons.check_circle_outline, color: scheme.onPrimaryContainer),
+              leading: Icon(AppIcons.done, color: scheme.onPrimaryContainer),
               title: Text(result.message, style: TextStyle(color: scheme.onPrimaryContainer)),
               subtitle: Text(context.read<AppState>().loans.resourceFor(result.loan).title,
                   style: TextStyle(color: scheme.onPrimaryContainer)),

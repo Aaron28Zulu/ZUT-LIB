@@ -21,18 +21,20 @@ final messengerKey = GlobalKey<ScaffoldMessengerState>();
 class ZutLibApp extends StatelessWidget {
   const ZutLibApp({super.key});
 
+  static final _light = buildTheme(Brightness.light);
+  static final _dark = buildTheme(Brightness.dark);
+
   @override
   Widget build(BuildContext context) {
-    final tenant = context.select<AppState, Tenant?>((a) => a.tenant);
-    // FR-TEN-04: the tenant colour seeds the whole scheme after sign-in.
-    final seed = tenant == null ? defaultSeed : Color(tenant.colourValue);
+    // One blue scheme for every institution. FR-TEN-04 branding is carried by
+    // the tenant badge and name in each shell header (TenantMark).
     return MaterialApp(
       title: 'ZutLib',
       debugShowCheckedModeBanner: false,
       navigatorKey: navigatorKey,
       scaffoldMessengerKey: messengerKey,
-      theme: buildTheme(seed, Brightness.light),
-      darkTheme: buildTheme(seed, Brightness.dark),
+      theme: _light,
+      darkTheme: _dark,
       home: const RootGate(),
     );
   }

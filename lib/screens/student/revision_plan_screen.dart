@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/format.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
@@ -31,15 +32,15 @@ class RevisionPlanScreen extends StatelessWidget {
         actions: [
           IconButton(
             tooltip: 'Rebuild plan',
-            icon: const Icon(Icons.refresh),
+            icon: const Icon(AppIcons.refresh),
             onPressed: () => runAction(context, study.regeneratePlan,
                 success: 'Plan rebuilt from your exam dates and study times.'),
           ),
         ],
       ),
-      body: plan.isEmpty
+      body: Readable(child: plan.isEmpty
           ? EmptyState(
-              icon: Icons.event_note_outlined,
+              icon: AppIcons.plan,
               message: 'No sessions planned. Add exam dates and preferred study times to build a plan.',
               actionLabel: 'Edit study profile',
               onAction: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ProfileSetupScreen())),
@@ -74,7 +75,7 @@ class RevisionPlanScreen extends StatelessWidget {
                     ),
                 ],
               ],
-            ),
+            )),
     );
   }
 }

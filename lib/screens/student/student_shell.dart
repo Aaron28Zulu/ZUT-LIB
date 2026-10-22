@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
+import '../../core/theme.dart';
 import '../../state/app_state.dart';
+import '../../widgets/common.dart';
 import '../common/notifications_screen.dart';
 import '../common/profile_screen.dart';
 import 'home_tab.dart';
@@ -9,7 +12,22 @@ import 'loans_tab.dart';
 import 'search_tab.dart';
 import 'study_tab.dart';
 
-/// Bottom navigation for students (SRS 8 general UI rules).
+class _Tab {
+  const _Tab(this.label, this.icon);
+  final String label;
+  final IconData icon;
+}
+
+const _tabs = [
+  _Tab('Home', AppIcons.home),
+  _Tab('Search', AppIcons.search),
+  _Tab('Study', AppIcons.study),
+  _Tab('Loans', AppIcons.loans),
+  _Tab('Profile', AppIcons.profile),
+];
+
+/// Student navigation (SRS 8 general UI rules): a bottom bar on phones and a
+/// side rail from tablet width, with content held to a readable width.
 class StudentShell extends StatefulWidget {
   const StudentShell({super.key});
 
@@ -30,26 +48,59 @@ class _StudentShellState extends State<StudentShell> {
   @override
   Widget build(BuildContext context) {
     final tenant = context.watch<AppState>().tenant;
+    final width = MediaQuery.sizeOf(context).width;
+    final wide = width >= Breakpoints.medium;
+    final s = Theme.of(context).colorScheme;
+
+    final body = IndexedStack(
+      index: _index,
+      children: const [HomeTab(), SearchTab(), StudyTab(), LoansTab(), ProfileScreen(embedded: true)],
+    );
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(_index == 0 ? (tenant?.shortCode ?? 'ZutLib') : _titles[_index]),
-        actions: const [NotificationsButton()],
+        titleSpacing: Space.l,
+        title: _index == 0 && tenant != null
+            ? Row(
+                children: [
+                  TenantMark(tenant, size: 30),
+                  const SizedBox(width: Space.m),
+                  const Flexible(child: Text('ZutLib')),
+                ],
+              )
+            : Text(_titles[_index]),
+        actions: const [NotificationsButton(), SizedBox(width: Space.xs)],
       ),
-      body: IndexedStack(
-        index: _index,
-        children: const [HomeTab(), SearchTab(), StudyTab(), LoansTab(), ProfileScreen(embedded: true)],
-      ),
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: _index,
-        onDestinationSelected: select,
-        destinations: const [
-          NavigationDestination(icon: Icon(Icons.home_outlined), selectedIcon: Icon(Icons.home), label: 'Home'),
-          NavigationDestination(icon: Icon(Icons.search), label: 'Search'),
-          NavigationDestination(icon: Icon(Icons.school_outlined), selectedIcon: Icon(Icons.school), label: 'Study'),
-          NavigationDestination(icon: Icon(Icons.assignment_outlined), selectedIcon: Icon(Icons.assignment), label: 'Loans'),
-          NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: 'Profile'),
-        ],
-      ),
+      body: wide
+          ? Row(
+              children: [
+                NavigationRail(
+                  selectedIndex: _index,
+                  onDestinationSelected: select,
+                  extended: width >= Breakpoints.expanded,
+                  labelType: width >= Breakpoints.expanded ? NavigationRailLabelType.none : NavigationRailLabelType.all,
+                  minExtendedWidth: 200,
+                  destinations: [
+                    for (final t in _tabs) NavigationRailDestination(icon: Icon(t.icon), label: Text(t.label)),
+                  ],
+                ),
+                VerticalDivider(width: 1, color: s.outlineVariant),
+                Expanded(child: Readable(child: body)),
+              ],
+            )
+          : body,
+      bottomNavigationBar: wide
+          ? null
+          : DecoratedBox(
+              decoration: BoxDecoration(border: Border(top: BorderSide(color: s.outlineVariant))),
+              child: NavigationBar(
+                selectedIndex: _index,
+                onDestinationSelected: select,
+                destinations: [
+                  for (final t in _tabs) NavigationDestination(icon: Icon(t.icon), label: t.label),
+                ],
+              ),
+            ),
     );
   }
 }

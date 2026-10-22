@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../models/models.dart';
 import '../../state/app_state.dart';
 import '../../widgets/common.dart';
@@ -16,19 +17,19 @@ class BrowseScreen extends StatelessWidget {
     final depts = context.watch<AppState>().resources.browseDepartments();
     return Scaffold(
       appBar: AppBar(title: const Text('Browse by department')),
-      body: depts.isEmpty
-          ? const EmptyState(icon: Icons.account_tree_outlined, message: 'No papers have been added yet.')
+      body: Readable(child: depts.isEmpty
+          ? const EmptyState(icon: AppIcons.courses, message: 'No papers have been added yet.')
           : ListView(
               children: [
                 for (final d in depts)
                   ListTile(
                     title: Text(d.name),
                     subtitle: Text(d.code),
-                    trailing: const Icon(Icons.chevron_right),
+                    trailing: const Icon(AppIcons.next),
                     onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => _CoursesScreen(department: d))),
                   ),
               ],
-            ),
+            )),
     );
   }
 }
@@ -43,17 +44,17 @@ class _CoursesScreen extends StatelessWidget {
     final courses = context.watch<AppState>().resources.browseCourses(department.id);
     return Scaffold(
       appBar: AppBar(title: Text(department.name)),
-      body: ListView(
+      body: Readable(child: ListView(
         children: [
           for (final c in courses)
             ListTile(
               title: Text(c.code),
               subtitle: Text(c.name),
-              trailing: const Icon(Icons.chevron_right),
+              trailing: const Icon(AppIcons.next),
               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => _YearsScreen(course: c))),
             ),
         ],
-      ),
+      )),
     );
   }
 }
@@ -69,14 +70,14 @@ class _YearsScreen extends StatelessWidget {
     final years = res.browseYears(course.id);
     return Scaffold(
       appBar: AppBar(title: Text(course.label)),
-      body: ListView(
+      body: Readable(child: ListView(
         children: [
           for (final y in years) ...[
             SectionHeader('$y'),
             for (final r in res.resourcesFor(course.id, year: y)) ResourceTile(r),
           ],
         ],
-      ),
+      )),
     );
   }
 }

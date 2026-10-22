@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/clock.dart';
 import '../../core/format.dart';
 import '../../core/theme.dart';
 import '../../services/auth_service.dart';
 import '../../state/app_state.dart';
 import '../../widgets/actions.dart';
+import '../../widgets/common.dart';
 
 /// FR-AUTH-05: enrolled courses, exam dates and preferred study times.
 class ProfileSetupScreen extends StatefulWidget {
@@ -85,7 +87,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
           if (widget.firstRun) TextButton(onPressed: app.auth.signOut, child: const Text('Sign out')),
         ],
       ),
-      body: ListView(
+      body: Readable(child: ListView(
         padding: const EdgeInsets.only(bottom: Space.xxl),
         children: [
           if (widget.firstRun)
@@ -114,7 +116,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: OutlinedButton.icon(
-                    icon: const Icon(Icons.event_outlined),
+                    icon: const Icon(AppIcons.event),
                     label: Text(_exams[c.id] == null ? 'Set exam date' : 'Exam ${formatDate(_exams[c.id]!)}'),
                     onPressed: () => _pickExam(c.id),
                   ),
@@ -135,7 +137,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
               children: [
                 for (final time in _times..sort())
                   InputChip(label: Text(time), onDeleted: () => setState(() => _times.remove(time))),
-                ActionChip(avatar: const Icon(Icons.add, size: 18), label: const Text('Add time'), onPressed: _addTime),
+                ActionChip(avatar: const Icon(AppIcons.add, size: 18), label: const Text('Add time'), onPressed: _addTime),
               ],
             ),
           ),
@@ -145,7 +147,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
             child: FilledButton(onPressed: _save, child: Text(widget.firstRun ? 'Save and continue' : 'Save')),
           ),
         ],
-      ),
+      )),
     );
   }
 }

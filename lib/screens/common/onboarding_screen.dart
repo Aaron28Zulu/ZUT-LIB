@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/theme.dart';
 import '../../state/app_state.dart';
+import '../../widgets/common.dart';
 
 /// Three-screen walkthrough on first launch (NFR-05).
 class OnboardingScreen extends StatefulWidget {
@@ -18,17 +20,17 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   static const _pages = [
     (
-      Icons.search,
+      AppIcons.search,
       'Find past papers',
       'Search by course code, name or topic, or browse by department, course and year. Open any paper on your phone.',
     ),
     (
-      Icons.qr_code_2,
+      AppIcons.qr,
       'Borrow printed copies',
       'Request a copy in the app. When the librarian approves it, show the collection code at the desk. No ID card needed.',
     ),
     (
-      Icons.school_outlined,
+      AppIcons.study,
       'Revise with a plan',
       'Practise with quizzes and flashcards built from past papers, and follow a revision plan based on your exam dates.',
     ),
@@ -47,7 +49,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     final t = Theme.of(context).textTheme;
     final last = _page == _pages.length - 1;
     return Scaffold(
-      body: SafeArea(
+      body: Readable(child: SafeArea(
         child: Column(
           children: [
             Align(
@@ -97,7 +99,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ),
           ],
         ),
-      ),
+      )),
     );
   }
 }

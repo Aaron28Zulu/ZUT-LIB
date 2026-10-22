@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/errors.dart';
 import '../../core/format.dart';
+import '../../core/rules.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
 import '../../state/app_state.dart';
@@ -26,7 +28,7 @@ class PaperDetailsScreen extends StatelessWidget {
     try {
       r = app.resources.resource(resourceId);
     } on AppException catch (e) {
-      return Scaffold(appBar: AppBar(), body: EmptyState(icon: Icons.menu_book_outlined, message: e.message));
+      return Scaffold(appBar: AppBar(), body: Readable(child: EmptyState(icon: AppIcons.paper, message: e.message)));
     }
     final user = app.user!;
     final isStudent = user.role == Role.student;
@@ -44,14 +46,14 @@ class PaperDetailsScreen extends StatelessWidget {
           if (isStudent)
             IconButton(
               tooltip: bookmarked ? 'Remove from saved' : 'Save paper',
-              icon: Icon(bookmarked ? Icons.bookmark : Icons.bookmark_border),
+              icon: Icon(bookmarked ? AppIcons.bookmarked : AppIcons.bookmark),
               onPressed: () => runAction(context, () => app.resources.toggleBookmark(r.id),
                   success: bookmarked ? 'Removed from saved papers.' : 'Saved.'),
             ),
           if (!isStudent)
             IconButton(
               tooltip: 'Edit paper',
-              icon: const Icon(Icons.edit_outlined),
+              icon: const Icon(AppIcons.edit),
               onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute(builder: (_) => ResourceFormScreen(resourceId: r.id)),
@@ -59,63 +61,86 @@ class PaperDetailsScreen extends StatelessWidget {
             ),
         ],
       ),
-      body: ListView(
+      body: Readable(child: ListView(
         padding: const EdgeInsets.only(bottom: Space.xxl),
         children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(Space.l, Space.s, Space.l, 0),
-            child: Text(r.title, style: t.titleLarge),
-          ),
-          if (r.archived)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(Space.l, Space.s, Space.l, 0),
-              child: Text('Archived. Students cannot see this paper.',
-                  style: TextStyle(color: Theme.of(context).colorScheme.error)),
-            ),
-          Padding(
-            padding: const EdgeInsets.all(Space.l),
-            child: Row(
+          // Header band, like a course landing page: kicker, title, facts, actions.
+          Container(
+            color: Theme.of(context).colorScheme.surfaceContainerLow,
+            padding: const EdgeInsets.fromLTRB(Space.l, Space.xl, Space.l, Space.l),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(
-                  child: FilledButton.icon(
-                    icon: const Icon(Icons.picture_as_pdf_outlined),
-                    label: const Text('Open paper'),
-                    onPressed: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (_) => PdfViewerScreen(resourceId: r.id, title: r.title)),
-                    ),
-                  ),
+                if (department != null) Text(department.name.toUpperCase(), style: AppText.overline(context)),
+                const SizedBox(height: Space.s),
+                Text(course == null ? r.title : '${course.code} ${course.name}', style: t.headlineSmall),
+                const SizedBox(height: Space.s),
+                Text(
+                  '${r.paperType.label} · ${r.academicYear} · Semester ${r.semester}'
+                  '${r.lecturer == null ? '' : ' · ${r.lecturer}'}',
+                  style: AppText.muted(context),
                 ),
-                if (isStudent) ...[
-                  const SizedBox(width: Space.s),
-                  Expanded(child: _RequestButton(resourceId: r.id)),
-                ],
+                const SizedBox(height: Space.m),
+                Wrap(
+                  spacing: Space.s,
+                  runSpacing: Space.xs,
+                  children: [
+                    if (r.durationMinutes != null) Tag('${r.durationMinutes} min', icon: AppIcons.time),
+                    if (r.totalMarks != null) Tag('${r.totalMarks} marks', icon: AppIcons.target),
+                    Tag(r.hasMemo ? 'Memo included' : 'No memo', icon: r.hasMemo ? AppIcons.done : AppIcons.info),
+                    if (copies.isNotEmpty)
+                      Tag(
+                        '$available of ${copies.length} copies free',
+                        icon: AppIcons.copies,
+                        foreground: available > 0 ? AppPalette.of(context).success : AppPalette.of(context).warning,
+                        background: available > 0 ? AppPalette.of(context).successBg : AppPalette.of(context).warningBg,
+                      ),
+                    if (r.archived)
+                      Tag(
+                        'Archived, hidden from students',
+                        icon: AppIcons.warning,
+                        foreground: AppPalette.of(context).danger,
+                        background: AppPalette.of(context).dangerBg,
+                      ),
+                  ],
+                ),
+                const SizedBox(height: Space.l),
+                Row(
+                  children: [
+                    Expanded(
+                      child: FilledButton.icon(
+                        icon: const Icon(AppIcons.pdf, size: 18),
+                        label: const Text('Open paper'),
+                        onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (_) => PdfViewerScreen(resourceId: r.id, title: r.title)),
+                        ),
+                      ),
+                    ),
+                    if (isStudent) ...[
+                      const SizedBox(width: Space.s),
+                      Expanded(child: _RequestButton(resourceId: r.id)),
+                    ],
+                  ],
+                ),
               ],
             ),
           ),
-          Padding(
-            padding: Space.screen,
-            child: Card(
-              child: Padding(
-                padding: const EdgeInsets.all(Space.l),
-                child: Column(
-                  children: [
-                    if (course != null) InfoRow('Course', '${course.code} ${course.name}'),
-                    if (department != null) InfoRow('Department', department.name),
-                    InfoRow('Paper type', r.paperType.label),
-                    InfoRow('Year', '${r.academicYear}, semester ${r.semester}'),
-                    if (r.lecturer != null) InfoRow('Lecturer', r.lecturer!),
-                    if (r.durationMinutes != null) InfoRow('Duration', '${r.durationMinutes} minutes'),
-                    if (r.totalMarks != null) InfoRow('Total marks', '${r.totalMarks}'),
-                    if (r.topics.isNotEmpty) InfoRow('Topics', r.topics.join(', ')),
-                    InfoRow('Memo', r.hasMemo ? 'Marking guide attached' : 'No marking guide'),
-                  ],
-                ),
+          const Divider(),
+          if (isStudent) _MyLoanForPaper(resourceId: r.id),
+          if (r.topics.isNotEmpty) ...[
+            const SectionHeader('Topics covered'),
+            Padding(
+              padding: Space.screen,
+              child: Wrap(
+                spacing: Space.s,
+                runSpacing: Space.s,
+                children: [for (final topic in r.topics) Tag(topic, icon: AppIcons.check)],
               ),
             ),
-          ),
-          SectionHeader('Assistant summary'),
-          _SummaryBlock(summary: r.summary),
+          ],
+          const SectionHeader('About this paper', subtitle: 'Summary prepared by the study assistant'),
+          _SummaryBlock(summary: r.summary, totalMarks: r.totalMarks),
           SectionHeader(
             'Printed copies',
             trailing: isStudent
@@ -136,7 +161,7 @@ class PaperDetailsScreen extends StatelessWidget {
           else ...[
             Padding(
               padding: Space.screen,
-              child: Text('$available of ${copies.length} available'),
+              child: Text('$available of ${copies.length} available to borrow for ${Rules.loanPeriod.inDays} days', style: AppText.muted(context)),
             ),
             if (!isStudent)
               for (final c in copies)
@@ -147,53 +172,51 @@ class PaperDetailsScreen extends StatelessWidget {
                   trailing: Text(c.status.label),
                 ),
           ],
-          if (isStudent) _MyLoanForPaper(resourceId: r.id),
           if (!isStudent)
             Padding(
               padding: const EdgeInsets.fromLTRB(Space.l, Space.l, Space.l, 0),
               child: Text('Uploaded ${formatDate(r.uploadedAt)}', style: t.bodySmall),
             ),
         ],
-      ),
+      )),
     );
   }
 }
 
 class _SummaryBlock extends StatelessWidget {
-  const _SummaryBlock({required this.summary});
+  const _SummaryBlock({required this.summary, this.totalMarks});
 
   final ResourceSummary? summary;
+  final int? totalMarks;
 
   @override
   Widget build(BuildContext context) {
     final s = summary;
     if (s == null) {
-      return const Padding(padding: Space.screen, child: Text('Summary not available'));
+      return Padding(padding: Space.screen, child: Text('Summary not available', style: AppText.muted(context)));
     }
     final t = Theme.of(context).textTheme;
-    return Padding(
-      padding: Space.screen,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(s.overview),
-          const SizedBox(height: Space.m),
-          Text('Question types', style: t.labelLarge),
-          Text(s.questionTypes.join(', ')),
-          const SizedBox(height: Space.m),
-          Text('Mark distribution', style: t.labelLarge),
-          for (final m in s.markDistribution)
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 2),
-              child: Row(
-                children: [
-                  Expanded(child: Text(m.section)),
-                  Text('${m.marks} marks', style: AppText.code(context)),
-                ],
-              ),
-            ),
-        ],
-      ),
+    final total = totalMarks ?? s.markDistribution.fold<int>(0, (a, m) => a + m.marks);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(padding: Space.screen, child: Text(s.overview, style: t.bodyLarge)),
+        const SizedBox(height: Space.l),
+        Padding(padding: Space.screen, child: Text('QUESTION TYPES', style: AppText.overline(context))),
+        const SizedBox(height: Space.s),
+        Padding(
+          padding: Space.screen,
+          child: Wrap(spacing: Space.s, runSpacing: Space.s, children: [for (final q in s.questionTypes) Tag(q)]),
+        ),
+        const SizedBox(height: Space.l),
+        Padding(padding: Space.screen, child: Text('MARK DISTRIBUTION', style: AppText.overline(context))),
+        for (final m in s.markDistribution)
+          ProgressRow(
+            label: m.section,
+            value: total == 0 ? 0 : m.marks / total,
+            caption: '${m.marks} marks',
+          ),
+      ],
     );
   }
 }
@@ -253,7 +276,7 @@ class _MyLoanForPaper extends StatelessWidget {
           ),
         for (final l in active)
           ListTile(
-            leading: const Icon(Icons.assignment_outlined),
+            leading: const Icon(AppIcons.loans),
             title: const Text('Your loan'),
             subtitle: l.dueAt == null ? null : Text('Due ${formatDate(l.dueAt!)}'),
             trailing: StatusChip(l.status),

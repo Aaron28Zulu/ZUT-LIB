@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
 import '../../state/app_state.dart';
@@ -19,7 +20,7 @@ class DepartmentsCoursesScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
         heroTag: 'add-dept',
-        icon: const Icon(Icons.add),
+        icon: const Icon(AppIcons.add),
         label: const Text('Add'),
         onPressed: () => showModalBottomSheet(
           context: context,
@@ -29,7 +30,7 @@ class DepartmentsCoursesScreen extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 ListTile(
-                  leading: const Icon(Icons.account_tree_outlined),
+                  leading: const Icon(AppIcons.courses),
                   title: const Text('Department'),
                   onTap: () {
                     Navigator.pop(sheet);
@@ -37,7 +38,7 @@ class DepartmentsCoursesScreen extends StatelessWidget {
                   },
                 ),
                 ListTile(
-                  leading: const Icon(Icons.class_outlined),
+                  leading: const Icon(AppIcons.course),
                   title: const Text('Course'),
                   enabled: departments.isNotEmpty,
                   onTap: () {
@@ -50,7 +51,7 @@ class DepartmentsCoursesScreen extends StatelessWidget {
           ),
         ),
       ),
-      body: ListView(
+      body: Readable(child: ListView(
         padding: const EdgeInsets.only(bottom: 88),
         children: [
           for (final d in departments) ...[
@@ -58,7 +59,7 @@ class DepartmentsCoursesScreen extends StatelessWidget {
               '${d.name} (${d.code})',
               trailing: IconButton(
                 tooltip: 'Edit department',
-                icon: const Icon(Icons.edit_outlined),
+                icon: const Icon(AppIcons.edit),
                 onPressed: () => _editDepartment(context, d),
               ),
             ),
@@ -78,7 +79,7 @@ class DepartmentsCoursesScreen extends StatelessWidget {
               ),
           ],
         ],
-      ),
+      )),
     );
   }
 

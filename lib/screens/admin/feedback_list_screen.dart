@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/format.dart';
 import '../../state/app_state.dart';
 import '../../widgets/common.dart';
@@ -14,7 +15,7 @@ class FeedbackListScreen extends StatelessWidget {
     final admin = context.watch<AppState>().admin;
     final items = admin.feedback();
     if (items.isEmpty) {
-      return const EmptyState(icon: Icons.rate_review_outlined, message: 'No feedback yet. Students can send it from their profile.');
+      return const EmptyState(icon: AppIcons.feedback, message: 'No feedback yet. Students can send it from their profile.');
     }
     return ListView.separated(
       itemCount: items.length,

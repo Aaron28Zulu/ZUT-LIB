@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/errors.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
@@ -57,19 +58,20 @@ class _SignInScreenState extends State<SignInScreen> {
     final t = Theme.of(context).textTheme;
     final isPlatform = widget.tenantId == platformTenantId;
     return Scaffold(
-      appBar: AppBar(title: const Text('Sign in'), actions: const [
+      appBar: AppBar(actions: const [
         Padding(padding: EdgeInsets.only(right: Space.l), child: DemoModeBanner()),
       ]),
-      body: SafeArea(
+      body: Readable(maxWidth: 480, child: SafeArea(
         child: ListView(
-          padding: const EdgeInsets.all(Space.l),
+          padding: const EdgeInsets.fromLTRB(Space.l, Space.xl, Space.l, Space.xxl),
           children: [
-            Row(
-              children: [
-                if (widget.tenant != null) ...[TenantMark(widget.tenant!), const SizedBox(width: Space.m)],
-                Expanded(child: Text(widget.tenantName, style: t.titleMedium)),
-              ],
-            ),
+            if (widget.tenant != null) ...[
+              Align(alignment: AlignmentDirectional.centerStart, child: TenantMark(widget.tenant!, size: 48)),
+              const SizedBox(height: Space.l),
+            ],
+            Text('Sign in', style: t.headlineMedium),
+            const SizedBox(height: Space.xs),
+            Text(widget.tenantName, style: AppText.muted(context)),
             const SizedBox(height: Space.xl),
             AutofillGroup(
               child: Column(
@@ -91,7 +93,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       errorText: _error,
                       suffixIcon: IconButton(
                         tooltip: _obscure ? 'Show password' : 'Hide password',
-                        icon: Icon(_obscure ? Icons.visibility_outlined : Icons.visibility_off_outlined),
+                        icon: Icon(_obscure ? AppIcons.show : AppIcons.hide),
                         onPressed: () => setState(() => _obscure = !_obscure),
                       ),
                     ),
@@ -118,25 +120,41 @@ class _SignInScreenState extends State<SignInScreen> {
             ],
             if (demo.isNotEmpty) ...[
               const SizedBox(height: Space.xl),
-              Text('Quick demo sign-in', style: t.titleSmall),
-              const SizedBox(height: Space.xs),
-              Text('Fictional accounts. Password for all: demo1234', style: t.bodySmall),
-              const SizedBox(height: Space.s),
-              Wrap(
-                spacing: Space.s,
-                runSpacing: Space.s,
+              Row(
                 children: [
-                  for (final a in demo)
-                    OutlinedButton(
-                      onPressed: _busy ? null : () => _signIn(a.email, 'demo1234'),
-                      child: Text('${a.role.label}: ${a.name}'),
-                    ),
+                  const Expanded(child: Divider()),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: Space.m),
+                    child: Text('or use a demo account', style: t.bodySmall),
+                  ),
+                  const Expanded(child: Divider()),
                 ],
               ),
+              const SizedBox(height: Space.l),
+              Panel(
+                padding: EdgeInsets.zero,
+                child: Column(
+                  children: [
+                    for (final (i, a) in demo.indexed) ...[
+                      if (i > 0) const Divider(),
+                      ListTile(
+                        enabled: !_busy,
+                        leading: const Icon(AppIcons.profile, size: 20),
+                        title: Text(a.name, style: t.bodyMedium?.copyWith(fontWeight: FontWeight.w600)),
+                        subtitle: Text(a.role.label),
+                        trailing: const Icon(AppIcons.signIn, size: 18),
+                        onTap: () => _signIn(a.email, 'demo1234'),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+              const SizedBox(height: Space.s),
+              Text('Fictional accounts. The password for all of them is demo1234.', style: t.bodySmall),
             ],
           ],
         ),
-      ),
+      )),
     );
   }
 }

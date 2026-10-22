@@ -1,12 +1,21 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import 'app.dart';
+import 'core/app_icons.dart';
 import 'core/theme.dart';
 import 'state/app_state.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  // Bundled fonts are OFL; their licences show on the About/licences page.
+  LicenseRegistry.addLicense(() async* {
+    for (final (pkg, file) in [('Inter', 'OFL-Inter.txt'), ('Source Serif 4', 'OFL-SourceSerif4.txt')]) {
+      yield LicenseEntryWithLineBreaks([pkg], await rootBundle.loadString('assets/fonts/$file'));
+    }
+  });
   runApp(const BootApp());
 }
 
@@ -31,8 +40,8 @@ class _BootAppState extends State<BootApp> {
         }
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          theme: buildTheme(defaultSeed, Brightness.light),
-          darkTheme: buildTheme(defaultSeed, Brightness.dark),
+          theme: buildTheme(Brightness.light),
+          darkTheme: buildTheme(Brightness.dark),
           home: _Splash(error: snapshot.error),
         );
       },
@@ -55,7 +64,7 @@ class _Splash extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(Icons.local_library_outlined, size: 56, color: Theme.of(context).colorScheme.primary),
+              Icon(AppIcons.library, size: 56, color: Theme.of(context).colorScheme.primary),
               const SizedBox(height: Space.l),
               Text('ZutLib', style: t.headlineMedium),
               const SizedBox(height: Space.s),

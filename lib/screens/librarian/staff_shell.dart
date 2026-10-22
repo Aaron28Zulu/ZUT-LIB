@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/permissions.dart';
+import '../../core/theme.dart';
 import '../../models/models.dart';
 import '../../state/app_state.dart';
 import '../../widgets/common.dart';
@@ -44,29 +46,29 @@ class _StaffShellState extends State<StaffShell> {
     bool can(Permission p) => roleAllows(role, p);
     return [
       if (can(Permission.viewLibraryReports))
-        _Destination('Dashboard', Icons.dashboard_outlined, () => const DashboardScreen()),
+        _Destination('Dashboard', AppIcons.dashboard, () => const DashboardScreen()),
       if (can(Permission.processLoans)) ...[
-        _Destination('Request queue', Icons.inbox_outlined, () => const RequestQueueScreen(embedded: true),
+        _Destination('Request queue', AppIcons.inbox, () => const RequestQueueScreen(embedded: true),
             badge: (a) => a.loans.pendingRequests().length + a.loans.renewalRequests().length),
-        _Destination('Scan code', Icons.qr_code_scanner, () => const ScanScreen()),
-        _Destination('Loans', Icons.assignment_outlined, () => const LoansListScreen()),
+        _Destination('Scan code', AppIcons.scan, () => const ScanScreen()),
+        _Destination('Loans', AppIcons.loans, () => const LoansListScreen()),
       ],
       if (can(Permission.manageResources))
-        _Destination('Papers', Icons.menu_book_outlined, () => const ResourcesListScreen()),
+        _Destination('Papers', AppIcons.paper, () => const ResourcesListScreen()),
       if (can(Permission.manageStudyContent))
-        _Destination('Question bank', Icons.quiz_outlined, () => const QuestionBankScreen()),
+        _Destination('Question bank', AppIcons.quiz, () => const QuestionBankScreen()),
       if (can(Permission.manageUsers)) ...[
-        _Destination('Users', Icons.people_outline, () => const UsersScreen()),
-        _Destination('Role review', Icons.verified_user_outlined, () => const RoleReviewScreen()),
-        _Destination('Courses', Icons.account_tree_outlined, () => const DepartmentsCoursesScreen()),
+        _Destination('Users', AppIcons.users, () => const UsersScreen()),
+        _Destination('Role review', AppIcons.roleReview, () => const RoleReviewScreen()),
+        _Destination('Courses', AppIcons.courses, () => const DepartmentsCoursesScreen()),
       ],
       if (can(Permission.viewFeedback))
-        _Destination('Feedback', Icons.rate_review_outlined, () => const FeedbackListScreen()),
+        _Destination('Feedback', AppIcons.feedback, () => const FeedbackListScreen()),
       if (can(Permission.manageTenants))
-        _Destination('Institutions', Icons.apartment_outlined, () => const TenantsScreen()),
+        _Destination('Institutions', AppIcons.institution, () => const TenantsScreen()),
       if (can(Permission.demoControls))
-        _Destination('Demo controls', Icons.tune, () => const DemoControlsScreen()),
-      _Destination('Profile', Icons.person_outline, () => const ProfileScreen(embedded: true)),
+        _Destination('Demo controls', AppIcons.demoControls, () => const DemoControlsScreen()),
+      _Destination('Profile', AppIcons.profile, () => const ProfileScreen(embedded: true)),
     ];
   }
 
@@ -78,48 +80,83 @@ class _StaffShellState extends State<StaffShell> {
     final items = _destinations(user.role);
     final index = _index.clamp(0, items.length - 1);
     final current = items[index];
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(current.label),
-        actions: const [NotificationsButton()],
-      ),
-      // ListTile rows rather than NavigationDrawerDestination so labels wrap
-      // at large text sizes (NFR-06).
-      drawer: Drawer(
-        child: SafeArea(
+    final width = MediaQuery.sizeOf(context).width;
+    final permanent = width >= Breakpoints.expanded;
+    final s = Theme.of(context).colorScheme;
+
+    Widget menu({required bool closeOnTap}) => SafeArea(
           child: ListView(
-            padding: const EdgeInsets.symmetric(vertical: 12),
+            padding: const EdgeInsets.symmetric(vertical: Space.m),
             children: [
-              ListTile(
-                leading: tenant != null ? TenantMark(tenant, size: 36) : null,
-                title: Text(user.fullName, style: Theme.of(context).textTheme.titleSmall),
-                subtitle: Text(user.role.label),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(Space.l, Space.s, Space.l, Space.l),
+                child: Row(
+                  children: [
+                    if (tenant != null) ...[TenantMark(tenant, size: 40), const SizedBox(width: Space.m)],
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(user.fullName, style: Theme.of(context).textTheme.titleSmall),
+                          Text(user.role.label, style: Theme.of(context).textTheme.bodySmall),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
               const Divider(),
+              const SizedBox(height: Space.s),
               for (final (i, d) in items.indexed)
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  padding: const EdgeInsets.symmetric(horizontal: Space.s, vertical: 1),
                   child: ListTile(
                     selected: i == index,
-                    selectedTileColor: Theme.of(context).colorScheme.secondaryContainer,
-                    shape: const StadiumBorder(),
+                    selectedTileColor: s.primaryContainer,
+                    selectedColor: s.onPrimaryContainer,
+                    shape: Radii.controlShape,
                     leading: Badge(
                       isLabelVisible: (d.badge?.call(app) ?? 0) > 0,
                       label: Text('${d.badge?.call(app) ?? 0}'),
-                      child: Icon(d.icon),
+                      child: Icon(d.icon, size: 20),
                     ),
-                    title: Text(d.label),
+                    title: Text(
+                      d.label,
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            fontWeight: i == index ? FontWeight.w600 : FontWeight.w500,
+                            color: i == index ? s.onPrimaryContainer : s.onSurface,
+                          ),
+                    ),
                     onTap: () {
                       setState(() => _index = i);
-                      Navigator.pop(context);
+                      if (closeOnTap) Navigator.pop(context);
                     },
                   ),
                 ),
             ],
           ),
-        ),
+        );
+
+    return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: !permanent,
+        titleSpacing: permanent ? Space.xl : null,
+        title: Text(current.label),
+        actions: const [NotificationsButton(), SizedBox(width: Space.xs)],
       ),
-      body: current.builder(),
+      // ListTile rows rather than NavigationDrawerDestination so labels wrap
+      // at large text sizes (NFR-06). From tablet-landscape width the menu is
+      // always visible, like the side navigation on course dashboards.
+      drawer: permanent ? null : Drawer(child: menu(closeOnTap: true)),
+      body: permanent
+          ? Row(
+              children: [
+                SizedBox(width: Sizes.sideMenu, child: menu(closeOnTap: false)),
+                VerticalDivider(width: 1, color: s.outlineVariant),
+                Expanded(child: Readable(maxWidth: 1040, child: current.builder())),
+              ],
+            )
+          : current.builder(),
     );
   }
 }

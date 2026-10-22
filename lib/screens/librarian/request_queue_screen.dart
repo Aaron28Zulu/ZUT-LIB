@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/format.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
@@ -22,7 +23,7 @@ class RequestQueueScreen extends StatelessWidget {
     final renewals = app.loans.renewalRequests();
 
     final body = pending.isEmpty && renewals.isEmpty
-        ? const EmptyState(icon: Icons.inbox_outlined, message: 'No requests waiting. New requests appear here.')
+        ? const EmptyState(icon: AppIcons.inbox, message: 'No requests waiting. New requests appear here.')
         : ListView(
             padding: const EdgeInsets.only(bottom: Space.xl),
             children: [
@@ -32,7 +33,7 @@ class RequestQueueScreen extends StatelessWidget {
               for (final l in renewals) _RenewalTile(loan: l),
             ],
           );
-    return embedded ? body : Scaffold(appBar: AppBar(title: const Text('Request queue')), body: body);
+    return embedded ? body : Scaffold(appBar: AppBar(title: const Text('Request queue')), body: Readable(child: body));
   }
 }
 
@@ -113,12 +114,12 @@ class _RenewalTile extends StatelessWidget {
         children: [
           IconButton(
             tooltip: 'Decline renewal',
-            icon: const Icon(Icons.close),
+            icon: const Icon(AppIcons.close),
             onPressed: () => runAction(context, () => app.loans.decideRenewal(loan.id, approve: false), success: 'Renewal declined.'),
           ),
           IconButton(
             tooltip: 'Approve renewal',
-            icon: const Icon(Icons.check),
+            icon: const Icon(AppIcons.check),
             onPressed: () => runAction(context, () => app.loans.decideRenewal(loan.id, approve: true), success: 'Renewal approved.'),
           ),
         ],

@@ -2,6 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/format.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
@@ -31,8 +32,8 @@ class _ProgressScreenState extends State<ProgressScreen> {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Progress')),
-      body: courses.isEmpty
-          ? const EmptyState(icon: Icons.show_chart, message: 'Add courses to your profile to track progress.')
+      body: Readable(child: courses.isEmpty
+          ? const EmptyState(icon: AppIcons.progress, message: 'Add courses to your profile to track progress.')
           : ListView(
               padding: const EdgeInsets.only(bottom: Space.xl),
               children: [
@@ -80,7 +81,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
                     ListTile(dense: true, title: Text(s.topic), trailing: Text('${s.percent}%', style: AppText.code(context))),
                 ],
               ],
-            ),
+            )),
     );
   }
 }
