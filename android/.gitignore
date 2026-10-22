@@ -12,3 +12,5 @@ GeneratedPluginRegistrant.java
 key.properties
 **/*.keystore
 **/*.jks
+# Shared debug key, so local and CI builds have the SHA-1 registered for Google sign-in.
+!app/debug.keystore

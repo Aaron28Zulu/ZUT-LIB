@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1056188731851",
+    "project_id": "zutlib-7a3a0",
+    "storage_bucket": "zutlib-7a3a0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056188731851:android:27c6648e629001c40fa64e",
+        "android_client_info": {
+          "package_name": "zm.ac.zut.zutlib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056188731851-ibmc631ojo738de7d4ku9rqjol9b99gu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "zm.ac.zut.zutlib",
+            "certificate_hash": "6711930a56761634d6e8b5fe54af430934c07201"
+          }
+        },
+        {
+          "client_id": "1056188731851-jae1vh2i3f0a0lpi3pokff030tjsg9rp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "zm.ac.zut.zutlib",
+            "certificate_hash": "d8ed702ff21ae5039def5ca62300d60cbda40e53"
+          }
+        },
+        {
+          "client_id": "1056188731851-hdgvsri56cg7fcsugd924dmhhd385ina.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR6nQLEaPviVIVcRSbBCn1Sjj5a2fsLZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056188731851-hdgvsri56cg7fcsugd924dmhhd385ina.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

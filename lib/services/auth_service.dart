@@ -39,6 +39,22 @@ class StudyProfile {
   final List<String> studyTimes;
 }
 
+/// A Google account confirmed by the identity backend.
+class ExternalIdentity {
+  const ExternalIdentity({required this.email, required this.displayName});
+  final String email;
+  final String displayName;
+}
+
+/// Third-party sign-in (Firebase Authentication in cloud mode). The auth
+/// service decides which ZutLib account, if any, the identity maps to.
+abstract interface class IdentityProvider {
+  /// Returns null when the user closes the Google sign-in sheet.
+  Future<ExternalIdentity?> signInWithGoogle();
+
+  Future<void> signOut();
+}
+
 /// Pseudo-tenant id used by the platform administrator account.
 const platformTenantId = 'platform';
 
@@ -58,6 +74,14 @@ abstract interface class AuthService {
 
   /// FR-AUTH-04
   Future<AppUser> register(RegistrationDraft draft);
+
+  /// Whether "Continue with Google" is offered (cloud builds only).
+  bool get googleSignInAvailable;
+
+  /// Signs in to [tenantId] with a Google account. An email that already has
+  /// an account there signs in to it; a new email gets a student account.
+  /// Returns null if the user cancelled.
+  Future<AppUser?> signInWithGoogle(String tenantId);
 
   Future<void> signOut();
 

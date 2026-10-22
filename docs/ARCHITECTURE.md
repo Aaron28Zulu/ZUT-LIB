@@ -41,6 +41,31 @@ dates, collection expiries, overdue checks and reminders use it.
 `runScheduledJobs` in `mock_services.dart` stands in for the scheduled cloud functions
 and runs at start-up, when the app resumes and when the clock moves.
 
+## Cloud mode (Firebase)
+
+Offline stays the default build (SRS: offline prototype on seed data). Cloud mode is
+opt-in at build time:
+
+```bash
+flutter run --dart-define=BACKEND=firebase
+```
+
+- `lib/core/backend.dart` reads the flag. `AppState.create` then starts Firebase and
+  swaps `SharedPrefsStorage` for `FirestoreStorage`, so the services and screens are
+  the same in both modes. The first cloud run uploads the seed.
+- `FirestoreStorage` keeps each storage key as a document in `zutlib_kv`, split into
+  200,000-character parts (Firestore's 1 MiB document limit). The whole demo state is
+  one key, so two devices saving at once overwrite each other (last save wins), and a
+  device only sees other devices' changes when it starts.
+- Google sign-in goes through `IdentityProvider` (`FirebaseIdentityProvider`).
+  `MockAuthService.signInWithGoogle` maps the Google email to an account in the chosen
+  tenant, or creates a student account there. Without Google, the app signs in to
+  Firebase anonymously so `firestore.rules` accepts it.
+- Setup on a dev machine: `firebase login`, `flutterfire configure --project=<id>
+  --platforms=android,web` (overwrites the placeholder `lib/firebase_options.dart`),
+  `firebase deploy --only firestore:rules`, enable Google and Anonymous sign-in in the
+  console, and add the debug keystore's SHA-1 to the Android app.
+
 ## Swapping mocks for Firebase
 
 The SRS lists Firebase as the production backend (section 13). To move over:

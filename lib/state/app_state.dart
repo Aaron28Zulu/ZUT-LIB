@@ -1,17 +1,24 @@
 import 'dart:async';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../core/backend.dart';
 import '../core/clock.dart';
 import '../core/rules.dart';
 import '../data/data_store.dart';
+import '../data/firestore_storage.dart';
 import '../data/storage.dart';
 import '../models/models.dart';
 import '../services/admin_service.dart';
 import '../services/auth_service.dart';
+import '../firebase_options.dart';
 import '../services/device/local_device_notifier.dart';
+import '../services/firebase/firebase_identity_provider.dart';
 import '../services/loan_service.dart';
 import '../services/mock/mock_services.dart';
 import '../services/notification_service.dart';
@@ -33,6 +40,13 @@ class AppState extends ChangeNotifier {
 
   /// [storage] and [notifier] are overridden by widget tests.
   static Future<AppState> create({KeyValueStorage? storage, DeviceNotifier? notifier}) async {
+    IdentityProvider? identity;
+    if (storage == null && Backend.current == Backend.firebase) {
+      await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+      final google = FirebaseIdentityProvider(FirebaseAuth.instance);
+      identity = google;
+      storage = FirestoreStorage(FirebaseFirestore.instance, ensureSignedIn: google.ensureSignedIn);
+    }
     if (storage == null) {
       try {
         storage = SharedPrefsStorage(SharedPreferencesAsync());
@@ -49,7 +63,7 @@ class AppState extends ChangeNotifier {
     await store.init();
     notifier ??= LocalDeviceNotifier();
     await notifier.init();
-    final services = ServiceBundle.mock(store, notifier);
+    final services = ServiceBundle.mock(store, notifier, identity: identity);
     services.runScheduledJobs();
     return AppState._(store, services);
   }

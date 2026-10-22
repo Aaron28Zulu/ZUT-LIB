@@ -42,11 +42,12 @@ class ServiceBundle {
     study.runReminderChecks();
   }
 
-  factory ServiceBundle.mock(DataStore store, DeviceNotifier notifier) {
+  /// [identity] enables Google sign-in; it is set in cloud mode only.
+  factory ServiceBundle.mock(DataStore store, DeviceNotifier notifier, {IdentityProvider? identity}) {
     final ctx = MockContext(store, notifier);
     late final ServiceBundle bundle;
     bundle = ServiceBundle(
-      auth: MockAuthService(ctx),
+      auth: MockAuthService(ctx, identity: identity),
       resources: MockResourceService(ctx),
       loans: MockLoanService(ctx),
       study: MockStudyAssistantService(ctx),

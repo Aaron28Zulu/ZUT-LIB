@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../core/app_icons.dart';
+import '../../core/backend.dart';
 import '../../core/format.dart';
 import '../../core/theme.dart';
 import '../../state/app_state.dart';
@@ -69,6 +70,11 @@ class DemoControlsScreen extends StatelessWidget {
           onChanged: (v) => platform.setShortSessionTimeout(v),
         ),
         const SectionHeader('Data'),
+        ListTile(
+          leading: const Icon(AppIcons.info),
+          title: const Text('Saved to'),
+          subtitle: Text(Backend.current.label),
+        ),
         ListTile(
           leading: Icon(AppIcons.reset, color: Theme.of(context).colorScheme.error),
           title: const Text('Reset demo data'),
