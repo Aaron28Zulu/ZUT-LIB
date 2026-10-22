@@ -2,11 +2,13 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
 import '../../services/resource_service.dart';
 import '../../state/app_state.dart';
 import '../../widgets/actions.dart';
+import '../../widgets/common.dart';
 
 /// Upload or edit a paper (FR-RES-01 to 05). Mandatory fields show their
 /// error next to the field (FR-RES-02); duplicates warn first (FR-RES-04).
@@ -123,13 +125,13 @@ class _ResourceFormScreenState extends State<ResourceFormScreen> {
 
     return Scaffold(
       appBar: AppBar(title: Text(_editing ? 'Edit paper' : 'Upload paper')),
-      body: ListView(
+      body: Readable(child: ListView(
         padding: const EdgeInsets.all(Space.l),
         children: [
           Text('Required', style: t.titleSmall),
           gap,
           OutlinedButton.icon(
-            icon: const Icon(Icons.attach_file),
+            icon: const Icon(AppIcons.attach),
             label: Text(_draft.fileName ?? (_editing ? 'Replace PDF file' : 'Choose PDF file')),
             onPressed: _pickFile,
           ),
@@ -228,7 +230,7 @@ class _ResourceFormScreenState extends State<ResourceFormScreen> {
               labelText: 'Add topic',
               suffixIcon: IconButton(
                 tooltip: 'Add topic',
-                icon: const Icon(Icons.add),
+                icon: const Icon(AppIcons.add),
                 onPressed: () => _addTopic(_topic.text),
               ),
             ),
@@ -242,7 +244,7 @@ class _ResourceFormScreenState extends State<ResourceFormScreen> {
               for (final topic in _draft.topics)
                 InputChip(label: Text(topic), onDeleted: () => setState(() => _draft.topics.remove(topic))),
               for (final s in suggestions.take(6))
-                ActionChip(avatar: const Icon(Icons.add, size: 16), label: Text(s), onPressed: () => _addTopic(s)),
+                ActionChip(avatar: const Icon(AppIcons.add, size: 16), label: Text(s), onPressed: () => _addTopic(s)),
             ],
           ),
           SwitchListTile(
@@ -268,7 +270,7 @@ class _ResourceFormScreenState extends State<ResourceFormScreen> {
           const SizedBox(height: Space.xl),
           FilledButton(onPressed: _save, child: Text(_editing ? 'Save changes' : 'Upload')),
         ],
-      ),
+      )),
     );
   }
 

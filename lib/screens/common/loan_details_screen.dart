@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/errors.dart';
 import '../../core/format.dart';
 import '../../core/rules.dart';
@@ -25,7 +26,7 @@ class LoanDetailsScreen extends StatelessWidget {
     try {
       l = app.loans.loan(loanId);
     } on AppException catch (e) {
-      return Scaffold(appBar: AppBar(), body: EmptyState(icon: Icons.assignment_outlined, message: e.message));
+      return Scaffold(appBar: AppBar(), body: Readable(child: EmptyState(icon: AppIcons.loans, message: e.message)));
     }
     final isStudent = app.user!.role == Role.student;
     final r = app.loans.resourceFor(l);
@@ -35,13 +36,13 @@ class LoanDetailsScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Loan')),
-      body: ListView(
+      body: Readable(child: ListView(
         padding: const EdgeInsets.only(bottom: Space.xxl),
         children: [
           ListTile(
             title: Text(r.title),
             subtitle: Text(course?.name ?? ''),
-            trailing: const Icon(Icons.chevron_right),
+            trailing: const Icon(AppIcons.next),
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (_) => PaperDetailsScreen(resourceId: r.id)),
@@ -83,7 +84,7 @@ class LoanDetailsScreen extends StatelessWidget {
               child: Text('Collection code ${l.qrToken}${l.qrUsed ? ' (used)' : ''}', style: t.bodySmall),
             ),
         ],
-      ),
+      )),
     );
   }
 }

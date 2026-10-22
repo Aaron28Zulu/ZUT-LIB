@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/format.dart';
 import '../../core/permissions.dart';
 import '../../core/theme.dart';
@@ -66,7 +67,7 @@ class DashboardScreen extends StatelessWidget {
           if (d.unmetSearches.isEmpty) const ListTile(title: Text('Every search found at least one paper.')),
           for (final item in d.unmetSearches)
             ListTile(
-              leading: const Icon(Icons.search_off),
+              leading: const Icon(AppIcons.noResults),
               title: Text(item.label),
               trailing: Text('${item.count}', style: AppText.code(context)),
             ),

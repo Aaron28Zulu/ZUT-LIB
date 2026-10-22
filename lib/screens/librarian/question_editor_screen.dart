@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
 import '../../state/app_state.dart';
 import '../../widgets/actions.dart';
+import '../../widgets/common.dart';
 
 /// Add or edit a practice question. Works on a copy so cancelling changes nothing.
 class QuestionEditorScreen extends StatefulWidget {
@@ -80,7 +82,7 @@ class _QuestionEditorScreenState extends State<QuestionEditorScreen> {
           if (widget.existing)
             IconButton(
               tooltip: 'Delete question',
-              icon: const Icon(Icons.delete_outline),
+              icon: const Icon(AppIcons.delete),
               onPressed: () async {
                 if (await confirm(context, title: 'Delete this question?', message: 'It will be removed from future quizzes.', action: 'Delete', destructive: true) &&
                     context.mounted) {
@@ -91,7 +93,7 @@ class _QuestionEditorScreenState extends State<QuestionEditorScreen> {
             ),
         ],
       ),
-      body: ListView(
+      body: Readable(child: ListView(
         padding: const EdgeInsets.all(Space.l),
         children: [
           SegmentedButton<QuestionType>(
@@ -171,7 +173,7 @@ class _QuestionEditorScreenState extends State<QuestionEditorScreen> {
             child: const Text('Save'),
           ),
         ],
-      ),
+      )),
     );
   }
 }

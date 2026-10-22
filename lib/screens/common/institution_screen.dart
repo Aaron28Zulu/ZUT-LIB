@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
 import '../../services/auth_service.dart';
@@ -19,44 +20,64 @@ class InstitutionScreen extends StatelessWidget {
     final t = Theme.of(context).textTheme;
     final scheme = Theme.of(context).colorScheme;
     return Scaffold(
-      body: SafeArea(
+      body: Readable(child: SafeArea(
         child: ListView(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(Space.l, Space.xl, Space.l, Space.s),
+              padding: const EdgeInsets.fromLTRB(Space.l, Space.l, Space.l, 0),
               child: Row(
                 children: [
-                  Icon(Icons.local_library_outlined, color: scheme.primary),
+                  Icon(AppIcons.library, color: scheme.primary, size: 26),
                   const SizedBox(width: Space.s),
-                  Expanded(child: Text('ZutLib', style: t.titleLarge, overflow: TextOverflow.ellipsis)),
+                  Expanded(child: Text('ZutLib', style: t.titleLarge?.copyWith(color: scheme.primary))),
                   const _DemoModeLabel(),
                 ],
               ),
             ),
             Padding(
-              padding: Space.screen,
-              child: Text('Choose your institution', style: t.headlineSmall),
+              padding: const EdgeInsets.fromLTRB(Space.l, Space.xxl, Space.l, Space.s),
+              child: Text('Past papers, library loans and revision in one place', style: t.headlineMedium),
             ),
-            const SizedBox(height: Space.s),
-            for (final tenant in tenants)
-              ListTile(
-                leading: TenantMark(tenant),
-                title: Text(tenant.name),
-                subtitle: Text(tenant.shortCode),
-                trailing: const Icon(Icons.chevron_right),
-                onTap: () => _open(context, tenant.id, tenant.name, tenant),
+            Padding(
+              padding: Space.screen,
+              child: Text(
+                'Find papers for your courses, borrow printed copies and practise with quizzes built from real exams.',
+                style: t.bodyLarge?.copyWith(color: scheme.onSurfaceVariant),
               ),
-            const Divider(),
+            ),
+            const SectionHeader('Choose your institution'),
+            Padding(
+              padding: Space.screen,
+              child: Panel(
+                padding: EdgeInsets.zero,
+                child: Column(
+                  children: [
+                    for (final (i, tenant) in tenants.indexed) ...[
+                      if (i > 0) const Divider(),
+                      ListTile(
+                        contentPadding: const EdgeInsets.symmetric(horizontal: Space.l, vertical: Space.xs),
+                        leading: TenantMark(tenant),
+                        title: Text(tenant.name, style: t.titleSmall),
+                        subtitle: Text(tenant.shortCode),
+                        trailing: const Icon(AppIcons.next, size: 18),
+                        onTap: () => _open(context, tenant.id, tenant.name, tenant),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: Space.l),
             ListTile(
-              leading: const Icon(Icons.admin_panel_settings_outlined),
-              title: const Text('Platform administration'),
+              leading: const Icon(AppIcons.admin, size: 20),
+              title: Text('Platform administration', style: t.bodyMedium?.copyWith(fontWeight: FontWeight.w500)),
               subtitle: const Text('For the operator of the shared platform'),
-              trailing: const Icon(Icons.chevron_right),
+              trailing: const Icon(AppIcons.next, size: 18),
               onTap: () => _open(context, platformTenantId, 'Platform administration', null),
             ),
           ],
         ),
-      ),
+      )),
     );
   }
 
@@ -74,14 +95,10 @@ class _DemoModeLabel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final s = Theme.of(context).colorScheme;
+    final p = AppPalette.of(context);
     return Tooltip(
       message: 'All data in this app is fictional',
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: Space.s, vertical: Space.xs),
-        decoration: BoxDecoration(color: s.tertiaryContainer, borderRadius: BorderRadius.circular(6)),
-        child: Text('Demo mode', style: TextStyle(color: s.onTertiaryContainer)),
-      ),
+      child: Tag('Demo mode', icon: AppIcons.info, foreground: p.info, background: p.infoBg),
     );
   }
 }

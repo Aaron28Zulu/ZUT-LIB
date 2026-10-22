@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../models/models.dart';
 import '../../state/app_state.dart';
 import '../../widgets/actions.dart';
@@ -20,7 +21,7 @@ class CopiesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Printed copies')),
       floatingActionButton: FloatingActionButton.extended(
-        icon: const Icon(Icons.add),
+        icon: const Icon(AppIcons.add),
         label: const Text('Add copy'),
         onPressed: () async {
           final shelf = await promptText(context, title: 'Add copy', label: 'Shelf location, e.g. B2-04', action: 'Add');
@@ -29,8 +30,8 @@ class CopiesScreen extends StatelessWidget {
           }
         },
       ),
-      body: copies.isEmpty
-          ? const EmptyState(icon: Icons.inventory_2_outlined, message: 'No printed copies recorded for this paper.')
+      body: Readable(child: copies.isEmpty
+          ? const EmptyState(icon: AppIcons.copies, message: 'No printed copies recorded for this paper.')
           : ListView(
               children: [
                 ListTile(title: Text(r.title), subtitle: Text('${copies.length} copies')),
@@ -69,7 +70,7 @@ class CopiesScreen extends StatelessWidget {
                     ),
                   ),
               ],
-            ),
+            )),
     );
   }
 }

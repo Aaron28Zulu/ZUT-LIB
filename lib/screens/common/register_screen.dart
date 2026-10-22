@@ -5,6 +5,7 @@ import '../../core/theme.dart';
 import '../../services/auth_service.dart';
 import '../../state/app_state.dart';
 import '../../widgets/actions.dart';
+import '../../widgets/common.dart';
 
 /// FR-AUTH-04 with the registration privacy notice (NFR-09).
 class RegisterScreen extends StatefulWidget {
@@ -62,7 +63,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     final departments = context.read<AppState>().auth.departmentsFor(widget.tenantId);
     return Scaffold(
       appBar: AppBar(title: const Text('Create student account')),
-      body: ListView(
+      body: Readable(child: ListView(
         padding: const EdgeInsets.all(Space.l),
         children: [
           Text(widget.tenantName, style: Theme.of(context).textTheme.titleMedium),
@@ -135,7 +136,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           const SizedBox(height: Space.s),
           FilledButton(onPressed: _agreed ? _submit : null, child: const Text('Create account')),
         ],
-      ),
+      )),
     );
   }
 }

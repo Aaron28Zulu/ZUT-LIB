@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/format.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
@@ -62,14 +63,20 @@ class _QuizScreenState extends State<QuizScreen> {
     final scheme = Theme.of(context).colorScheme;
     return Scaffold(
       appBar: AppBar(title: Text('Question ${_index + 1} of $total')),
-      body: ListView(
+      body: Readable(child: ListView(
         padding: const EdgeInsets.all(Space.l),
         children: [
-          LinearProgressIndicator(value: (_index + (fb == null ? 0 : 1)) / total),
+          ClipRRect(
+            borderRadius: Radii.tagRadius,
+            child: LinearProgressIndicator(
+              value: (_index + (fb == null ? 0 : 1)) / total,
+              semanticsLabel: 'Quiz progress',
+            ),
+          ),
           const SizedBox(height: Space.l),
           Text('${_q.topic} · ${_q.type.label}', style: AppText.overline(context)),
           const SizedBox(height: Space.s),
-          Text(_q.text, style: t.titleMedium),
+          Text(_q.text, style: t.titleLarge),
           const SizedBox(height: Space.l),
           if (_q.type == QuestionType.shortAnswer)
             TextField(
@@ -87,34 +94,63 @@ class _QuizScreenState extends State<QuizScreen> {
               child: Column(
                 children: [
                   for (final o in _q.options)
-                    RadioListTile<String>(
-                      value: o,
-                      enabled: fb == null,
-                      title: Text(o),
-                      secondary: fb == null
-                          ? null
-                          : o == fb.correctAnswer
-                              ? Icon(Icons.check_circle_outline, color: scheme.primary, semanticLabel: 'Correct answer')
-                              : o == _selected
-                                  ? Icon(Icons.cancel_outlined, color: scheme.error, semanticLabel: 'Your answer')
-                                  : null,
-                    ),
+                    Builder(builder: (context) {
+                      final p = AppPalette.of(context);
+                      final isAnswer = fb != null && o == fb.correctAnswer;
+                      final isWrongPick = fb != null && o == _selected && !isAnswer;
+                      final picked = fb == null && o == _selected;
+                      final (border, bg) = isAnswer
+                          ? (p.success, p.successBg)
+                          : isWrongPick
+                              ? (p.danger, p.dangerBg)
+                              : picked
+                                  ? (scheme.primary, scheme.primaryContainer)
+                                  : (scheme.outline, scheme.surface);
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: Space.s),
+                        child: Material(
+                          color: bg,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: Radii.controlRadius,
+                            side: BorderSide(color: border, width: picked || isAnswer || isWrongPick ? 2 : 1),
+                          ),
+                          clipBehavior: Clip.antiAlias,
+                          child: RadioListTile<String>(
+                            value: o,
+                            enabled: fb == null,
+                            title: Text(o, style: t.bodyLarge),
+                            secondary: isAnswer
+                                ? Icon(AppIcons.done, color: p.success, semanticLabel: 'Correct answer')
+                                : isWrongPick
+                                    ? Icon(AppIcons.cancelled, color: p.danger, semanticLabel: 'Your answer')
+                                    : null,
+                          ),
+                        ),
+                      );
+                    }),
                 ],
               ),
             ),
           if (fb != null) ...[
             const SizedBox(height: Space.l),
-            Card(
-              color: fb.correct ? scheme.primaryContainer : scheme.errorContainer,
-              child: Padding(
-                padding: const EdgeInsets.all(Space.l),
+            Builder(builder: (context) {
+              final p = AppPalette.of(context);
+              final fg = fb.correct ? p.success : p.danger;
+              return Panel(
+                colour: fb.correct ? p.successBg : p.dangerBg,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(fb.correct ? 'Correct' : 'Not quite', style: t.titleSmall),
+                    Row(
+                      children: [
+                        Icon(fb.correct ? AppIcons.done : AppIcons.warning, color: fg, size: 20),
+                        const SizedBox(width: Space.s),
+                        Text(fb.correct ? 'Correct' : 'Not quite', style: t.titleMedium?.copyWith(color: fg)),
+                      ],
+                    ),
                     if (!fb.correct) ...[
-                      const SizedBox(height: Space.xs),
-                      Text('Answer: ${fb.correctAnswer}'),
+                      const SizedBox(height: Space.s),
+                      Text('Answer: ${fb.correctAnswer}', style: t.bodyMedium?.copyWith(fontWeight: FontWeight.w600)),
                     ],
                     const SizedBox(height: Space.s),
                     Text(fb.explanation),
@@ -122,11 +158,11 @@ class _QuizScreenState extends State<QuizScreen> {
                     Text('From ${fb.sourceLabel}', style: t.bodySmall),
                   ],
                 ),
-              ),
-            ),
+              );
+            }),
           ],
         ],
-      ),
+      )),
       bottomNavigationBar: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(Space.l),
@@ -155,23 +191,39 @@ class QuizResultsScreen extends StatelessWidget {
     final correct = attempt.topicScores.values.fold<int>(0, (s, e) => s + e.correct);
     return Scaffold(
       appBar: AppBar(title: const Text('Quiz results')),
-      body: ListView(
+      body: Readable(child: ListView(
         padding: const EdgeInsets.symmetric(vertical: Space.l),
         children: [
           Padding(
             padding: Space.screen,
-            child: Text('${attempt.score}%', style: t.displaySmall),
+            child: Panel(
+              child: Row(
+                children: [
+                  Text('${attempt.score}%', style: t.displaySmall?.copyWith(color: Theme.of(context).colorScheme.primary)),
+                  const SizedBox(width: Space.l),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(attempt.score >= 50 ? 'Well done' : 'Keep practising', style: t.titleMedium),
+                        const SizedBox(height: 2),
+                        Text(
+                          '$correct of ${attempt.questionIds.length} correct in ${formatDuration(attempt.timeTaken)}',
+                          style: AppText.muted(context),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
-          Padding(
-            padding: Space.screen,
-            child: Text('$correct of ${attempt.questionIds.length} correct in ${formatDuration(attempt.timeTaken)}'),
-          ),
-          const SectionHeader('By topic'),
+          const SectionHeader('By topic', subtitle: 'Weakest first'),
           for (final e in topics)
-            ListTile(
-              title: Text(e.key),
-              subtitle: LinearProgressIndicator(value: e.value.total == 0 ? 0 : e.value.correct / e.value.total),
-              trailing: Text('${e.value.correct}/${e.value.total}', style: AppText.code(context)),
+            ProgressRow(
+              label: e.key,
+              value: e.value.total == 0 ? 0 : e.value.correct / e.value.total,
+              caption: '${e.value.correct} of ${e.value.total} correct',
             ),
           const SizedBox(height: Space.l),
           Padding(
@@ -195,7 +247,7 @@ class QuizResultsScreen extends StatelessWidget {
             ),
           ),
         ],
-      ),
+      )),
     );
   }
 }

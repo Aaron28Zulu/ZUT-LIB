@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/theme.dart';
 import '../student/search_tab.dart';
 import 'resource_form_screen.dart';
@@ -18,7 +19,7 @@ class ResourcesListScreen extends StatelessWidget {
           bottom: Space.l,
           child: FloatingActionButton.extended(
             heroTag: 'upload',
-            icon: const Icon(Icons.upload_file_outlined),
+            icon: const Icon(AppIcons.upload),
             label: const Text('Upload paper'),
             onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ResourceFormScreen())),
           ),

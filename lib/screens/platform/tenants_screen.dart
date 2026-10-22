@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/theme.dart';
 import '../../state/app_state.dart';
 import '../../widgets/actions.dart';
@@ -24,11 +25,11 @@ class TenantsScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
         heroTag: 'add-tenant',
-        icon: const Icon(Icons.add_business_outlined),
+        icon: const Icon(AppIcons.addInstitution),
         label: const Text('Add institution'),
         onPressed: () => _add(context),
       ),
-      body: ListView(
+      body: Readable(child: ListView(
         padding: const EdgeInsets.only(top: Space.l, bottom: 88),
         children: [
           StatGrid([
@@ -49,7 +50,7 @@ class TenantsScreen extends StatelessWidget {
             child: Text('Platform totals are counts only. Individual student records stay with each institution.'),
           ),
         ],
-      ),
+      )),
     );
   }
 
@@ -93,7 +94,7 @@ class TenantsScreen extends StatelessWidget {
                             child: CircleAvatar(
                               radius: 18,
                               backgroundColor: Color(int.parse('FF${c.substring(1)}', radix: 16)),
-                              child: c == colour ? const Icon(Icons.check, color: Colors.white, size: 18) : null,
+                              child: c == colour ? const Icon(AppIcons.check, color: Colors.white, size: 18) : null,
                             ),
                           ),
                         ),
