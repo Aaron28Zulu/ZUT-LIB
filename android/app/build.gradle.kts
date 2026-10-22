@@ -19,6 +19,17 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+    signingConfigs {
+        // A debug key kept in the repo, so every machine and CI build signs with
+        // the SHA-1 registered in Firebase for Google sign-in. Not a release key.
+        getByName("debug") {
+            storeFile = file("debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
+
     defaultConfig {
         applicationId = "zm.ac.zut.zutlib"
         // SRS 2.4: Android 8.0 (API 26) or later.
