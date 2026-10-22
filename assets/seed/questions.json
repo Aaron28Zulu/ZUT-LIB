@@ -1,0 +1,3117 @@
+[
+ {
+  "id": "q_c_ict2201_001",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2019_final",
+  "topic": "Relational model",
+  "type": "multipleChoice",
+  "text": "In the relational model, a row of a table is formally called a:",
+  "options": [
+   "Tuple",
+   "Attribute",
+   "Domain",
+   "Schema"
+  ],
+  "correctAnswer": "Tuple",
+  "acceptedKeywords": [],
+  "explanation": "A relation is a set of tuples; each tuple is one row."
+ },
+ {
+  "id": "q_c_ict2201_002",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2019_final",
+  "topic": "Relational model",
+  "type": "trueFalse",
+  "text": "True or false: In the relational model, a row of a table is formally called an attribute.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Tuple. A relation is a set of tuples; each tuple is one row."
+ },
+ {
+  "id": "q_c_ict2201_003",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "Relational model",
+  "type": "multipleChoice",
+  "text": "Which key uniquely identifies each row and cannot be NULL?",
+  "options": [
+   "Foreign key",
+   "Primary key",
+   "Candidate key that allows NULL",
+   "Composite attribute"
+  ],
+  "correctAnswer": "Primary key",
+  "acceptedKeywords": [],
+  "explanation": "Entity integrity requires the primary key to be unique and never NULL."
+ },
+ {
+  "id": "q_c_ict2201_004",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "Relational model",
+  "type": "trueFalse",
+  "text": "Which key uniquely identifies each row and cannot be NULL? Proposed answer: Primary key. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Primary key. Entity integrity requires the primary key to be unique and never NULL."
+ },
+ {
+  "id": "q_c_ict2201_005",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2019_final",
+  "topic": "Relational model",
+  "type": "multipleChoice",
+  "text": "A foreign key enforces which kind of integrity?",
+  "options": [
+   "Entity integrity",
+   "Domain integrity",
+   "Referential integrity",
+   "User-defined integrity"
+  ],
+  "correctAnswer": "Referential integrity",
+  "acceptedKeywords": [],
+  "explanation": "A foreign key must match a primary key value in the referenced table or be NULL."
+ },
+ {
+  "id": "q_c_ict2201_006",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2019_final",
+  "topic": "Relational model",
+  "type": "trueFalse",
+  "text": "A foreign key enforces which kind of integrity? Proposed answer: User-defined integrity. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Referential integrity. A foreign key must match a primary key value in the referenced table or be NULL."
+ },
+ {
+  "id": "q_c_ict2201_007",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2021_supp",
+  "topic": "Relational model",
+  "type": "multipleChoice",
+  "text": "The set of allowed values for an attribute is its:",
+  "options": [
+   "Degree",
+   "Cardinality",
+   "Domain",
+   "Tuple"
+  ],
+  "correctAnswer": "Domain",
+  "acceptedKeywords": [],
+  "explanation": "The domain defines the type and range of permitted values."
+ },
+ {
+  "id": "q_c_ict2201_008",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2021_supp",
+  "topic": "Relational model",
+  "type": "trueFalse",
+  "text": "True or false: The set of allowed values for an attribute is its domain.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Domain. The domain defines the type and range of permitted values."
+ },
+ {
+  "id": "q_c_ict2201_009",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "Relational model",
+  "type": "multipleChoice",
+  "text": "The number of attributes in a relation is called its:",
+  "options": [
+   "Cardinality",
+   "Degree",
+   "Arity of keys",
+   "Extension"
+  ],
+  "correctAnswer": "Degree",
+  "acceptedKeywords": [],
+  "explanation": "Degree counts columns; cardinality counts rows."
+ },
+ {
+  "id": "q_c_ict2201_010",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "Relational model",
+  "type": "trueFalse",
+  "text": "True or false: The number of attributes in a relation is called its arity of keys.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Degree. Degree counts columns; cardinality counts rows."
+ },
+ {
+  "id": "q_c_ict2201_011",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "Relational model",
+  "type": "shortAnswer",
+  "text": "Name the key that references the primary key of another table.",
+  "options": [],
+  "correctAnswer": "Foreign key",
+  "acceptedKeywords": [
+   "foreign"
+  ],
+  "explanation": "A foreign key links a row to a row in another relation."
+ },
+ {
+  "id": "q_c_ict2201_012",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2021_supp",
+  "topic": "SQL",
+  "type": "multipleChoice",
+  "text": "Which SQL clause filters groups after aggregation?",
+  "options": [
+   "WHERE",
+   "HAVING",
+   "ORDER BY",
+   "GROUP BY"
+  ],
+  "correctAnswer": "HAVING",
+  "acceptedKeywords": [],
+  "explanation": "WHERE filters rows before grouping; HAVING filters the grouped results."
+ },
+ {
+  "id": "q_c_ict2201_013",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2021_supp",
+  "topic": "SQL",
+  "type": "trueFalse",
+  "text": "Which SQL clause filters groups after aggregation? Proposed answer: ORDER BY. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: HAVING. WHERE filters rows before grouping; HAVING filters the grouped results."
+ },
+ {
+  "id": "q_c_ict2201_014",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2021_supp",
+  "topic": "SQL",
+  "type": "multipleChoice",
+  "text": "Which statement removes all rows but keeps the table structure, and cannot be rolled back in most systems?",
+  "options": [
+   "DROP TABLE",
+   "DELETE FROM",
+   "TRUNCATE TABLE",
+   "ALTER TABLE"
+  ],
+  "correctAnswer": "TRUNCATE TABLE",
+  "acceptedKeywords": [],
+  "explanation": "TRUNCATE deallocates data pages quickly and keeps the table definition."
+ },
+ {
+  "id": "q_c_ict2201_015",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2021_supp",
+  "topic": "SQL",
+  "type": "trueFalse",
+  "text": "Which statement removes all rows but keeps the table structure, and cannot be rolled back in most systems? Proposed answer: ALTER TABLE. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: TRUNCATE TABLE. TRUNCATE deallocates data pages quickly and keeps the table definition."
+ },
+ {
+  "id": "q_c_ict2201_016",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "SQL",
+  "type": "multipleChoice",
+  "text": "A LEFT JOIN returns:",
+  "options": [
+   "Only matching rows",
+   "All rows from the left table plus matches from the right",
+   "All rows from both tables",
+   "Only non-matching rows"
+  ],
+  "correctAnswer": "All rows from the left table plus matches from the right",
+  "acceptedKeywords": [],
+  "explanation": "Unmatched left rows appear with NULLs in the right table's columns."
+ },
+ {
+  "id": "q_c_ict2201_017",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "SQL",
+  "type": "trueFalse",
+  "text": "True or false: A LEFT JOIN returns all rows from both tables.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: All rows from the left table plus matches from the right. Unmatched left rows appear with NULLs in the right table's columns."
+ },
+ {
+  "id": "q_c_ict2201_018",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2021_supp",
+  "topic": "SQL",
+  "type": "multipleChoice",
+  "text": "Which aggregate ignores NULL values?",
+  "options": [
+   "COUNT(*)",
+   "COUNT(column)",
+   "Both",
+   "Neither"
+  ],
+  "correctAnswer": "COUNT(column)",
+  "acceptedKeywords": [],
+  "explanation": "COUNT(*) counts rows; COUNT(column) counts non-NULL values in that column."
+ },
+ {
+  "id": "q_c_ict2201_019",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2021_supp",
+  "topic": "SQL",
+  "type": "trueFalse",
+  "text": "Which aggregate ignores NULL values? Proposed answer: Both. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: COUNT(column). COUNT(*) counts rows; COUNT(column) counts non-NULL values in that column."
+ },
+ {
+  "id": "q_c_ict2201_020",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "SQL",
+  "type": "multipleChoice",
+  "text": "Which keyword removes duplicate rows from a SELECT result?",
+  "options": [
+   "UNIQUE",
+   "DISTINCT",
+   "DIFFERENT",
+   "SINGLE"
+  ],
+  "correctAnswer": "DISTINCT",
+  "acceptedKeywords": [],
+  "explanation": "SELECT DISTINCT returns each distinct row once."
+ },
+ {
+  "id": "q_c_ict2201_021",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "SQL",
+  "type": "trueFalse",
+  "text": "Which keyword removes duplicate rows from a SELECT result? Proposed answer: DIFFERENT. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: DISTINCT. SELECT DISTINCT returns each distinct row once."
+ },
+ {
+  "id": "q_c_ict2201_022",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "SQL",
+  "type": "multipleChoice",
+  "text": "Which SQL command category does GRANT belong to?",
+  "options": [
+   "DDL",
+   "DML",
+   "DCL",
+   "TCL"
+  ],
+  "correctAnswer": "DCL",
+  "acceptedKeywords": [],
+  "explanation": "GRANT and REVOKE are Data Control Language."
+ },
+ {
+  "id": "q_c_ict2201_023",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "SQL",
+  "type": "trueFalse",
+  "text": "Which SQL command category does GRANT belong to? Proposed answer: TCL. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: DCL. GRANT and REVOKE are Data Control Language."
+ },
+ {
+  "id": "q_c_ict2201_024",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "SQL",
+  "type": "shortAnswer",
+  "text": "Which SQL clause is used to sort the result set?",
+  "options": [],
+  "correctAnswer": "ORDER BY",
+  "acceptedKeywords": [
+   "order by"
+  ],
+  "explanation": "ORDER BY sorts ascending by default; add DESC for descending."
+ },
+ {
+  "id": "q_c_ict2201_025",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2021_supp",
+  "topic": "SQL",
+  "type": "shortAnswer",
+  "text": "Which SQL clause combines rows that share values so aggregates can be computed per group?",
+  "options": [],
+  "correctAnswer": "GROUP BY",
+  "acceptedKeywords": [
+   "group by"
+  ],
+  "explanation": "GROUP BY collapses rows into groups for COUNT, SUM, AVG and so on."
+ },
+ {
+  "id": "q_c_ict2201_026",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2019_final",
+  "topic": "Normalisation",
+  "type": "multipleChoice",
+  "text": "A relation is in 1NF when:",
+  "options": [
+   "It has no partial dependencies",
+   "All attribute values are atomic",
+   "It has no transitive dependencies",
+   "Every determinant is a candidate key"
+  ],
+  "correctAnswer": "All attribute values are atomic",
+  "acceptedKeywords": [],
+  "explanation": "First normal form forbids repeating groups and multi-valued attributes."
+ },
+ {
+  "id": "q_c_ict2201_027",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2019_final",
+  "topic": "Normalisation",
+  "type": "trueFalse",
+  "text": "True or false: A relation is in 1NF when it has no transitive dependencies.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: All attribute values are atomic. First normal form forbids repeating groups and multi-valued attributes."
+ },
+ {
+  "id": "q_c_ict2201_028",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2019_final",
+  "topic": "Normalisation",
+  "type": "multipleChoice",
+  "text": "2NF removes which kind of dependency?",
+  "options": [
+   "Transitive",
+   "Partial",
+   "Multivalued",
+   "Join"
+  ],
+  "correctAnswer": "Partial",
+  "acceptedKeywords": [],
+  "explanation": "In 2NF no non-key attribute depends on only part of a composite key."
+ },
+ {
+  "id": "q_c_ict2201_029",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2019_final",
+  "topic": "Normalisation",
+  "type": "trueFalse",
+  "text": "2NF removes which kind of dependency? Proposed answer: Multivalued. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Partial. In 2NF no non-key attribute depends on only part of a composite key."
+ },
+ {
+  "id": "q_c_ict2201_030",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2024_final",
+  "topic": "Normalisation",
+  "type": "multipleChoice",
+  "text": "3NF removes which kind of dependency?",
+  "options": [
+   "Partial",
+   "Transitive",
+   "Trivial",
+   "Functional"
+  ],
+  "correctAnswer": "Transitive",
+  "acceptedKeywords": [],
+  "explanation": "In 3NF no non-key attribute depends on another non-key attribute."
+ },
+ {
+  "id": "q_c_ict2201_031",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2024_final",
+  "topic": "Normalisation",
+  "type": "trueFalse",
+  "text": "3NF removes which kind of dependency? Proposed answer: Trivial. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Transitive. In 3NF no non-key attribute depends on another non-key attribute."
+ },
+ {
+  "id": "q_c_ict2201_032",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2024_final",
+  "topic": "Normalisation",
+  "type": "multipleChoice",
+  "text": "BCNF requires that every determinant is a:",
+  "options": [
+   "Foreign key",
+   "Non-key attribute",
+   "Candidate key",
+   "Composite key"
+  ],
+  "correctAnswer": "Candidate key",
+  "acceptedKeywords": [],
+  "explanation": "BCNF is a stricter form of 3NF."
+ },
+ {
+  "id": "q_c_ict2201_033",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2024_final",
+  "topic": "Normalisation",
+  "type": "trueFalse",
+  "text": "True or false: BCNF requires that every determinant is a composite key.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Candidate key. BCNF is a stricter form of 3NF."
+ },
+ {
+  "id": "q_c_ict2201_034",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2024_final",
+  "topic": "Normalisation",
+  "type": "multipleChoice",
+  "text": "Which anomaly occurs when deleting a row unintentionally removes other facts?",
+  "options": [
+   "Insertion anomaly",
+   "Update anomaly",
+   "Deletion anomaly",
+   "Read anomaly"
+  ],
+  "correctAnswer": "Deletion anomaly",
+  "acceptedKeywords": [],
+  "explanation": "Normalisation splits relations so that deleting one fact does not lose another."
+ },
+ {
+  "id": "q_c_ict2201_035",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2024_final",
+  "topic": "Normalisation",
+  "type": "trueFalse",
+  "text": "Which anomaly occurs when deleting a row unintentionally removes other facts? Proposed answer: Read anomaly. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Deletion anomaly. Normalisation splits relations so that deleting one fact does not lose another."
+ },
+ {
+  "id": "q_c_ict2201_036",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2019_final",
+  "topic": "Normalisation",
+  "type": "shortAnswer",
+  "text": "What is the name for a dependency where A -> B and B -> C, so A -> C?",
+  "options": [],
+  "correctAnswer": "Transitive dependency",
+  "acceptedKeywords": [
+   "transitive"
+  ],
+  "explanation": "Transitive dependencies are removed in 3NF."
+ },
+ {
+  "id": "q_c_ict2201_037",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "ER modelling",
+  "type": "multipleChoice",
+  "text": "In an ER diagram, a weak entity is one that:",
+  "options": [
+   "Has no attributes",
+   "Cannot be identified without its owner entity",
+   "Has only one relationship",
+   "Is optional"
+  ],
+  "correctAnswer": "Cannot be identified without its owner entity",
+  "acceptedKeywords": [],
+  "explanation": "A weak entity uses a partial key plus the owner's key."
+ },
+ {
+  "id": "q_c_ict2201_038",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "ER modelling",
+  "type": "trueFalse",
+  "text": "True or false: In an ER diagram, a weak entity is one that has only one relationship.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Cannot be identified without its owner entity. A weak entity uses a partial key plus the owner's key."
+ },
+ {
+  "id": "q_c_ict2201_039",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "ER modelling",
+  "type": "multipleChoice",
+  "text": "A many-to-many relationship is implemented in a relational schema by:",
+  "options": [
+   "A foreign key on one side",
+   "Merging both tables",
+   "A junction (associative) table",
+   "A view"
+  ],
+  "correctAnswer": "A junction (associative) table",
+  "acceptedKeywords": [],
+  "explanation": "The junction table holds foreign keys to both entities."
+ },
+ {
+  "id": "q_c_ict2201_040",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "ER modelling",
+  "type": "trueFalse",
+  "text": "True or false: A many-to-many relationship is implemented in a relational schema by a junction (associative) table.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: A junction (associative) table. The junction table holds foreign keys to both entities."
+ },
+ {
+  "id": "q_c_ict2201_041",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2024_final",
+  "topic": "ER modelling",
+  "type": "multipleChoice",
+  "text": "An attribute that can be calculated from other attributes is:",
+  "options": [
+   "Composite",
+   "Derived",
+   "Multivalued",
+   "Key"
+  ],
+  "correctAnswer": "Derived",
+  "acceptedKeywords": [],
+  "explanation": "For example, age derived from date of birth."
+ },
+ {
+  "id": "q_c_ict2201_042",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2024_final",
+  "topic": "ER modelling",
+  "type": "trueFalse",
+  "text": "True or false: An attribute that can be calculated from other attributes is multivalued.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Derived. For example, age derived from date of birth."
+ },
+ {
+  "id": "q_c_ict2201_043",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "ER modelling",
+  "type": "multipleChoice",
+  "text": "Cardinality in an ER relationship describes:",
+  "options": [
+   "The number of attributes",
+   "How many instances of one entity relate to another",
+   "The data type",
+   "The primary key size"
+  ],
+  "correctAnswer": "How many instances of one entity relate to another",
+  "acceptedKeywords": [],
+  "explanation": "Examples: one-to-one, one-to-many, many-to-many."
+ },
+ {
+  "id": "q_c_ict2201_044",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "ER modelling",
+  "type": "trueFalse",
+  "text": "True or false: Cardinality in an ER relationship describes how many instances of one entity relate to another.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: How many instances of one entity relate to another. Examples: one-to-one, one-to-many, many-to-many."
+ },
+ {
+  "id": "q_c_ict2201_045",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2019_final",
+  "topic": "ER modelling",
+  "type": "shortAnswer",
+  "text": "What type of table resolves a many-to-many relationship?",
+  "options": [],
+  "correctAnswer": "Junction table",
+  "acceptedKeywords": [
+   "junction",
+   "associative",
+   "bridge",
+   "link"
+  ],
+  "explanation": "Also called an associative or bridge table."
+ },
+ {
+  "id": "q_c_ict2201_046",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2019_final",
+  "topic": "Transactions",
+  "type": "multipleChoice",
+  "text": "The A in ACID stands for:",
+  "options": [
+   "Availability",
+   "Atomicity",
+   "Authorisation",
+   "Accuracy"
+  ],
+  "correctAnswer": "Atomicity",
+  "acceptedKeywords": [],
+  "explanation": "Atomicity: a transaction completes fully or not at all."
+ },
+ {
+  "id": "q_c_ict2201_047",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2019_final",
+  "topic": "Transactions",
+  "type": "trueFalse",
+  "text": "True or false: The A in ACID stands for authorisation.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Atomicity. Atomicity: a transaction completes fully or not at all."
+ },
+ {
+  "id": "q_c_ict2201_048",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "Transactions",
+  "type": "multipleChoice",
+  "text": "Which property ensures committed data survives a crash?",
+  "options": [
+   "Consistency",
+   "Isolation",
+   "Durability",
+   "Atomicity"
+  ],
+  "correctAnswer": "Durability",
+  "acceptedKeywords": [],
+  "explanation": "Durability is provided by logging and recovery."
+ },
+ {
+  "id": "q_c_ict2201_049",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "Transactions",
+  "type": "trueFalse",
+  "text": "Which property ensures committed data survives a crash? Proposed answer: Atomicity. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Durability. Durability is provided by logging and recovery."
+ },
+ {
+  "id": "q_c_ict2201_050",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "Transactions",
+  "type": "multipleChoice",
+  "text": "A dirty read happens when a transaction reads data that is:",
+  "options": [
+   "Committed",
+   "Uncommitted by another transaction",
+   "Indexed",
+   "Locked exclusively by itself"
+  ],
+  "correctAnswer": "Uncommitted by another transaction",
+  "acceptedKeywords": [],
+  "explanation": "Read Uncommitted isolation allows dirty reads."
+ },
+ {
+  "id": "q_c_ict2201_051",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "Transactions",
+  "type": "trueFalse",
+  "text": "True or false: A dirty read happens when a transaction reads data that is indexed.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Uncommitted by another transaction. Read Uncommitted isolation allows dirty reads."
+ },
+ {
+  "id": "q_c_ict2201_052",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "Transactions",
+  "type": "multipleChoice",
+  "text": "Two transactions each waiting for a lock the other holds is called:",
+  "options": [
+   "Starvation",
+   "Deadlock",
+   "Livelock",
+   "Rollback"
+  ],
+  "correctAnswer": "Deadlock",
+  "acceptedKeywords": [],
+  "explanation": "DBMSs detect deadlocks and abort one transaction."
+ },
+ {
+  "id": "q_c_ict2201_053",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2023_final",
+  "topic": "Transactions",
+  "type": "trueFalse",
+  "text": "True or false: Two transactions each waiting for a lock the other holds is called livelock.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Deadlock. DBMSs detect deadlocks and abort one transaction."
+ },
+ {
+  "id": "q_c_ict2201_054",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "sourceResourceId": "r_ict2201_2024_final",
+  "topic": "Transactions",
+  "type": "shortAnswer",
+  "text": "Which SQL command makes a transaction's changes permanent?",
+  "options": [],
+  "correctAnswer": "COMMIT",
+  "acceptedKeywords": [
+   "commit"
+  ],
+  "explanation": "ROLLBACK undoes them instead."
+ },
+ {
+  "id": "q_c_ict2205_001",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Complexity",
+  "type": "multipleChoice",
+  "text": "The time complexity of binary search on a sorted array is:",
+  "options": [
+   "O(n)",
+   "O(log n)",
+   "O(n log n)",
+   "O(1)"
+  ],
+  "correctAnswer": "O(log n)",
+  "acceptedKeywords": [],
+  "explanation": "Each step halves the search interval."
+ },
+ {
+  "id": "q_c_ict2205_002",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Complexity",
+  "type": "trueFalse",
+  "text": "True or false: The time complexity of binary search on a sorted array is O(n log n).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: O(log n). Each step halves the search interval."
+ },
+ {
+  "id": "q_c_ict2205_003",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Complexity",
+  "type": "multipleChoice",
+  "text": "Which grows fastest as n increases?",
+  "options": [
+   "O(n^2)",
+   "O(n log n)",
+   "O(2^n)",
+   "O(n^3)"
+  ],
+  "correctAnswer": "O(2^n)",
+  "acceptedKeywords": [],
+  "explanation": "Exponential growth outpaces any polynomial."
+ },
+ {
+  "id": "q_c_ict2205_004",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Complexity",
+  "type": "trueFalse",
+  "text": "Which grows fastest as n increases? Proposed answer: O(2^n). Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: O(2^n). Exponential growth outpaces any polynomial."
+ },
+ {
+  "id": "q_c_ict2205_005",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Complexity",
+  "type": "multipleChoice",
+  "text": "Big-O notation describes an algorithm's:",
+  "options": [
+   "Exact running time",
+   "Upper bound on growth rate",
+   "Memory address",
+   "Lower bound only"
+  ],
+  "correctAnswer": "Upper bound on growth rate",
+  "acceptedKeywords": [],
+  "explanation": "Big-O is an asymptotic upper bound."
+ },
+ {
+  "id": "q_c_ict2205_006",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Complexity",
+  "type": "trueFalse",
+  "text": "True or false: Big-O notation describes an algorithm's memory address.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Upper bound on growth rate. Big-O is an asymptotic upper bound."
+ },
+ {
+  "id": "q_c_ict2205_007",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Complexity",
+  "type": "multipleChoice",
+  "text": "Accessing an array element by index is:",
+  "options": [
+   "O(1)",
+   "O(log n)",
+   "O(n)",
+   "O(n^2)"
+  ],
+  "correctAnswer": "O(1)",
+  "acceptedKeywords": [],
+  "explanation": "Address = base + index x element size."
+ },
+ {
+  "id": "q_c_ict2205_008",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Complexity",
+  "type": "trueFalse",
+  "text": "True or false: Accessing an array element by index is O(1).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: O(1). Address = base + index x element size."
+ },
+ {
+  "id": "q_c_ict2205_009",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Complexity",
+  "type": "shortAnswer",
+  "text": "What is the worst-case time complexity of linear search, in Big-O?",
+  "options": [],
+  "correctAnswer": "O(n)",
+  "acceptedKeywords": [
+   "o(n)",
+   "linear"
+  ],
+  "explanation": "Every element may need to be checked."
+ },
+ {
+  "id": "q_c_ict2205_010",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Linked lists",
+  "type": "multipleChoice",
+  "text": "Inserting at the head of a singly linked list takes:",
+  "options": [
+   "O(1)",
+   "O(log n)",
+   "O(n)",
+   "O(n^2)"
+  ],
+  "correctAnswer": "O(1)",
+  "acceptedKeywords": [],
+  "explanation": "Only the head pointer and the new node's next pointer change."
+ },
+ {
+  "id": "q_c_ict2205_011",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Linked lists",
+  "type": "trueFalse",
+  "text": "True or false: Inserting at the head of a singly linked list takes O(log n).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: O(1). Only the head pointer and the new node's next pointer change."
+ },
+ {
+  "id": "q_c_ict2205_012",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Linked lists",
+  "type": "multipleChoice",
+  "text": "Each node of a doubly linked list stores:",
+  "options": [
+   "Data only",
+   "Data and next pointer",
+   "Data, next and previous pointers",
+   "Two data fields"
+  ],
+  "correctAnswer": "Data, next and previous pointers",
+  "acceptedKeywords": [],
+  "explanation": "The previous pointer allows backward traversal."
+ },
+ {
+  "id": "q_c_ict2205_013",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Linked lists",
+  "type": "trueFalse",
+  "text": "True or false: Each node of a doubly linked list stores two data fields.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Data, next and previous pointers. The previous pointer allows backward traversal."
+ },
+ {
+  "id": "q_c_ict2205_014",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Linked lists",
+  "type": "multipleChoice",
+  "text": "Finding the k-th element of a linked list takes:",
+  "options": [
+   "O(1)",
+   "O(k)",
+   "O(log k)",
+   "O(k^2)"
+  ],
+  "correctAnswer": "O(k)",
+  "acceptedKeywords": [],
+  "explanation": "Lists have no random access; you walk k nodes."
+ },
+ {
+  "id": "q_c_ict2205_015",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Linked lists",
+  "type": "trueFalse",
+  "text": "True or false: Finding the k-th element of a linked list takes O(log k).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: O(k). Lists have no random access; you walk k nodes."
+ },
+ {
+  "id": "q_c_ict2205_016",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Linked lists",
+  "type": "multipleChoice",
+  "text": "A circular linked list's last node points to:",
+  "options": [
+   "NULL",
+   "Itself",
+   "The first node",
+   "The middle node"
+  ],
+  "correctAnswer": "The first node",
+  "acceptedKeywords": [],
+  "explanation": "This makes the list a cycle."
+ },
+ {
+  "id": "q_c_ict2205_017",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Linked lists",
+  "type": "trueFalse",
+  "text": "True or false: A circular linked list's last node points to the middle node.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: The first node. This makes the list a cycle."
+ },
+ {
+  "id": "q_c_ict2205_018",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Linked lists",
+  "type": "shortAnswer",
+  "text": "What value does the next pointer of the last node of a singly linked list hold?",
+  "options": [],
+  "correctAnswer": "NULL",
+  "acceptedKeywords": [
+   "null",
+   "none",
+   "nil"
+  ],
+  "explanation": "NULL marks the end of the list."
+ },
+ {
+  "id": "q_c_ict2205_019",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Stacks and queues",
+  "type": "multipleChoice",
+  "text": "A stack follows which order?",
+  "options": [
+   "FIFO",
+   "LIFO",
+   "Priority",
+   "Random"
+  ],
+  "correctAnswer": "LIFO",
+  "acceptedKeywords": [],
+  "explanation": "Last In, First Out."
+ },
+ {
+  "id": "q_c_ict2205_020",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Stacks and queues",
+  "type": "trueFalse",
+  "text": "A stack follows which order? Proposed answer: LIFO. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: LIFO. Last In, First Out."
+ },
+ {
+  "id": "q_c_ict2205_021",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Stacks and queues",
+  "type": "multipleChoice",
+  "text": "Which structure is used to evaluate postfix expressions?",
+  "options": [
+   "Queue",
+   "Stack",
+   "Heap",
+   "Graph"
+  ],
+  "correctAnswer": "Stack",
+  "acceptedKeywords": [],
+  "explanation": "Operands are pushed; operators pop two operands."
+ },
+ {
+  "id": "q_c_ict2205_022",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Stacks and queues",
+  "type": "trueFalse",
+  "text": "Which structure is used to evaluate postfix expressions? Proposed answer: Heap. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Stack. Operands are pushed; operators pop two operands."
+ },
+ {
+  "id": "q_c_ict2205_023",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Stacks and queues",
+  "type": "multipleChoice",
+  "text": "Breadth-first search uses a:",
+  "options": [
+   "Stack",
+   "Queue",
+   "Binary tree",
+   "Hash table"
+  ],
+  "correctAnswer": "Queue",
+  "acceptedKeywords": [],
+  "explanation": "BFS visits nodes level by level using a FIFO queue."
+ },
+ {
+  "id": "q_c_ict2205_024",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Stacks and queues",
+  "type": "trueFalse",
+  "text": "True or false: Breadth-first search uses a queue.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Queue. BFS visits nodes level by level using a FIFO queue."
+ },
+ {
+  "id": "q_c_ict2205_025",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Stacks and queues",
+  "type": "multipleChoice",
+  "text": "Removing an element from a queue is called:",
+  "options": [
+   "Push",
+   "Pop",
+   "Dequeue",
+   "Peek"
+  ],
+  "correctAnswer": "Dequeue",
+  "acceptedKeywords": [],
+  "explanation": "Enqueue adds at the rear, dequeue removes at the front."
+ },
+ {
+  "id": "q_c_ict2205_026",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Stacks and queues",
+  "type": "trueFalse",
+  "text": "True or false: Removing an element from a queue is called peek.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Dequeue. Enqueue adds at the rear, dequeue removes at the front."
+ },
+ {
+  "id": "q_c_ict2205_027",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Stacks and queues",
+  "type": "shortAnswer",
+  "text": "Which data structure does a program's function call mechanism use?",
+  "options": [],
+  "correctAnswer": "Stack",
+  "acceptedKeywords": [
+   "stack"
+  ],
+  "explanation": "Each call pushes an activation record onto the call stack."
+ },
+ {
+  "id": "q_c_ict2205_028",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Trees",
+  "type": "multipleChoice",
+  "text": "In-order traversal of a binary search tree visits keys in:",
+  "options": [
+   "Random order",
+   "Descending order",
+   "Ascending order",
+   "Level order"
+  ],
+  "correctAnswer": "Ascending order",
+  "acceptedKeywords": [],
+  "explanation": "Left subtree, node, right subtree."
+ },
+ {
+  "id": "q_c_ict2205_029",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Trees",
+  "type": "trueFalse",
+  "text": "True or false: In-order traversal of a binary search tree visits keys in level order.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Ascending order. Left subtree, node, right subtree."
+ },
+ {
+  "id": "q_c_ict2205_030",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Trees",
+  "type": "multipleChoice",
+  "text": "The height of a balanced binary tree with n nodes is about:",
+  "options": [
+   "n",
+   "log2 n",
+   "n/2",
+   "sqrt n"
+  ],
+  "correctAnswer": "log2 n",
+  "acceptedKeywords": [],
+  "explanation": "Each level doubles the number of nodes."
+ },
+ {
+  "id": "q_c_ict2205_031",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Trees",
+  "type": "trueFalse",
+  "text": "True or false: The height of a balanced binary tree with n nodes is about n/2.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: log2 n. Each level doubles the number of nodes."
+ },
+ {
+  "id": "q_c_ict2205_032",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Trees",
+  "type": "multipleChoice",
+  "text": "A binary heap is usually stored in:",
+  "options": [
+   "A linked list",
+   "An array",
+   "A hash table",
+   "A stack"
+  ],
+  "correctAnswer": "An array",
+  "acceptedKeywords": [],
+  "explanation": "Children of index i are at 2i+1 and 2i+2."
+ },
+ {
+  "id": "q_c_ict2205_033",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Trees",
+  "type": "trueFalse",
+  "text": "True or false: A binary heap is usually stored in a hash table.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: An array. Children of index i are at 2i+1 and 2i+2."
+ },
+ {
+  "id": "q_c_ict2205_034",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Trees",
+  "type": "multipleChoice",
+  "text": "Which tree keeps itself balanced using rotations based on height differences?",
+  "options": [
+   "AVL tree",
+   "Binary heap",
+   "Trie",
+   "Full binary tree"
+  ],
+  "correctAnswer": "AVL tree",
+  "acceptedKeywords": [],
+  "explanation": "AVL trees keep the balance factor within -1..1."
+ },
+ {
+  "id": "q_c_ict2205_035",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Trees",
+  "type": "trueFalse",
+  "text": "Which tree keeps itself balanced using rotations based on height differences? Proposed answer: Binary heap. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: AVL tree. AVL trees keep the balance factor within -1..1."
+ },
+ {
+  "id": "q_c_ict2205_036",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Trees",
+  "type": "multipleChoice",
+  "text": "A node with no children is called a:",
+  "options": [
+   "Root",
+   "Leaf",
+   "Parent",
+   "Sibling"
+  ],
+  "correctAnswer": "Leaf",
+  "acceptedKeywords": [],
+  "explanation": "Leaves are at the bottom of the tree."
+ },
+ {
+  "id": "q_c_ict2205_037",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Trees",
+  "type": "trueFalse",
+  "text": "True or false: A node with no children is called a parent.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Leaf. Leaves are at the bottom of the tree."
+ },
+ {
+  "id": "q_c_ict2205_038",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2025_mid",
+  "topic": "Trees",
+  "type": "shortAnswer",
+  "text": "Which traversal visits the root before its subtrees?",
+  "options": [],
+  "correctAnswer": "Pre-order",
+  "acceptedKeywords": [
+   "pre-order",
+   "preorder",
+   "pre order"
+  ],
+  "explanation": "Pre-order: node, left, right."
+ },
+ {
+  "id": "q_c_ict2205_039",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Sorting",
+  "type": "multipleChoice",
+  "text": "Which sort has worst case O(n^2) but average O(n log n)?",
+  "options": [
+   "Merge sort",
+   "Quick sort",
+   "Heap sort",
+   "Counting sort"
+  ],
+  "correctAnswer": "Quick sort",
+  "acceptedKeywords": [],
+  "explanation": "A poor pivot choice gives quadratic behaviour."
+ },
+ {
+  "id": "q_c_ict2205_040",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Sorting",
+  "type": "trueFalse",
+  "text": "Which sort has worst case O(n^2) but average O(n log n)? Proposed answer: Quick sort. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Quick sort. A poor pivot choice gives quadratic behaviour."
+ },
+ {
+  "id": "q_c_ict2205_041",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Sorting",
+  "type": "multipleChoice",
+  "text": "Which sorting algorithm is stable and always O(n log n)?",
+  "options": [
+   "Quick sort",
+   "Selection sort",
+   "Merge sort",
+   "Heap sort"
+  ],
+  "correctAnswer": "Merge sort",
+  "acceptedKeywords": [],
+  "explanation": "Merge sort preserves the order of equal keys."
+ },
+ {
+  "id": "q_c_ict2205_042",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Sorting",
+  "type": "trueFalse",
+  "text": "Which sorting algorithm is stable and always O(n log n)? Proposed answer: Heap sort. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Merge sort. Merge sort preserves the order of equal keys."
+ },
+ {
+  "id": "q_c_ict2205_043",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Sorting",
+  "type": "multipleChoice",
+  "text": "Bubble sort's best case on an already sorted list (with early exit) is:",
+  "options": [
+   "O(1)",
+   "O(n)",
+   "O(n log n)",
+   "O(n^2)"
+  ],
+  "correctAnswer": "O(n)",
+  "acceptedKeywords": [],
+  "explanation": "One pass with no swaps confirms the list is sorted."
+ },
+ {
+  "id": "q_c_ict2205_044",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Sorting",
+  "type": "trueFalse",
+  "text": "True or false: Bubble sort's best case on an already sorted list (with early exit) is O(n).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: O(n). One pass with no swaps confirms the list is sorted."
+ },
+ {
+  "id": "q_c_ict2205_045",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Sorting",
+  "type": "multipleChoice",
+  "text": "Which sort repeatedly selects the minimum and places it at the front?",
+  "options": [
+   "Insertion sort",
+   "Selection sort",
+   "Shell sort",
+   "Radix sort"
+  ],
+  "correctAnswer": "Selection sort",
+  "acceptedKeywords": [],
+  "explanation": "Selection sort always does O(n^2) comparisons."
+ },
+ {
+  "id": "q_c_ict2205_046",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2020_final",
+  "topic": "Sorting",
+  "type": "trueFalse",
+  "text": "Which sort repeatedly selects the minimum and places it at the front? Proposed answer: Shell sort. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Selection sort. Selection sort always does O(n^2) comparisons."
+ },
+ {
+  "id": "q_c_ict2205_047",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "sourceResourceId": "r_ict2205_2022_final",
+  "topic": "Sorting",
+  "type": "shortAnswer",
+  "text": "Name the divide-and-conquer sort that splits the list in half and merges sorted halves.",
+  "options": [],
+  "correctAnswer": "Merge sort",
+  "acceptedKeywords": [
+   "merge"
+  ],
+  "explanation": "Merge sort needs O(n) extra space."
+ },
+ {
+  "id": "q_c_ict1101_001",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Variables and types",
+  "type": "multipleChoice",
+  "text": "Which of these is a valid variable name in most languages?",
+  "options": [
+   "2total",
+   "total_2",
+   "total-2",
+   "total 2"
+  ],
+  "correctAnswer": "total_2",
+  "acceptedKeywords": [],
+  "explanation": "Names cannot start with a digit or contain spaces or hyphens."
+ },
+ {
+  "id": "q_c_ict1101_002",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Variables and types",
+  "type": "trueFalse",
+  "text": "Which of these is a valid variable name in most languages? Proposed answer: total-2. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: total_2. Names cannot start with a digit or contain spaces or hyphens."
+ },
+ {
+  "id": "q_c_ict1101_003",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Variables and types",
+  "type": "multipleChoice",
+  "text": "Which data type stores whole numbers?",
+  "options": [
+   "float",
+   "int",
+   "char",
+   "boolean"
+  ],
+  "correctAnswer": "int",
+  "acceptedKeywords": [],
+  "explanation": "int holds integers; float holds decimals."
+ },
+ {
+  "id": "q_c_ict1101_004",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Variables and types",
+  "type": "trueFalse",
+  "text": "Which data type stores whole numbers? Proposed answer: int. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: int. int holds integers; float holds decimals."
+ },
+ {
+  "id": "q_c_ict1101_005",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Variables and types",
+  "type": "multipleChoice",
+  "text": "A variable whose value cannot change after assignment is a:",
+  "options": [
+   "Global",
+   "Constant",
+   "Parameter",
+   "Pointer"
+  ],
+  "correctAnswer": "Constant",
+  "acceptedKeywords": [],
+  "explanation": "Declared with const or final in many languages."
+ },
+ {
+  "id": "q_c_ict1101_006",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Variables and types",
+  "type": "trueFalse",
+  "text": "True or false: A variable whose value cannot change after assignment is a parameter.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Constant. Declared with const or final in many languages."
+ },
+ {
+  "id": "q_c_ict1101_007",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Variables and types",
+  "type": "multipleChoice",
+  "text": "The result of 7 / 2 using integer division is:",
+  "options": [
+   "3.5",
+   "3",
+   "4",
+   "1"
+  ],
+  "correctAnswer": "3",
+  "acceptedKeywords": [],
+  "explanation": "Integer division discards the remainder."
+ },
+ {
+  "id": "q_c_ict1101_008",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Variables and types",
+  "type": "trueFalse",
+  "text": "True or false: The result of 7 / 2 using integer division is 3.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: 3. Integer division discards the remainder."
+ },
+ {
+  "id": "q_c_ict1101_009",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Variables and types",
+  "type": "multipleChoice",
+  "text": "The result of 7 % 2 is:",
+  "options": [
+   "3",
+   "1",
+   "0",
+   "3.5"
+  ],
+  "correctAnswer": "1",
+  "acceptedKeywords": [],
+  "explanation": "% gives the remainder of division."
+ },
+ {
+  "id": "q_c_ict1101_010",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Variables and types",
+  "type": "trueFalse",
+  "text": "True or false: The result of 7 % 2 is 0.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: 1. % gives the remainder of division."
+ },
+ {
+  "id": "q_c_ict1101_011",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Variables and types",
+  "type": "shortAnswer",
+  "text": "Which data type holds only the values true and false?",
+  "options": [],
+  "correctAnswer": "Boolean",
+  "acceptedKeywords": [
+   "bool"
+  ],
+  "explanation": "Named after George Boole."
+ },
+ {
+  "id": "q_c_ict1101_012",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Control structures",
+  "type": "multipleChoice",
+  "text": "Which loop always executes its body at least once?",
+  "options": [
+   "for",
+   "while",
+   "do-while",
+   "foreach"
+  ],
+  "correctAnswer": "do-while",
+  "acceptedKeywords": [],
+  "explanation": "The condition is checked after the body."
+ },
+ {
+  "id": "q_c_ict1101_013",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Control structures",
+  "type": "trueFalse",
+  "text": "Which loop always executes its body at least once? Proposed answer: foreach. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: do-while. The condition is checked after the body."
+ },
+ {
+  "id": "q_c_ict1101_014",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Control structures",
+  "type": "multipleChoice",
+  "text": "Which statement exits a loop immediately?",
+  "options": [
+   "continue",
+   "break",
+   "return 0",
+   "skip"
+  ],
+  "correctAnswer": "break",
+  "acceptedKeywords": [],
+  "explanation": "continue skips to the next iteration instead."
+ },
+ {
+  "id": "q_c_ict1101_015",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Control structures",
+  "type": "trueFalse",
+  "text": "Which statement exits a loop immediately? Proposed answer: return 0. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: break. continue skips to the next iteration instead."
+ },
+ {
+  "id": "q_c_ict1101_016",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2023_final",
+  "topic": "Control structures",
+  "type": "multipleChoice",
+  "text": "How many times does the loop for (i = 0; i < 5; i++) run?",
+  "options": [
+   "4",
+   "5",
+   "6",
+   "Infinite"
+  ],
+  "correctAnswer": "5",
+  "acceptedKeywords": [],
+  "explanation": "i takes values 0 to 4."
+ },
+ {
+  "id": "q_c_ict1101_017",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2023_final",
+  "topic": "Control structures",
+  "type": "trueFalse",
+  "text": "How many times does the loop for (i = 0; i < 5; i++) run? Proposed answer: 6. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: 5. i takes values 0 to 4."
+ },
+ {
+  "id": "q_c_ict1101_018",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Control structures",
+  "type": "multipleChoice",
+  "text": "Which structure chooses between many fixed values of one variable?",
+  "options": [
+   "if",
+   "switch",
+   "while",
+   "for"
+  ],
+  "correctAnswer": "switch",
+  "acceptedKeywords": [],
+  "explanation": "switch (or match) branches on discrete cases."
+ },
+ {
+  "id": "q_c_ict1101_019",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Control structures",
+  "type": "trueFalse",
+  "text": "Which structure chooses between many fixed values of one variable? Proposed answer: while. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: switch. switch (or match) branches on discrete cases."
+ },
+ {
+  "id": "q_c_ict1101_020",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2023_final",
+  "topic": "Control structures",
+  "type": "shortAnswer",
+  "text": "Which keyword skips the rest of the current loop iteration?",
+  "options": [],
+  "correctAnswer": "continue",
+  "acceptedKeywords": [
+   "continue"
+  ],
+  "explanation": "Execution jumps to the next iteration."
+ },
+ {
+  "id": "q_c_ict1101_021",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Functions",
+  "type": "multipleChoice",
+  "text": "Values passed into a function when it is called are:",
+  "options": [
+   "Parameters",
+   "Arguments",
+   "Returns",
+   "Locals"
+  ],
+  "correctAnswer": "Arguments",
+  "acceptedKeywords": [],
+  "explanation": "Parameters are the names in the definition; arguments are the values passed."
+ },
+ {
+  "id": "q_c_ict1101_022",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Functions",
+  "type": "trueFalse",
+  "text": "True or false: Values passed into a function when it is called are returns.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Arguments. Parameters are the names in the definition; arguments are the values passed."
+ },
+ {
+  "id": "q_c_ict1101_023",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Functions",
+  "type": "multipleChoice",
+  "text": "A function that calls itself is:",
+  "options": [
+   "Iterative",
+   "Recursive",
+   "Overloaded",
+   "Inline"
+  ],
+  "correctAnswer": "Recursive",
+  "acceptedKeywords": [],
+  "explanation": "Recursion needs a base case to stop."
+ },
+ {
+  "id": "q_c_ict1101_024",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Functions",
+  "type": "trueFalse",
+  "text": "True or false: A function that calls itself is recursive.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Recursive. Recursion needs a base case to stop."
+ },
+ {
+  "id": "q_c_ict1101_025",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Functions",
+  "type": "multipleChoice",
+  "text": "What does a void function return?",
+  "options": [
+   "0",
+   "Nothing",
+   "NULL pointer",
+   "An empty string"
+  ],
+  "correctAnswer": "Nothing",
+  "acceptedKeywords": [],
+  "explanation": "void means no return value."
+ },
+ {
+  "id": "q_c_ict1101_026",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Functions",
+  "type": "trueFalse",
+  "text": "What does a void function return? Proposed answer: NULL pointer. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Nothing. void means no return value."
+ },
+ {
+  "id": "q_c_ict1101_027",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Functions",
+  "type": "multipleChoice",
+  "text": "Defining several functions with the same name but different parameters is:",
+  "options": [
+   "Overriding",
+   "Overloading",
+   "Recursion",
+   "Encapsulation"
+  ],
+  "correctAnswer": "Overloading",
+  "acceptedKeywords": [],
+  "explanation": "The compiler picks the version by its parameter list."
+ },
+ {
+  "id": "q_c_ict1101_028",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Functions",
+  "type": "trueFalse",
+  "text": "True or false: Defining several functions with the same name but different parameters is overloading.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Overloading. The compiler picks the version by its parameter list."
+ },
+ {
+  "id": "q_c_ict1101_029",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Functions",
+  "type": "shortAnswer",
+  "text": "What is the condition that stops a recursive function called?",
+  "options": [],
+  "correctAnswer": "Base case",
+  "acceptedKeywords": [
+   "base"
+  ],
+  "explanation": "Without it the recursion never ends."
+ },
+ {
+  "id": "q_c_ict1101_030",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Arrays",
+  "type": "multipleChoice",
+  "text": "In most languages, the index of the first array element is:",
+  "options": [
+   "1",
+   "0",
+   "-1",
+   "Depends on size"
+  ],
+  "correctAnswer": "0",
+  "acceptedKeywords": [],
+  "explanation": "Zero-based indexing is standard in C, Java, Python and Dart."
+ },
+ {
+  "id": "q_c_ict1101_031",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Arrays",
+  "type": "trueFalse",
+  "text": "True or false: In most languages, the index of the first array element is -1.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: 0. Zero-based indexing is standard in C, Java, Python and Dart."
+ },
+ {
+  "id": "q_c_ict1101_032",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Arrays",
+  "type": "multipleChoice",
+  "text": "Accessing index 10 of an array of length 10 causes:",
+  "options": [
+   "The last element",
+   "An out-of-bounds error",
+   "The first element",
+   "NULL"
+  ],
+  "correctAnswer": "An out-of-bounds error",
+  "acceptedKeywords": [],
+  "explanation": "Valid indices are 0 to 9."
+ },
+ {
+  "id": "q_c_ict1101_033",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Arrays",
+  "type": "trueFalse",
+  "text": "True or false: Accessing index 10 of an array of length 10 causes the first element.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: An out-of-bounds error. Valid indices are 0 to 9."
+ },
+ {
+  "id": "q_c_ict1101_034",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2023_final",
+  "topic": "Arrays",
+  "type": "multipleChoice",
+  "text": "A two-dimensional array is best described as:",
+  "options": [
+   "A list of lists (rows and columns)",
+   "Two separate arrays",
+   "A linked list",
+   "A stack"
+  ],
+  "correctAnswer": "A list of lists (rows and columns)",
+  "acceptedKeywords": [],
+  "explanation": "Elements are accessed with two indices, a[row][col]."
+ },
+ {
+  "id": "q_c_ict1101_035",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2023_final",
+  "topic": "Arrays",
+  "type": "trueFalse",
+  "text": "True or false: A two-dimensional array is best described as two separate arrays.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: A list of lists (rows and columns). Elements are accessed with two indices, a[row][col]."
+ },
+ {
+  "id": "q_c_ict1101_036",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2023_final",
+  "topic": "Arrays",
+  "type": "shortAnswer",
+  "text": "What is the index of the last element in an array of length n?",
+  "options": [],
+  "correctAnswer": "n - 1",
+  "acceptedKeywords": [
+   "n-1",
+   "n - 1"
+  ],
+  "explanation": "Because indexing starts at 0."
+ },
+ {
+  "id": "q_c_ict1101_037",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Problem solving",
+  "type": "multipleChoice",
+  "text": "A step-by-step procedure for solving a problem is an:",
+  "options": [
+   "Algorithm",
+   "Compiler",
+   "Interpreter",
+   "IDE"
+  ],
+  "correctAnswer": "Algorithm",
+  "acceptedKeywords": [],
+  "explanation": "Programs implement algorithms."
+ },
+ {
+  "id": "q_c_ict1101_038",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Problem solving",
+  "type": "trueFalse",
+  "text": "True or false: A step-by-step procedure for solving a problem is a compiler.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Algorithm. Programs implement algorithms."
+ },
+ {
+  "id": "q_c_ict1101_039",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Problem solving",
+  "type": "multipleChoice",
+  "text": "Which diagram uses a diamond for a decision?",
+  "options": [
+   "UML class diagram",
+   "Flowchart",
+   "ER diagram",
+   "Gantt chart"
+  ],
+  "correctAnswer": "Flowchart",
+  "acceptedKeywords": [],
+  "explanation": "Flowcharts use diamonds for decisions and rectangles for processes."
+ },
+ {
+  "id": "q_c_ict1101_040",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2024_mid",
+  "topic": "Problem solving",
+  "type": "trueFalse",
+  "text": "Which diagram uses a diamond for a decision? Proposed answer: Flowchart. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Flowchart. Flowcharts use diamonds for decisions and rectangles for processes."
+ },
+ {
+  "id": "q_c_ict1101_041",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2023_final",
+  "topic": "Problem solving",
+  "type": "multipleChoice",
+  "text": "Pseudocode is:",
+  "options": [
+   "Machine code",
+   "An informal, language-neutral description of an algorithm",
+   "A compiled language",
+   "A debugging tool"
+  ],
+  "correctAnswer": "An informal, language-neutral description of an algorithm",
+  "acceptedKeywords": [],
+  "explanation": "It focuses on logic, not syntax."
+ },
+ {
+  "id": "q_c_ict1101_042",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2023_final",
+  "topic": "Problem solving",
+  "type": "trueFalse",
+  "text": "True or false: Pseudocode is a compiled language.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: An informal, language-neutral description of an algorithm. It focuses on logic, not syntax."
+ },
+ {
+  "id": "q_c_ict1101_043",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Problem solving",
+  "type": "multipleChoice",
+  "text": "An error that makes a program produce wrong output without crashing is a:",
+  "options": [
+   "Syntax error",
+   "Logic error",
+   "Compile error",
+   "Linker error"
+  ],
+  "correctAnswer": "Logic error",
+  "acceptedKeywords": [],
+  "explanation": "Logic errors are found by testing, not by the compiler."
+ },
+ {
+  "id": "q_c_ict1101_044",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Problem solving",
+  "type": "trueFalse",
+  "text": "True or false: An error that makes a program produce wrong output without crashing is a logic error.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Logic error. Logic errors are found by testing, not by the compiler."
+ },
+ {
+  "id": "q_c_ict1101_045",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "sourceResourceId": "r_ict1101_2021_final",
+  "topic": "Problem solving",
+  "type": "shortAnswer",
+  "text": "What program translates the whole of a high-level program into machine code before it runs?",
+  "options": [],
+  "correctAnswer": "Compiler",
+  "acceptedKeywords": [
+   "compiler"
+  ],
+  "explanation": "An interpreter translates and runs line by line instead."
+ },
+ {
+  "id": "q_c_cmp110_001",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2023_final",
+  "topic": "Programming basics",
+  "type": "multipleChoice",
+  "text": "Which symbol usually ends a statement in C, Java and Dart?",
+  "options": [
+   ":",
+   ";",
+   ".",
+   ","
+  ],
+  "correctAnswer": ";",
+  "acceptedKeywords": [],
+  "explanation": "The semicolon terminates statements."
+ },
+ {
+  "id": "q_c_cmp110_002",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2023_final",
+  "topic": "Programming basics",
+  "type": "trueFalse",
+  "text": "Which symbol usually ends a statement in C, Java and Dart? Proposed answer: .. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: ;. The semicolon terminates statements."
+ },
+ {
+  "id": "q_c_cmp110_003",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Programming basics",
+  "type": "multipleChoice",
+  "text": "Comments in code are:",
+  "options": [
+   "Executed first",
+   "Ignored by the compiler",
+   "Required for compilation",
+   "Converted to output"
+  ],
+  "correctAnswer": "Ignored by the compiler",
+  "acceptedKeywords": [],
+  "explanation": "Comments explain code to humans."
+ },
+ {
+  "id": "q_c_cmp110_004",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Programming basics",
+  "type": "trueFalse",
+  "text": "True or false: Comments in code are ignored by the compiler.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Ignored by the compiler. Comments explain code to humans."
+ },
+ {
+  "id": "q_c_cmp110_005",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Programming basics",
+  "type": "multipleChoice",
+  "text": "An IDE is:",
+  "options": [
+   "A programming language",
+   "An integrated development environment",
+   "An operating system",
+   "A database"
+  ],
+  "correctAnswer": "An integrated development environment",
+  "acceptedKeywords": [],
+  "explanation": "Examples: VS Code, Android Studio."
+ },
+ {
+  "id": "q_c_cmp110_006",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Programming basics",
+  "type": "trueFalse",
+  "text": "True or false: An IDE is an operating system.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: An integrated development environment. Examples: VS Code, Android Studio."
+ },
+ {
+  "id": "q_c_cmp110_007",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2023_final",
+  "topic": "Programming basics",
+  "type": "multipleChoice",
+  "text": "The entry point of a C or Java program is the function named:",
+  "options": [
+   "start",
+   "main",
+   "init",
+   "run"
+  ],
+  "correctAnswer": "main",
+  "acceptedKeywords": [],
+  "explanation": "Execution begins at main."
+ },
+ {
+  "id": "q_c_cmp110_008",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2023_final",
+  "topic": "Programming basics",
+  "type": "trueFalse",
+  "text": "True or false: The entry point of a C or Java program is the function named main.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: main. Execution begins at main."
+ },
+ {
+  "id": "q_c_cmp110_009",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2023_final",
+  "topic": "Programming basics",
+  "type": "shortAnswer",
+  "text": "What do we call a mistake in a program?",
+  "options": [],
+  "correctAnswer": "Bug",
+  "acceptedKeywords": [
+   "bug"
+  ],
+  "explanation": "Finding and fixing them is debugging."
+ },
+ {
+  "id": "q_c_cmp110_010",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2023_final",
+  "topic": "Operators and expressions",
+  "type": "multipleChoice",
+  "text": "What is the value of 2 + 3 * 4?",
+  "options": [
+   "20",
+   "14",
+   "24",
+   "9"
+  ],
+  "correctAnswer": "14",
+  "acceptedKeywords": [],
+  "explanation": "Multiplication has higher precedence than addition."
+ },
+ {
+  "id": "q_c_cmp110_011",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2023_final",
+  "topic": "Operators and expressions",
+  "type": "trueFalse",
+  "text": "What is the value of 2 + 3 * 4? Proposed answer: 24. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: 14. Multiplication has higher precedence than addition."
+ },
+ {
+  "id": "q_c_cmp110_012",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Operators and expressions",
+  "type": "multipleChoice",
+  "text": "Which operator tests equality in most C-like languages?",
+  "options": [
+   "=",
+   "==",
+   "=>",
+   "!="
+  ],
+  "correctAnswer": "==",
+  "acceptedKeywords": [],
+  "explanation": "= assigns; == compares."
+ },
+ {
+  "id": "q_c_cmp110_013",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Operators and expressions",
+  "type": "trueFalse",
+  "text": "Which operator tests equality in most C-like languages? Proposed answer: =>. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: ==. = assigns; == compares."
+ },
+ {
+  "id": "q_c_cmp110_014",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Operators and expressions",
+  "type": "multipleChoice",
+  "text": "The logical AND of true and false is:",
+  "options": [
+   "true",
+   "false",
+   "null",
+   "error"
+  ],
+  "correctAnswer": "false",
+  "acceptedKeywords": [],
+  "explanation": "AND is true only when both operands are true."
+ },
+ {
+  "id": "q_c_cmp110_015",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Operators and expressions",
+  "type": "trueFalse",
+  "text": "True or false: The logical AND of true and false is null.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: false. AND is true only when both operands are true."
+ },
+ {
+  "id": "q_c_cmp110_016",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Operators and expressions",
+  "type": "multipleChoice",
+  "text": "x += 3 is equivalent to:",
+  "options": [
+   "x = 3",
+   "x = x + 3",
+   "x == x + 3",
+   "x = 3x"
+  ],
+  "correctAnswer": "x = x + 3",
+  "acceptedKeywords": [],
+  "explanation": "Compound assignment combines an operator with assignment."
+ },
+ {
+  "id": "q_c_cmp110_017",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Operators and expressions",
+  "type": "trueFalse",
+  "text": "True or false: x += 3 is equivalent to x == x + 3.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: x = x + 3. Compound assignment combines an operator with assignment."
+ },
+ {
+  "id": "q_c_cmp110_018",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2023_final",
+  "topic": "Operators and expressions",
+  "type": "shortAnswer",
+  "text": "Which operator gives the remainder of a division?",
+  "options": [],
+  "correctAnswer": "%",
+  "acceptedKeywords": [
+   "%",
+   "modulus",
+   "mod"
+  ],
+  "explanation": "Also called the modulus operator."
+ },
+ {
+  "id": "q_c_cmp110_019",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Selection",
+  "type": "multipleChoice",
+  "text": "In the statement if (a > b) x = a; else x = b; what does x end up as?",
+  "options": [
+   "The smaller value",
+   "The larger value",
+   "Always a",
+   "Always b"
+  ],
+  "correctAnswer": "The larger value",
+  "acceptedKeywords": [],
+  "explanation": "This computes the maximum of a and b."
+ },
+ {
+  "id": "q_c_cmp110_020",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Selection",
+  "type": "trueFalse",
+  "text": "In the statement if (a > b) x = a; else x = b; what does x end up as? Proposed answer: The larger value. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: The larger value. This computes the maximum of a and b."
+ },
+ {
+  "id": "q_c_cmp110_021",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Selection",
+  "type": "multipleChoice",
+  "text": "Which of these is a ternary expression?",
+  "options": [
+   "a ? b : c",
+   "a && b",
+   "a ?? b",
+   "a => b"
+  ],
+  "correctAnswer": "a ? b : c",
+  "acceptedKeywords": [],
+  "explanation": "condition ? valueIfTrue : valueIfFalse."
+ },
+ {
+  "id": "q_c_cmp110_022",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Selection",
+  "type": "trueFalse",
+  "text": "Which of these is a ternary expression? Proposed answer: a && b. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: a ? b : c. condition ? valueIfTrue : valueIfFalse."
+ },
+ {
+  "id": "q_c_cmp110_023",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Selection",
+  "type": "multipleChoice",
+  "text": "A switch case without break in C will:",
+  "options": [
+   "Stop",
+   "Fall through to the next case",
+   "Raise an error",
+   "Repeat"
+  ],
+  "correctAnswer": "Fall through to the next case",
+  "acceptedKeywords": [],
+  "explanation": "Execution continues into the following case."
+ },
+ {
+  "id": "q_c_cmp110_024",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Selection",
+  "type": "trueFalse",
+  "text": "True or false: A switch case without break in C will fall through to the next case.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Fall through to the next case. Execution continues into the following case."
+ },
+ {
+  "id": "q_c_cmp110_025",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Selection",
+  "type": "shortAnswer",
+  "text": "Which keyword introduces the alternative branch of an if statement?",
+  "options": [],
+  "correctAnswer": "else",
+  "acceptedKeywords": [
+   "else"
+  ],
+  "explanation": "else runs when the if condition is false."
+ },
+ {
+  "id": "q_c_cmp110_026",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Iteration",
+  "type": "multipleChoice",
+  "text": "Which loop is best when the number of iterations is known in advance?",
+  "options": [
+   "while",
+   "do-while",
+   "for",
+   "goto"
+  ],
+  "correctAnswer": "for",
+  "acceptedKeywords": [],
+  "explanation": "for keeps initialisation, condition and update together."
+ },
+ {
+  "id": "q_c_cmp110_027",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Iteration",
+  "type": "trueFalse",
+  "text": "Which loop is best when the number of iterations is known in advance? Proposed answer: goto. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: for. for keeps initialisation, condition and update together."
+ },
+ {
+  "id": "q_c_cmp110_028",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Iteration",
+  "type": "multipleChoice",
+  "text": "What does this code print?  i = 1; while (i < 4) { print(i); i++; }",
+  "options": [
+   "1 2 3",
+   "1 2 3 4",
+   "0 1 2 3",
+   "Nothing"
+  ],
+  "correctAnswer": "1 2 3",
+  "acceptedKeywords": [],
+  "explanation": "The loop stops when i becomes 4."
+ },
+ {
+  "id": "q_c_cmp110_029",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Iteration",
+  "type": "trueFalse",
+  "text": "True or false: What does this code print?  i = 1; while (i < 4) { print(i); i++; } 1 2 3 4.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: 1 2 3. The loop stops when i becomes 4."
+ },
+ {
+  "id": "q_c_cmp110_030",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Iteration",
+  "type": "multipleChoice",
+  "text": "A counter variable in a loop is used to:",
+  "options": [
+   "Store input",
+   "Track the number of iterations",
+   "End the program",
+   "Declare functions"
+  ],
+  "correctAnswer": "Track the number of iterations",
+  "acceptedKeywords": [],
+  "explanation": "It is updated on every pass."
+ },
+ {
+  "id": "q_c_cmp110_031",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Iteration",
+  "type": "trueFalse",
+  "text": "True or false: A counter variable in a loop is used to end the program.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Track the number of iterations. It is updated on every pass."
+ },
+ {
+  "id": "q_c_cmp110_032",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2024_mid",
+  "topic": "Iteration",
+  "type": "shortAnswer",
+  "text": "What is a loop called that never terminates?",
+  "options": [],
+  "correctAnswer": "Infinite loop",
+  "acceptedKeywords": [
+   "infinite"
+  ],
+  "explanation": "Usually caused by a condition that never becomes false."
+ },
+ {
+  "id": "q_c_cmp110_033",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Data structures intro",
+  "type": "multipleChoice",
+  "text": "Which structure stores key-value pairs?",
+  "options": [
+   "Array",
+   "Map (dictionary)",
+   "Stack",
+   "Queue"
+  ],
+  "correctAnswer": "Map (dictionary)",
+  "acceptedKeywords": [],
+  "explanation": "Values are looked up by key."
+ },
+ {
+  "id": "q_c_cmp110_034",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Data structures intro",
+  "type": "trueFalse",
+  "text": "Which structure stores key-value pairs? Proposed answer: Stack. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Map (dictionary). Values are looked up by key."
+ },
+ {
+  "id": "q_c_cmp110_035",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Data structures intro",
+  "type": "multipleChoice",
+  "text": "A string is essentially a sequence of:",
+  "options": [
+   "Integers",
+   "Characters",
+   "Booleans",
+   "Arrays of floats"
+  ],
+  "correctAnswer": "Characters",
+  "acceptedKeywords": [],
+  "explanation": "Strings are ordered collections of characters."
+ },
+ {
+  "id": "q_c_cmp110_036",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Data structures intro",
+  "type": "trueFalse",
+  "text": "True or false: A string is essentially a sequence of characters.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "True",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: Characters. Strings are ordered collections of characters."
+ },
+ {
+  "id": "q_c_cmp110_037",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Data structures intro",
+  "type": "multipleChoice",
+  "text": "Which list operation adds an item to the end?",
+  "options": [
+   "append/add",
+   "pop",
+   "insert at 0",
+   "clear"
+  ],
+  "correctAnswer": "append/add",
+  "acceptedKeywords": [],
+  "explanation": "add() in Dart, append() in Python."
+ },
+ {
+  "id": "q_c_cmp110_038",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Data structures intro",
+  "type": "trueFalse",
+  "text": "Which list operation adds an item to the end? Proposed answer: pop. Is this correct?",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correctAnswer": "False",
+  "acceptedKeywords": [],
+  "explanation": "The correct answer is: append/add. add() in Dart, append() in Python."
+ },
+ {
+  "id": "q_c_cmp110_039",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "sourceResourceId": "r_cmp110_2020_final",
+  "topic": "Data structures intro",
+  "type": "shortAnswer",
+  "text": "What is the term for the number of characters in a string?",
+  "options": [],
+  "correctAnswer": "Length",
+  "acceptedKeywords": [
+   "length",
+   "len"
+  ],
+  "explanation": "Most languages expose it as .length or len()."
+ }
+]

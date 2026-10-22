@@ -1,0 +1,693 @@
+[
+ {
+  "id": "a_zut_c2201_0",
+  "tenantId": "t_zut",
+  "studentId": "u_zut_chanda",
+  "courseId": "c_ict2201",
+  "questionIds": [
+   "q_c_ict2201_030",
+   "q_c_ict2201_021",
+   "q_c_ict2201_034",
+   "q_c_ict2201_019",
+   "q_c_ict2201_050",
+   "q_c_ict2201_051",
+   "q_c_ict2201_035",
+   "q_c_ict2201_031",
+   "q_c_ict2201_043",
+   "q_c_ict2201_001"
+  ],
+  "answers": {
+   "q_c_ict2201_030": "(wrong)",
+   "q_c_ict2201_021": "(wrong)",
+   "q_c_ict2201_034": "Deletion anomaly",
+   "q_c_ict2201_019": "False",
+   "q_c_ict2201_050": "Uncommitted by another transaction",
+   "q_c_ict2201_051": "False",
+   "q_c_ict2201_035": "False",
+   "q_c_ict2201_031": "False",
+   "q_c_ict2201_043": "How many instances of one entity relate to another",
+   "q_c_ict2201_001": "Tuple"
+  },
+  "score": 80,
+  "topicScores": {
+   "Normalisation": {
+    "correct": 3,
+    "total": 4
+   },
+   "SQL": {
+    "correct": 1,
+    "total": 2
+   },
+   "Transactions": {
+    "correct": 2,
+    "total": 2
+   },
+   "ER modelling": {
+    "correct": 1,
+    "total": 1
+   },
+   "Relational model": {
+    "correct": 1,
+    "total": 1
+   }
+  },
+  "startedAt": "2026-10-08T02:00:00Z",
+  "finishedAt": "2026-10-08T02:08:00Z"
+ },
+ {
+  "id": "a_zut_c2201_1",
+  "tenantId": "t_zut",
+  "studentId": "u_zut_chanda",
+  "courseId": "c_ict2201",
+  "questionIds": [
+   "q_c_ict2201_025",
+   "q_c_ict2201_032",
+   "q_c_ict2201_004",
+   "q_c_ict2201_016",
+   "q_c_ict2201_015",
+   "q_c_ict2201_039",
+   "q_c_ict2201_030",
+   "q_c_ict2201_019",
+   "q_c_ict2201_018",
+   "q_c_ict2201_040"
+  ],
+  "answers": {
+   "q_c_ict2201_025": "GROUP BY",
+   "q_c_ict2201_032": "(wrong)",
+   "q_c_ict2201_004": "True",
+   "q_c_ict2201_016": "All rows from the left table plus matches from the right",
+   "q_c_ict2201_015": "False",
+   "q_c_ict2201_039": "A junction (associative) table",
+   "q_c_ict2201_030": "(wrong)",
+   "q_c_ict2201_019": "False",
+   "q_c_ict2201_018": "COUNT(column)",
+   "q_c_ict2201_040": "True"
+  },
+  "score": 80,
+  "topicScores": {
+   "SQL": {
+    "correct": 5,
+    "total": 5
+   },
+   "Normalisation": {
+    "correct": 0,
+    "total": 2
+   },
+   "Relational model": {
+    "correct": 1,
+    "total": 1
+   },
+   "ER modelling": {
+    "correct": 2,
+    "total": 2
+   }
+  },
+  "startedAt": "2026-10-10T20:00:00Z",
+  "finishedAt": "2026-10-10T20:13:00Z"
+ },
+ {
+  "id": "a_zut_c2201_2",
+  "tenantId": "t_zut",
+  "studentId": "u_zut_chanda",
+  "courseId": "c_ict2201",
+  "questionIds": [
+   "q_c_ict2201_052",
+   "q_c_ict2201_025",
+   "q_c_ict2201_039",
+   "q_c_ict2201_023",
+   "q_c_ict2201_021",
+   "q_c_ict2201_001",
+   "q_c_ict2201_035",
+   "q_c_ict2201_047",
+   "q_c_ict2201_017",
+   "q_c_ict2201_015"
+  ],
+  "answers": {
+   "q_c_ict2201_052": "Deadlock",
+   "q_c_ict2201_025": "GROUP BY",
+   "q_c_ict2201_039": "(wrong)",
+   "q_c_ict2201_023": "False",
+   "q_c_ict2201_021": "False",
+   "q_c_ict2201_001": "Tuple",
+   "q_c_ict2201_035": "False",
+   "q_c_ict2201_047": "(wrong)",
+   "q_c_ict2201_017": "False",
+   "q_c_ict2201_015": "False"
+  },
+  "score": 80,
+  "topicScores": {
+   "Transactions": {
+    "correct": 1,
+    "total": 2
+   },
+   "SQL": {
+    "correct": 5,
+    "total": 5
+   },
+   "ER modelling": {
+    "correct": 0,
+    "total": 1
+   },
+   "Relational model": {
+    "correct": 1,
+    "total": 1
+   },
+   "Normalisation": {
+    "correct": 1,
+    "total": 1
+   }
+  },
+  "startedAt": "2026-10-13T21:00:00Z",
+  "finishedAt": "2026-10-13T21:14:00Z"
+ },
+ {
+  "id": "a_zut_c2201_3",
+  "tenantId": "t_zut",
+  "studentId": "u_zut_chanda",
+  "courseId": "c_ict2201",
+  "questionIds": [
+   "q_c_ict2201_028",
+   "q_c_ict2201_036",
+   "q_c_ict2201_039",
+   "q_c_ict2201_008",
+   "q_c_ict2201_011",
+   "q_c_ict2201_018",
+   "q_c_ict2201_025",
+   "q_c_ict2201_006",
+   "q_c_ict2201_009",
+   "q_c_ict2201_032"
+  ],
+  "answers": {
+   "q_c_ict2201_028": "Partial",
+   "q_c_ict2201_036": "(wrong)",
+   "q_c_ict2201_039": "A junction (associative) table",
+   "q_c_ict2201_008": "(wrong)",
+   "q_c_ict2201_011": "Foreign key",
+   "q_c_ict2201_018": "COUNT(column)",
+   "q_c_ict2201_025": "GROUP BY",
+   "q_c_ict2201_006": "False",
+   "q_c_ict2201_009": "Degree",
+   "q_c_ict2201_032": "(wrong)"
+  },
+  "score": 70,
+  "topicScores": {
+   "Normalisation": {
+    "correct": 1,
+    "total": 3
+   },
+   "ER modelling": {
+    "correct": 1,
+    "total": 1
+   },
+   "Relational model": {
+    "correct": 3,
+    "total": 4
+   },
+   "SQL": {
+    "correct": 2,
+    "total": 2
+   }
+  },
+  "startedAt": "2026-10-17T01:00:00Z",
+  "finishedAt": "2026-10-17T01:12:00Z"
+ },
+ {
+  "id": "a_zut_c2201_4",
+  "tenantId": "t_zut",
+  "studentId": "u_zut_chanda",
+  "courseId": "c_ict2201",
+  "questionIds": [
+   "q_c_ict2201_005",
+   "q_c_ict2201_034",
+   "q_c_ict2201_036",
+   "q_c_ict2201_045",
+   "q_c_ict2201_009",
+   "q_c_ict2201_044",
+   "q_c_ict2201_031",
+   "q_c_ict2201_029",
+   "q_c_ict2201_023",
+   "q_c_ict2201_020"
+  ],
+  "answers": {
+   "q_c_ict2201_005": "Referential integrity",
+   "q_c_ict2201_034": "(wrong)",
+   "q_c_ict2201_036": "(wrong)",
+   "q_c_ict2201_045": "(wrong)",
+   "q_c_ict2201_009": "(wrong)",
+   "q_c_ict2201_044": "True",
+   "q_c_ict2201_031": "False",
+   "q_c_ict2201_029": "False",
+   "q_c_ict2201_023": "False",
+   "q_c_ict2201_020": "DISTINCT"
+  },
+  "score": 60,
+  "topicScores": {
+   "Relational model": {
+    "correct": 1,
+    "total": 2
+   },
+   "Normalisation": {
+    "correct": 2,
+    "total": 4
+   },
+   "ER modelling": {
+    "correct": 1,
+    "total": 2
+   },
+   "SQL": {
+    "correct": 2,
+    "total": 2
+   }
+  },
+  "startedAt": "2026-10-19T00:00:00Z",
+  "finishedAt": "2026-10-19T00:12:00Z"
+ },
+ {
+  "id": "a_zut_c2205_0",
+  "tenantId": "t_zut",
+  "studentId": "u_zut_chanda",
+  "courseId": "c_ict2205",
+  "questionIds": [
+   "q_c_ict2205_039",
+   "q_c_ict2205_021",
+   "q_c_ict2205_013",
+   "q_c_ict2205_007",
+   "q_c_ict2205_046",
+   "q_c_ict2205_033",
+   "q_c_ict2205_020",
+   "q_c_ict2205_026",
+   "q_c_ict2205_010",
+   "q_c_ict2205_030"
+  ],
+  "answers": {
+   "q_c_ict2205_039": "Quick sort",
+   "q_c_ict2205_021": "Stack",
+   "q_c_ict2205_013": "False",
+   "q_c_ict2205_007": "(wrong)",
+   "q_c_ict2205_046": "(wrong)",
+   "q_c_ict2205_033": "(wrong)",
+   "q_c_ict2205_020": "(wrong)",
+   "q_c_ict2205_026": "False",
+   "q_c_ict2205_010": "O(1)",
+   "q_c_ict2205_030": "(wrong)"
+  },
+  "score": 50,
+  "topicScores": {
+   "Sorting": {
+    "correct": 1,
+    "total": 2
+   },
+   "Stacks and queues": {
+    "correct": 2,
+    "total": 3
+   },
+   "Linked lists": {
+    "correct": 2,
+    "total": 2
+   },
+   "Complexity": {
+    "correct": 0,
+    "total": 1
+   },
+   "Trees": {
+    "correct": 0,
+    "total": 2
+   }
+  },
+  "startedAt": "2026-10-08T21:00:00Z",
+  "finishedAt": "2026-10-08T21:11:00Z"
+ },
+ {
+  "id": "a_zut_c2205_1",
+  "tenantId": "t_zut",
+  "studentId": "u_zut_chanda",
+  "courseId": "c_ict2205",
+  "questionIds": [
+   "q_c_ict2205_015",
+   "q_c_ict2205_038",
+   "q_c_ict2205_023",
+   "q_c_ict2205_027",
+   "q_c_ict2205_017",
+   "q_c_ict2205_001",
+   "q_c_ict2205_024",
+   "q_c_ict2205_021",
+   "q_c_ict2205_035",
+   "q_c_ict2205_044"
+  ],
+  "answers": {
+   "q_c_ict2205_015": "(wrong)",
+   "q_c_ict2205_038": "Pre-order",
+   "q_c_ict2205_023": "(wrong)",
+   "q_c_ict2205_027": "Stack",
+   "q_c_ict2205_017": "(wrong)",
+   "q_c_ict2205_001": "(wrong)",
+   "q_c_ict2205_024": "(wrong)",
+   "q_c_ict2205_021": "Stack",
+   "q_c_ict2205_035": "(wrong)",
+   "q_c_ict2205_044": "(wrong)"
+  },
+  "score": 30,
+  "topicScores": {
+   "Linked lists": {
+    "correct": 0,
+    "total": 2
+   },
+   "Trees": {
+    "correct": 1,
+    "total": 2
+   },
+   "Stacks and queues": {
+    "correct": 2,
+    "total": 4
+   },
+   "Complexity": {
+    "correct": 0,
+    "total": 1
+   },
+   "Sorting": {
+    "correct": 0,
+    "total": 1
+   }
+  },
+  "startedAt": "2026-10-12T23:00:00Z",
+  "finishedAt": "2026-10-12T23:13:00Z"
+ },
+ {
+  "id": "a_zut_c2205_2",
+  "tenantId": "t_zut",
+  "studentId": "u_zut_chanda",
+  "courseId": "c_ict2205",
+  "questionIds": [
+   "q_c_ict2205_014",
+   "q_c_ict2205_034",
+   "q_c_ict2205_043",
+   "q_c_ict2205_040",
+   "q_c_ict2205_042",
+   "q_c_ict2205_011",
+   "q_c_ict2205_038",
+   "q_c_ict2205_021",
+   "q_c_ict2205_046",
+   "q_c_ict2205_030"
+  ],
+  "answers": {
+   "q_c_ict2205_014": "O(k)",
+   "q_c_ict2205_034": "AVL tree",
+   "q_c_ict2205_043": "O(n)",
+   "q_c_ict2205_040": "True",
+   "q_c_ict2205_042": "False",
+   "q_c_ict2205_011": "False",
+   "q_c_ict2205_038": "Pre-order",
+   "q_c_ict2205_021": "Stack",
+   "q_c_ict2205_046": "False",
+   "q_c_ict2205_030": "log2 n"
+  },
+  "score": 100,
+  "topicScores": {
+   "Linked lists": {
+    "correct": 2,
+    "total": 2
+   },
+   "Trees": {
+    "correct": 3,
+    "total": 3
+   },
+   "Sorting": {
+    "correct": 4,
+    "total": 4
+   },
+   "Stacks and queues": {
+    "correct": 1,
+    "total": 1
+   }
+  },
+  "startedAt": "2026-10-17T21:00:00Z",
+  "finishedAt": "2026-10-17T21:13:00Z"
+ },
+ {
+  "id": "a_zut_o_0",
+  "tenantId": "t_zut",
+  "studentId": "u_zut_s01",
+  "courseId": "c_ict2201",
+  "questionIds": [
+   "q_c_ict2201_038",
+   "q_c_ict2201_014",
+   "q_c_ict2201_028",
+   "q_c_ict2201_047",
+   "q_c_ict2201_040",
+   "q_c_ict2201_050",
+   "q_c_ict2201_029",
+   "q_c_ict2201_010",
+   "q_c_ict2201_049",
+   "q_c_ict2201_020"
+  ],
+  "answers": {
+   "q_c_ict2201_038": "(wrong)",
+   "q_c_ict2201_014": "TRUNCATE TABLE",
+   "q_c_ict2201_028": "Partial",
+   "q_c_ict2201_047": "False",
+   "q_c_ict2201_040": "True",
+   "q_c_ict2201_050": "Uncommitted by another transaction",
+   "q_c_ict2201_029": "(wrong)",
+   "q_c_ict2201_010": "False",
+   "q_c_ict2201_049": "False",
+   "q_c_ict2201_020": "DISTINCT"
+  },
+  "score": 80,
+  "topicScores": {
+   "ER modelling": {
+    "correct": 1,
+    "total": 2
+   },
+   "SQL": {
+    "correct": 2,
+    "total": 2
+   },
+   "Normalisation": {
+    "correct": 1,
+    "total": 2
+   },
+   "Transactions": {
+    "correct": 3,
+    "total": 3
+   },
+   "Relational model": {
+    "correct": 1,
+    "total": 1
+   }
+  },
+  "startedAt": "2026-10-12T02:00:00Z",
+  "finishedAt": "2026-10-12T02:11:00Z"
+ },
+ {
+  "id": "a_zut_o_1",
+  "tenantId": "t_zut",
+  "studentId": "u_zut_s02",
+  "courseId": "c_ict2201",
+  "questionIds": [
+   "q_c_ict2201_003",
+   "q_c_ict2201_043",
+   "q_c_ict2201_025",
+   "q_c_ict2201_002",
+   "q_c_ict2201_014",
+   "q_c_ict2201_004",
+   "q_c_ict2201_050",
+   "q_c_ict2201_007",
+   "q_c_ict2201_015",
+   "q_c_ict2201_024"
+  ],
+  "answers": {
+   "q_c_ict2201_003": "(wrong)",
+   "q_c_ict2201_043": "(wrong)",
+   "q_c_ict2201_025": "GROUP BY",
+   "q_c_ict2201_002": "False",
+   "q_c_ict2201_014": "TRUNCATE TABLE",
+   "q_c_ict2201_004": "(wrong)",
+   "q_c_ict2201_050": "(wrong)",
+   "q_c_ict2201_007": "(wrong)",
+   "q_c_ict2201_015": "(wrong)",
+   "q_c_ict2201_024": "ORDER BY"
+  },
+  "score": 40,
+  "topicScores": {
+   "Relational model": {
+    "correct": 1,
+    "total": 4
+   },
+   "ER modelling": {
+    "correct": 0,
+    "total": 1
+   },
+   "SQL": {
+    "correct": 3,
+    "total": 4
+   },
+   "Transactions": {
+    "correct": 0,
+    "total": 1
+   }
+  },
+  "startedAt": "2026-10-15T18:00:00Z",
+  "finishedAt": "2026-10-15T18:11:00Z"
+ },
+ {
+  "id": "a_zut_o_2",
+  "tenantId": "t_zut",
+  "studentId": "u_zut_s03",
+  "courseId": "c_ict2201",
+  "questionIds": [
+   "q_c_ict2201_019",
+   "q_c_ict2201_031",
+   "q_c_ict2201_042",
+   "q_c_ict2201_034",
+   "q_c_ict2201_039",
+   "q_c_ict2201_021",
+   "q_c_ict2201_003",
+   "q_c_ict2201_009",
+   "q_c_ict2201_010",
+   "q_c_ict2201_026"
+  ],
+  "answers": {
+   "q_c_ict2201_019": "False",
+   "q_c_ict2201_031": "False",
+   "q_c_ict2201_042": "False",
+   "q_c_ict2201_034": "Deletion anomaly",
+   "q_c_ict2201_039": "A junction (associative) table",
+   "q_c_ict2201_021": "False",
+   "q_c_ict2201_003": "(wrong)",
+   "q_c_ict2201_009": "Degree",
+   "q_c_ict2201_010": "(wrong)",
+   "q_c_ict2201_026": "All attribute values are atomic"
+  },
+  "score": 80,
+  "topicScores": {
+   "SQL": {
+    "correct": 2,
+    "total": 2
+   },
+   "Normalisation": {
+    "correct": 3,
+    "total": 3
+   },
+   "ER modelling": {
+    "correct": 2,
+    "total": 2
+   },
+   "Relational model": {
+    "correct": 1,
+    "total": 3
+   }
+  },
+  "startedAt": "2026-10-19T21:00:00Z",
+  "finishedAt": "2026-10-19T21:12:00Z"
+ },
+ {
+  "id": "a_nbt_m_0",
+  "tenantId": "t_nbt",
+  "studentId": "u_nbt_mutale",
+  "courseId": "c_cmp110",
+  "questionIds": [
+   "q_c_cmp110_007",
+   "q_c_cmp110_038",
+   "q_c_cmp110_011",
+   "q_c_cmp110_028",
+   "q_c_cmp110_025",
+   "q_c_cmp110_005",
+   "q_c_cmp110_023",
+   "q_c_cmp110_009",
+   "q_c_cmp110_016",
+   "q_c_cmp110_026"
+  ],
+  "answers": {
+   "q_c_cmp110_007": "main",
+   "q_c_cmp110_038": "(wrong)",
+   "q_c_cmp110_011": "False",
+   "q_c_cmp110_028": "1 2 3",
+   "q_c_cmp110_025": "else",
+   "q_c_cmp110_005": "An integrated development environment",
+   "q_c_cmp110_023": "(wrong)",
+   "q_c_cmp110_009": "Bug",
+   "q_c_cmp110_016": "(wrong)",
+   "q_c_cmp110_026": "for"
+  },
+  "score": 70,
+  "topicScores": {
+   "Programming basics": {
+    "correct": 3,
+    "total": 3
+   },
+   "Data structures intro": {
+    "correct": 0,
+    "total": 1
+   },
+   "Operators and expressions": {
+    "correct": 1,
+    "total": 2
+   },
+   "Iteration": {
+    "correct": 2,
+    "total": 2
+   },
+   "Selection": {
+    "correct": 1,
+    "total": 2
+   }
+  },
+  "startedAt": "2026-10-15T02:00:00Z",
+  "finishedAt": "2026-10-15T02:06:00Z"
+ },
+ {
+  "id": "a_nbt_m_1",
+  "tenantId": "t_nbt",
+  "studentId": "u_nbt_mutale",
+  "courseId": "c_cmp110",
+  "questionIds": [
+   "q_c_cmp110_023",
+   "q_c_cmp110_013",
+   "q_c_cmp110_030",
+   "q_c_cmp110_022",
+   "q_c_cmp110_029",
+   "q_c_cmp110_021",
+   "q_c_cmp110_001",
+   "q_c_cmp110_010",
+   "q_c_cmp110_033",
+   "q_c_cmp110_005"
+  ],
+  "answers": {
+   "q_c_cmp110_023": "(wrong)",
+   "q_c_cmp110_013": "False",
+   "q_c_cmp110_030": "(wrong)",
+   "q_c_cmp110_022": "(wrong)",
+   "q_c_cmp110_029": "(wrong)",
+   "q_c_cmp110_021": "a ? b : c",
+   "q_c_cmp110_001": ";",
+   "q_c_cmp110_010": "(wrong)",
+   "q_c_cmp110_033": "Map (dictionary)",
+   "q_c_cmp110_005": "An integrated development environment"
+  },
+  "score": 50,
+  "topicScores": {
+   "Selection": {
+    "correct": 1,
+    "total": 3
+   },
+   "Operators and expressions": {
+    "correct": 1,
+    "total": 2
+   },
+   "Iteration": {
+    "correct": 0,
+    "total": 2
+   },
+   "Programming basics": {
+    "correct": 2,
+    "total": 2
+   },
+   "Data structures intro": {
+    "correct": 1,
+    "total": 1
+   }
+  },
+  "startedAt": "2026-10-18T18:00:00Z",
+  "finishedAt": "2026-10-18T18:12:00Z"
+ }
+]

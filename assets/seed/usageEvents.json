@@ -1,0 +1,2106 @@
+[
+ {
+  "id": "e_0001",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 2205",
+  "createdAt": "2026-10-07T00:00:00Z"
+ },
+ {
+  "id": "e_0002",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 2201",
+  "createdAt": "2026-10-07T00:00:00Z"
+ },
+ {
+  "id": "e_0003",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "sorting",
+  "createdAt": "2026-10-06T21:00:00Z"
+ },
+ {
+  "id": "e_0004",
+  "tenantId": "t_zut",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "operating systems",
+  "createdAt": "2026-10-07T01:00:00Z"
+ },
+ {
+  "id": "e_0005",
+  "tenantId": "t_zut",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "operating systems",
+  "createdAt": "2026-10-06T17:00:00Z"
+ },
+ {
+  "id": "e_0006",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-06T18:00:00Z"
+ },
+ {
+  "id": "e_0007",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2024_final",
+  "term": null,
+  "createdAt": "2026-10-06T23:00:00Z"
+ },
+ {
+  "id": "e_0008",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2022_final",
+  "term": null,
+  "createdAt": "2026-10-07T00:00:00Z"
+ },
+ {
+  "id": "e_0009",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2025_mid",
+  "term": null,
+  "createdAt": "2026-10-06T16:00:00Z"
+ },
+ {
+  "id": "e_0010",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2024_final",
+  "term": null,
+  "createdAt": "2026-10-07T04:00:00Z"
+ },
+ {
+  "id": "e_0011",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2025_mid",
+  "term": null,
+  "createdAt": "2026-10-06T20:00:00Z"
+ },
+ {
+  "id": "e_0012",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-07T02:00:00Z"
+ },
+ {
+  "id": "e_0013",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-07T01:00:00Z"
+ },
+ {
+  "id": "e_0014",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_bus1102_2023_assignment",
+  "term": null,
+  "createdAt": "2026-10-06T21:00:00Z"
+ },
+ {
+  "id": "e_0015",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "CMP 110",
+  "createdAt": "2026-10-06T20:00:00Z"
+ },
+ {
+  "id": "e_0016",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2020_final",
+  "term": null,
+  "createdAt": "2026-10-07T02:00:00Z"
+ },
+ {
+  "id": "e_0017",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "CMP 110",
+  "createdAt": "2026-10-07T00:00:00Z"
+ },
+ {
+  "id": "e_0018",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2023_final",
+  "term": null,
+  "createdAt": "2026-10-07T04:00:00Z"
+ },
+ {
+  "id": "e_0019",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 2201",
+  "createdAt": "2026-10-07T18:00:00Z"
+ },
+ {
+  "id": "e_0020",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "normalisation",
+  "createdAt": "2026-10-07T22:00:00Z"
+ },
+ {
+  "id": "e_0021",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "trees",
+  "createdAt": "2026-10-07T21:00:00Z"
+ },
+ {
+  "id": "e_0022",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2024_final",
+  "term": null,
+  "createdAt": "2026-10-07T18:00:00Z"
+ },
+ {
+  "id": "e_0023",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2024_final",
+  "term": null,
+  "createdAt": "2026-10-07T19:00:00Z"
+ },
+ {
+  "id": "e_0024",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2025_mid",
+  "term": null,
+  "createdAt": "2026-10-07T17:00:00Z"
+ },
+ {
+  "id": "e_0025",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2022_final",
+  "term": null,
+  "createdAt": "2026-10-07T18:00:00Z"
+ },
+ {
+  "id": "e_0026",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict3301_2024_final",
+  "term": null,
+  "createdAt": "2026-10-07T20:00:00Z"
+ },
+ {
+  "id": "e_0027",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "HTML",
+  "createdAt": "2026-10-07T18:00:00Z"
+ },
+ {
+  "id": "e_0028",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_een120_2023_final",
+  "term": null,
+  "createdAt": "2026-10-08T04:00:00Z"
+ },
+ {
+  "id": "e_0029",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "loops",
+  "createdAt": "2026-10-08T02:00:00Z"
+ },
+ {
+  "id": "e_0030",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2023_final",
+  "term": null,
+  "createdAt": "2026-10-07T22:00:00Z"
+ },
+ {
+  "id": "e_0031",
+  "tenantId": "t_nbt",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "database",
+  "createdAt": "2026-10-07T21:00:00Z"
+ },
+ {
+  "id": "e_0032",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "accounting",
+  "createdAt": "2026-10-08T22:00:00Z"
+ },
+ {
+  "id": "e_0033",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "accounting",
+  "createdAt": "2026-10-08T21:00:00Z"
+ },
+ {
+  "id": "e_0034",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 2201",
+  "createdAt": "2026-10-08T20:00:00Z"
+ },
+ {
+  "id": "e_0035",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "trees",
+  "createdAt": "2026-10-08T17:00:00Z"
+ },
+ {
+  "id": "e_0036",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "2023",
+  "createdAt": "2026-10-08T19:00:00Z"
+ },
+ {
+  "id": "e_0037",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "normalisation",
+  "createdAt": "2026-10-09T04:00:00Z"
+ },
+ {
+  "id": "e_0038",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-08T18:00:00Z"
+ },
+ {
+  "id": "e_0039",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_bus1102_2021_final",
+  "term": null,
+  "createdAt": "2026-10-08T21:00:00Z"
+ },
+ {
+  "id": "e_0040",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2020_final",
+  "term": null,
+  "createdAt": "2026-10-08T17:00:00Z"
+ },
+ {
+  "id": "e_0041",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-08T22:00:00Z"
+ },
+ {
+  "id": "e_0042",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-08T18:00:00Z"
+ },
+ {
+  "id": "e_0043",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "CMP 110",
+  "createdAt": "2026-10-09T01:00:00Z"
+ },
+ {
+  "id": "e_0044",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_een120_2023_final",
+  "term": null,
+  "createdAt": "2026-10-08T20:00:00Z"
+ },
+ {
+  "id": "e_0045",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "sorting",
+  "createdAt": "2026-10-09T23:00:00Z"
+ },
+ {
+  "id": "e_0046",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 2201",
+  "createdAt": "2026-10-09T18:00:00Z"
+ },
+ {
+  "id": "e_0047",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 2205",
+  "createdAt": "2026-10-10T02:00:00Z"
+ },
+ {
+  "id": "e_0048",
+  "tenantId": "t_zut",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "discrete maths",
+  "createdAt": "2026-10-09T23:00:00Z"
+ },
+ {
+  "id": "e_0049",
+  "tenantId": "t_zut",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "statistics",
+  "createdAt": "2026-10-09T23:00:00Z"
+ },
+ {
+  "id": "e_0050",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_bus1102_2023_assignment",
+  "term": null,
+  "createdAt": "2026-10-10T03:00:00Z"
+ },
+ {
+  "id": "e_0051",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-10T01:00:00Z"
+ },
+ {
+  "id": "e_0052",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2023_final",
+  "term": null,
+  "createdAt": "2026-10-09T23:00:00Z"
+ },
+ {
+  "id": "e_0053",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2023_final",
+  "term": null,
+  "createdAt": "2026-10-10T00:00:00Z"
+ },
+ {
+  "id": "e_0054",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_bus1102_2021_final",
+  "term": null,
+  "createdAt": "2026-10-09T18:00:00Z"
+ },
+ {
+  "id": "e_0055",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2022_final",
+  "term": null,
+  "createdAt": "2026-10-10T01:00:00Z"
+ },
+ {
+  "id": "e_0056",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "loops",
+  "createdAt": "2026-10-09T19:00:00Z"
+ },
+ {
+  "id": "e_0057",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2020_final",
+  "term": null,
+  "createdAt": "2026-10-09T17:00:00Z"
+ },
+ {
+  "id": "e_0058",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "HTML",
+  "createdAt": "2026-10-09T18:00:00Z"
+ },
+ {
+  "id": "e_0059",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2023_final",
+  "term": null,
+  "createdAt": "2026-10-10T02:00:00Z"
+ },
+ {
+  "id": "e_0060",
+  "tenantId": "t_nbt",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "database",
+  "createdAt": "2026-10-10T00:00:00Z"
+ },
+ {
+  "id": "e_0061",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 1101",
+  "createdAt": "2026-10-10T16:00:00Z"
+ },
+ {
+  "id": "e_0062",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "trees",
+  "createdAt": "2026-10-10T21:00:00Z"
+ },
+ {
+  "id": "e_0063",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "database",
+  "createdAt": "2026-10-11T02:00:00Z"
+ },
+ {
+  "id": "e_0064",
+  "tenantId": "t_zut",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "discrete maths",
+  "createdAt": "2026-10-10T21:00:00Z"
+ },
+ {
+  "id": "e_0065",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2024_final",
+  "term": null,
+  "createdAt": "2026-10-10T21:00:00Z"
+ },
+ {
+  "id": "e_0066",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-10T16:00:00Z"
+ },
+ {
+  "id": "e_0067",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2020_final",
+  "term": null,
+  "createdAt": "2026-10-10T18:00:00Z"
+ },
+ {
+  "id": "e_0068",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2025_mid",
+  "term": null,
+  "createdAt": "2026-10-10T23:00:00Z"
+ },
+ {
+  "id": "e_0069",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2023_final",
+  "term": null,
+  "createdAt": "2026-10-10T18:00:00Z"
+ },
+ {
+  "id": "e_0070",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2025_mid",
+  "term": null,
+  "createdAt": "2026-10-11T01:00:00Z"
+ },
+ {
+  "id": "e_0071",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-10T22:00:00Z"
+ },
+ {
+  "id": "e_0072",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "CMP 110",
+  "createdAt": "2026-10-10T17:00:00Z"
+ },
+ {
+  "id": "e_0073",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp210_2025_notes",
+  "term": null,
+  "createdAt": "2026-10-10T16:00:00Z"
+ },
+ {
+  "id": "e_0074",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "circuits",
+  "createdAt": "2026-10-10T17:00:00Z"
+ },
+ {
+  "id": "e_0075",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp210_2025_notes",
+  "term": null,
+  "createdAt": "2026-10-11T02:00:00Z"
+ },
+ {
+  "id": "e_0076",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 1101",
+  "createdAt": "2026-10-11T18:00:00Z"
+ },
+ {
+  "id": "e_0077",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "database",
+  "createdAt": "2026-10-11T21:00:00Z"
+ },
+ {
+  "id": "e_0078",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "2023",
+  "createdAt": "2026-10-11T22:00:00Z"
+ },
+ {
+  "id": "e_0079",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "trees",
+  "createdAt": "2026-10-12T04:00:00Z"
+ },
+ {
+  "id": "e_0080",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "SQL",
+  "createdAt": "2026-10-12T00:00:00Z"
+ },
+ {
+  "id": "e_0081",
+  "tenantId": "t_zut",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "operating systems",
+  "createdAt": "2026-10-11T22:00:00Z"
+ },
+ {
+  "id": "e_0082",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2023_final",
+  "term": null,
+  "createdAt": "2026-10-11T19:00:00Z"
+ },
+ {
+  "id": "e_0083",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-11T23:00:00Z"
+ },
+ {
+  "id": "e_0084",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2020_final",
+  "term": null,
+  "createdAt": "2026-10-11T21:00:00Z"
+ },
+ {
+  "id": "e_0085",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2023_final",
+  "term": null,
+  "createdAt": "2026-10-12T02:00:00Z"
+ },
+ {
+  "id": "e_0086",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2024_final",
+  "term": null,
+  "createdAt": "2026-10-11T22:00:00Z"
+ },
+ {
+  "id": "e_0087",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_bus1102_2023_assignment",
+  "term": null,
+  "createdAt": "2026-10-12T04:00:00Z"
+ },
+ {
+  "id": "e_0088",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_bus1102_2023_assignment",
+  "term": null,
+  "createdAt": "2026-10-12T01:00:00Z"
+ },
+ {
+  "id": "e_0089",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict1101_2024_mid",
+  "term": null,
+  "createdAt": "2026-10-11T23:00:00Z"
+ },
+ {
+  "id": "e_0090",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2022_final",
+  "term": null,
+  "createdAt": "2026-10-11T17:00:00Z"
+ },
+ {
+  "id": "e_0091",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "circuits",
+  "createdAt": "2026-10-12T03:00:00Z"
+ },
+ {
+  "id": "e_0092",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2023_final",
+  "term": null,
+  "createdAt": "2026-10-11T21:00:00Z"
+ },
+ {
+  "id": "e_0093",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "2023",
+  "createdAt": "2026-10-13T02:00:00Z"
+ },
+ {
+  "id": "e_0094",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "SQL",
+  "createdAt": "2026-10-13T01:00:00Z"
+ },
+ {
+  "id": "e_0095",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "linked list",
+  "createdAt": "2026-10-13T03:00:00Z"
+ },
+ {
+  "id": "e_0096",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "SQL",
+  "createdAt": "2026-10-12T20:00:00Z"
+ },
+ {
+  "id": "e_0097",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "normalisation",
+  "createdAt": "2026-10-12T17:00:00Z"
+ },
+ {
+  "id": "e_0098",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2024_final",
+  "term": null,
+  "createdAt": "2026-10-13T02:00:00Z"
+ },
+ {
+  "id": "e_0099",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2020_final",
+  "term": null,
+  "createdAt": "2026-10-13T04:00:00Z"
+ },
+ {
+  "id": "e_0100",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-12T22:00:00Z"
+ },
+ {
+  "id": "e_0101",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2024_final",
+  "term": null,
+  "createdAt": "2026-10-12T17:00:00Z"
+ },
+ {
+  "id": "e_0102",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2022_final",
+  "term": null,
+  "createdAt": "2026-10-12T21:00:00Z"
+ },
+ {
+  "id": "e_0103",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2024_final",
+  "term": null,
+  "createdAt": "2026-10-13T00:00:00Z"
+ },
+ {
+  "id": "e_0104",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict1101_2024_mid",
+  "term": null,
+  "createdAt": "2026-10-13T01:00:00Z"
+ },
+ {
+  "id": "e_0105",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict3301_2024_final",
+  "term": null,
+  "createdAt": "2026-10-12T18:00:00Z"
+ },
+ {
+  "id": "e_0106",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2025_mid",
+  "term": null,
+  "createdAt": "2026-10-12T19:00:00Z"
+ },
+ {
+  "id": "e_0107",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "HTML",
+  "createdAt": "2026-10-12T16:00:00Z"
+ },
+ {
+  "id": "e_0108",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_een120_2023_final",
+  "term": null,
+  "createdAt": "2026-10-12T16:00:00Z"
+ },
+ {
+  "id": "e_0109",
+  "tenantId": "t_nbt",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "physics",
+  "createdAt": "2026-10-12T18:00:00Z"
+ },
+ {
+  "id": "e_0110",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 2205",
+  "createdAt": "2026-10-14T04:00:00Z"
+ },
+ {
+  "id": "e_0111",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "database",
+  "createdAt": "2026-10-14T02:00:00Z"
+ },
+ {
+  "id": "e_0112",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "linked list",
+  "createdAt": "2026-10-14T01:00:00Z"
+ },
+ {
+  "id": "e_0113",
+  "tenantId": "t_zut",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "operating systems",
+  "createdAt": "2026-10-13T20:00:00Z"
+ },
+ {
+  "id": "e_0114",
+  "tenantId": "t_zut",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "operating systems",
+  "createdAt": "2026-10-13T20:00:00Z"
+ },
+ {
+  "id": "e_0115",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-13T17:00:00Z"
+ },
+ {
+  "id": "e_0116",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2023_final",
+  "term": null,
+  "createdAt": "2026-10-14T03:00:00Z"
+ },
+ {
+  "id": "e_0117",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-13T22:00:00Z"
+ },
+ {
+  "id": "e_0118",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2022_final",
+  "term": null,
+  "createdAt": "2026-10-14T02:00:00Z"
+ },
+ {
+  "id": "e_0119",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "HTML",
+  "createdAt": "2026-10-13T17:00:00Z"
+ },
+ {
+  "id": "e_0120",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2020_final",
+  "term": null,
+  "createdAt": "2026-10-13T16:00:00Z"
+ },
+ {
+  "id": "e_0121",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "HTML",
+  "createdAt": "2026-10-13T17:00:00Z"
+ },
+ {
+  "id": "e_0122",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2023_final",
+  "term": null,
+  "createdAt": "2026-10-13T21:00:00Z"
+ },
+ {
+  "id": "e_0123",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 2205",
+  "createdAt": "2026-10-14T16:00:00Z"
+ },
+ {
+  "id": "e_0124",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 1101",
+  "createdAt": "2026-10-14T18:00:00Z"
+ },
+ {
+  "id": "e_0125",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 2205",
+  "createdAt": "2026-10-15T01:00:00Z"
+ },
+ {
+  "id": "e_0126",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "database",
+  "createdAt": "2026-10-14T21:00:00Z"
+ },
+ {
+  "id": "e_0127",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "2023",
+  "createdAt": "2026-10-15T00:00:00Z"
+ },
+ {
+  "id": "e_0128",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "networks",
+  "createdAt": "2026-10-14T19:00:00Z"
+ },
+ {
+  "id": "e_0129",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2025_mid",
+  "term": null,
+  "createdAt": "2026-10-15T01:00:00Z"
+ },
+ {
+  "id": "e_0130",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-14T16:00:00Z"
+ },
+ {
+  "id": "e_0131",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2020_final",
+  "term": null,
+  "createdAt": "2026-10-14T18:00:00Z"
+ },
+ {
+  "id": "e_0132",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-14T16:00:00Z"
+ },
+ {
+  "id": "e_0133",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2022_final",
+  "term": null,
+  "createdAt": "2026-10-14T18:00:00Z"
+ },
+ {
+  "id": "e_0134",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict1101_2023_final",
+  "term": null,
+  "createdAt": "2026-10-15T03:00:00Z"
+ },
+ {
+  "id": "e_0135",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_bus1102_2021_final",
+  "term": null,
+  "createdAt": "2026-10-14T22:00:00Z"
+ },
+ {
+  "id": "e_0136",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "loops",
+  "createdAt": "2026-10-14T20:00:00Z"
+ },
+ {
+  "id": "e_0137",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp210_2025_notes",
+  "term": null,
+  "createdAt": "2026-10-15T02:00:00Z"
+ },
+ {
+  "id": "e_0138",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "loops",
+  "createdAt": "2026-10-15T04:00:00Z"
+ },
+ {
+  "id": "e_0139",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2024_mid",
+  "term": null,
+  "createdAt": "2026-10-15T01:00:00Z"
+ },
+ {
+  "id": "e_0140",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "HTML",
+  "createdAt": "2026-10-14T16:00:00Z"
+ },
+ {
+  "id": "e_0141",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2023_final",
+  "term": null,
+  "createdAt": "2026-10-14T18:00:00Z"
+ },
+ {
+  "id": "e_0142",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 2205",
+  "createdAt": "2026-10-16T01:00:00Z"
+ },
+ {
+  "id": "e_0143",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "trees",
+  "createdAt": "2026-10-15T23:00:00Z"
+ },
+ {
+  "id": "e_0144",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "database",
+  "createdAt": "2026-10-15T18:00:00Z"
+ },
+ {
+  "id": "e_0145",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "normalisation",
+  "createdAt": "2026-10-15T17:00:00Z"
+ },
+ {
+  "id": "e_0146",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 1101",
+  "createdAt": "2026-10-15T23:00:00Z"
+ },
+ {
+  "id": "e_0147",
+  "tenantId": "t_zut",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "operating systems",
+  "createdAt": "2026-10-15T18:00:00Z"
+ },
+ {
+  "id": "e_0148",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2022_final",
+  "term": null,
+  "createdAt": "2026-10-15T20:00:00Z"
+ },
+ {
+  "id": "e_0149",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-16T01:00:00Z"
+ },
+ {
+  "id": "e_0150",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_bus1102_2021_final",
+  "term": null,
+  "createdAt": "2026-10-16T03:00:00Z"
+ },
+ {
+  "id": "e_0151",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2023_final",
+  "term": null,
+  "createdAt": "2026-10-15T18:00:00Z"
+ },
+ {
+  "id": "e_0152",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "loops",
+  "createdAt": "2026-10-16T03:00:00Z"
+ },
+ {
+  "id": "e_0153",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp210_2025_notes",
+  "term": null,
+  "createdAt": "2026-10-16T01:00:00Z"
+ },
+ {
+  "id": "e_0154",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "HTML",
+  "createdAt": "2026-10-15T21:00:00Z"
+ },
+ {
+  "id": "e_0155",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp210_2025_notes",
+  "term": null,
+  "createdAt": "2026-10-15T18:00:00Z"
+ },
+ {
+  "id": "e_0156",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "HTML",
+  "createdAt": "2026-10-16T04:00:00Z"
+ },
+ {
+  "id": "e_0157",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2024_mid",
+  "term": null,
+  "createdAt": "2026-10-15T23:00:00Z"
+ },
+ {
+  "id": "e_0158",
+  "tenantId": "t_nbt",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "physics",
+  "createdAt": "2026-10-16T02:00:00Z"
+ },
+ {
+  "id": "e_0159",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "sorting",
+  "createdAt": "2026-10-16T21:00:00Z"
+ },
+ {
+  "id": "e_0160",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "normalisation",
+  "createdAt": "2026-10-16T16:00:00Z"
+ },
+ {
+  "id": "e_0161",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "sorting",
+  "createdAt": "2026-10-17T01:00:00Z"
+ },
+ {
+  "id": "e_0162",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "SQL",
+  "createdAt": "2026-10-16T22:00:00Z"
+ },
+ {
+  "id": "e_0163",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "accounting",
+  "createdAt": "2026-10-16T17:00:00Z"
+ },
+ {
+  "id": "e_0164",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "normalisation",
+  "createdAt": "2026-10-16T16:00:00Z"
+ },
+ {
+  "id": "e_0165",
+  "tenantId": "t_zut",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "discrete maths",
+  "createdAt": "2026-10-17T00:00:00Z"
+ },
+ {
+  "id": "e_0166",
+  "tenantId": "t_zut",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "statistics",
+  "createdAt": "2026-10-17T01:00:00Z"
+ },
+ {
+  "id": "e_0167",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict1101_2023_final",
+  "term": null,
+  "createdAt": "2026-10-16T20:00:00Z"
+ },
+ {
+  "id": "e_0168",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2023_final",
+  "term": null,
+  "createdAt": "2026-10-17T03:00:00Z"
+ },
+ {
+  "id": "e_0169",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2023_final",
+  "term": null,
+  "createdAt": "2026-10-17T00:00:00Z"
+ },
+ {
+  "id": "e_0170",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-17T00:00:00Z"
+ },
+ {
+  "id": "e_0171",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-16T16:00:00Z"
+ },
+ {
+  "id": "e_0172",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-17T01:00:00Z"
+ },
+ {
+  "id": "e_0173",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-17T02:00:00Z"
+ },
+ {
+  "id": "e_0174",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "loops",
+  "createdAt": "2026-10-17T02:00:00Z"
+ },
+ {
+  "id": "e_0175",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2020_final",
+  "term": null,
+  "createdAt": "2026-10-16T23:00:00Z"
+ },
+ {
+  "id": "e_0176",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "circuits",
+  "createdAt": "2026-10-16T23:00:00Z"
+ },
+ {
+  "id": "e_0177",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2020_final",
+  "term": null,
+  "createdAt": "2026-10-17T03:00:00Z"
+ },
+ {
+  "id": "e_0178",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "HTML",
+  "createdAt": "2026-10-17T03:00:00Z"
+ },
+ {
+  "id": "e_0179",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp210_2022_final",
+  "term": null,
+  "createdAt": "2026-10-17T03:00:00Z"
+ },
+ {
+  "id": "e_0180",
+  "tenantId": "t_nbt",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "physics",
+  "createdAt": "2026-10-16T16:00:00Z"
+ },
+ {
+  "id": "e_0181",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "SQL",
+  "createdAt": "2026-10-17T21:00:00Z"
+ },
+ {
+  "id": "e_0182",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "database",
+  "createdAt": "2026-10-17T19:00:00Z"
+ },
+ {
+  "id": "e_0183",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "trees",
+  "createdAt": "2026-10-18T04:00:00Z"
+ },
+ {
+  "id": "e_0184",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "database",
+  "createdAt": "2026-10-18T01:00:00Z"
+ },
+ {
+  "id": "e_0185",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "SQL",
+  "createdAt": "2026-10-18T02:00:00Z"
+ },
+ {
+  "id": "e_0186",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-18T03:00:00Z"
+ },
+ {
+  "id": "e_0187",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2024_final",
+  "term": null,
+  "createdAt": "2026-10-17T16:00:00Z"
+ },
+ {
+  "id": "e_0188",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2020_final",
+  "term": null,
+  "createdAt": "2026-10-17T19:00:00Z"
+ },
+ {
+  "id": "e_0189",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2025_mid",
+  "term": null,
+  "createdAt": "2026-10-18T00:00:00Z"
+ },
+ {
+  "id": "e_0190",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2025_mid",
+  "term": null,
+  "createdAt": "2026-10-17T20:00:00Z"
+ },
+ {
+  "id": "e_0191",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2024_final",
+  "term": null,
+  "createdAt": "2026-10-17T19:00:00Z"
+ },
+ {
+  "id": "e_0192",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2022_final",
+  "term": null,
+  "createdAt": "2026-10-17T22:00:00Z"
+ },
+ {
+  "id": "e_0193",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_bus1102_2023_assignment",
+  "term": null,
+  "createdAt": "2026-10-18T03:00:00Z"
+ },
+ {
+  "id": "e_0194",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "loops",
+  "createdAt": "2026-10-17T21:00:00Z"
+ },
+ {
+  "id": "e_0195",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2024_mid",
+  "term": null,
+  "createdAt": "2026-10-17T23:00:00Z"
+ },
+ {
+  "id": "e_0196",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "loops",
+  "createdAt": "2026-10-18T02:00:00Z"
+ },
+ {
+  "id": "e_0197",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp210_2022_final",
+  "term": null,
+  "createdAt": "2026-10-18T04:00:00Z"
+ },
+ {
+  "id": "e_0198",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "linked list",
+  "createdAt": "2026-10-18T19:00:00Z"
+ },
+ {
+  "id": "e_0199",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "accounting",
+  "createdAt": "2026-10-19T02:00:00Z"
+ },
+ {
+  "id": "e_0200",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "trees",
+  "createdAt": "2026-10-19T03:00:00Z"
+ },
+ {
+  "id": "e_0201",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "ICT 2205",
+  "createdAt": "2026-10-19T04:00:00Z"
+ },
+ {
+  "id": "e_0202",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "2023",
+  "createdAt": "2026-10-19T04:00:00Z"
+ },
+ {
+  "id": "e_0203",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-18T17:00:00Z"
+ },
+ {
+  "id": "e_0204",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-18T21:00:00Z"
+ },
+ {
+  "id": "e_0205",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-18T20:00:00Z"
+ },
+ {
+  "id": "e_0206",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-19T03:00:00Z"
+ },
+ {
+  "id": "e_0207",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict1101_2021_final",
+  "term": null,
+  "createdAt": "2026-10-18T17:00:00Z"
+ },
+ {
+  "id": "e_0208",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2020_final",
+  "term": null,
+  "createdAt": "2026-10-18T16:00:00Z"
+ },
+ {
+  "id": "e_0209",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "CMP 110",
+  "createdAt": "2026-10-18T23:00:00Z"
+ },
+ {
+  "id": "e_0210",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2023_final",
+  "term": null,
+  "createdAt": "2026-10-19T03:00:00Z"
+ },
+ {
+  "id": "e_0211",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "circuits",
+  "createdAt": "2026-10-19T02:00:00Z"
+ },
+ {
+  "id": "e_0212",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp210_2025_notes",
+  "term": null,
+  "createdAt": "2026-10-19T04:00:00Z"
+ },
+ {
+  "id": "e_0213",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "CMP 110",
+  "createdAt": "2026-10-18T22:00:00Z"
+ },
+ {
+  "id": "e_0214",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp210_2022_final",
+  "term": null,
+  "createdAt": "2026-10-18T23:00:00Z"
+ },
+ {
+  "id": "e_0215",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "2023",
+  "createdAt": "2026-10-20T04:00:00Z"
+ },
+ {
+  "id": "e_0216",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "accounting",
+  "createdAt": "2026-10-19T17:00:00Z"
+ },
+ {
+  "id": "e_0217",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "2023",
+  "createdAt": "2026-10-20T04:00:00Z"
+ },
+ {
+  "id": "e_0218",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "networks",
+  "createdAt": "2026-10-19T22:00:00Z"
+ },
+ {
+  "id": "e_0219",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "2023",
+  "createdAt": "2026-10-20T04:00:00Z"
+ },
+ {
+  "id": "e_0220",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "2023",
+  "createdAt": "2026-10-20T02:00:00Z"
+ },
+ {
+  "id": "e_0221",
+  "tenantId": "t_zut",
+  "type": "search",
+  "refId": null,
+  "term": "database",
+  "createdAt": "2026-10-19T22:00:00Z"
+ },
+ {
+  "id": "e_0222",
+  "tenantId": "t_zut",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "ICT 3310 software engineering",
+  "createdAt": "2026-10-20T03:00:00Z"
+ },
+ {
+  "id": "e_0223",
+  "tenantId": "t_zut",
+  "type": "unmetSearch",
+  "refId": null,
+  "term": "ICT 3310 software engineering",
+  "createdAt": "2026-10-20T02:00:00Z"
+ },
+ {
+  "id": "e_0224",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2023_final",
+  "term": null,
+  "createdAt": "2026-10-19T16:00:00Z"
+ },
+ {
+  "id": "e_0225",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2023_final",
+  "term": null,
+  "createdAt": "2026-10-19T22:00:00Z"
+ },
+ {
+  "id": "e_0226",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_bus1102_2023_assignment",
+  "term": null,
+  "createdAt": "2026-10-20T02:00:00Z"
+ },
+ {
+  "id": "e_0227",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-20T02:00:00Z"
+ },
+ {
+  "id": "e_0228",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2023_final",
+  "term": null,
+  "createdAt": "2026-10-19T23:00:00Z"
+ },
+ {
+  "id": "e_0229",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-19T17:00:00Z"
+ },
+ {
+  "id": "e_0230",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2019_final",
+  "term": null,
+  "createdAt": "2026-10-19T22:00:00Z"
+ },
+ {
+  "id": "e_0231",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2201_2021_supp",
+  "term": null,
+  "createdAt": "2026-10-20T04:00:00Z"
+ },
+ {
+  "id": "e_0232",
+  "tenantId": "t_zut",
+  "type": "view",
+  "refId": "r_ict2205_2025_mid",
+  "term": null,
+  "createdAt": "2026-10-19T21:00:00Z"
+ },
+ {
+  "id": "e_0233",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "CMP 110",
+  "createdAt": "2026-10-19T21:00:00Z"
+ },
+ {
+  "id": "e_0234",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp110_2020_final",
+  "term": null,
+  "createdAt": "2026-10-19T23:00:00Z"
+ },
+ {
+  "id": "e_0235",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "CMP 110",
+  "createdAt": "2026-10-20T04:00:00Z"
+ },
+ {
+  "id": "e_0236",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_cmp210_2022_final",
+  "term": null,
+  "createdAt": "2026-10-19T22:00:00Z"
+ },
+ {
+  "id": "e_0237",
+  "tenantId": "t_nbt",
+  "type": "search",
+  "refId": null,
+  "term": "loops",
+  "createdAt": "2026-10-20T01:00:00Z"
+ },
+ {
+  "id": "e_0238",
+  "tenantId": "t_nbt",
+  "type": "view",
+  "refId": "r_een120_2023_final",
+  "term": null,
+  "createdAt": "2026-10-19T16:00:00Z"
+ },
+ {
+  "id": "e_0239",
+  "tenantId": "t_zut",
+  "type": "loan",
+  "refId": "l_zut_01",
+  "term": null,
+  "createdAt": "2026-10-19T19:00:00Z"
+ },
+ {
+  "id": "e_0240",
+  "tenantId": "t_zut",
+  "type": "loan",
+  "refId": "l_zut_02",
+  "term": null,
+  "createdAt": "2026-10-19T23:00:00Z"
+ },
+ {
+  "id": "e_0241",
+  "tenantId": "t_zut",
+  "type": "loan",
+  "refId": "l_zut_03",
+  "term": null,
+  "createdAt": "2026-10-17T17:00:00Z"
+ },
+ {
+  "id": "e_0242",
+  "tenantId": "t_zut",
+  "type": "loan",
+  "refId": "l_zut_04",
+  "term": null,
+  "createdAt": "2026-10-16T02:00:00Z"
+ },
+ {
+  "id": "e_0243",
+  "tenantId": "t_zut",
+  "type": "loan",
+  "refId": "l_zut_05",
+  "term": null,
+  "createdAt": "2026-10-09T02:00:00Z"
+ },
+ {
+  "id": "e_0244",
+  "tenantId": "t_zut",
+  "type": "loan",
+  "refId": "l_zut_06",
+  "term": null,
+  "createdAt": "2026-09-20T16:00:00Z"
+ },
+ {
+  "id": "e_0245",
+  "tenantId": "t_zut",
+  "type": "loan",
+  "refId": "l_zut_07",
+  "term": null,
+  "createdAt": "2026-09-25T19:00:00Z"
+ },
+ {
+  "id": "e_0246",
+  "tenantId": "t_zut",
+  "type": "loan",
+  "refId": "l_zut_08",
+  "term": null,
+  "createdAt": "2026-10-02T18:00:00Z"
+ },
+ {
+  "id": "e_0247",
+  "tenantId": "t_zut",
+  "type": "loan",
+  "refId": "l_zut_09",
+  "term": null,
+  "createdAt": "2026-10-13T04:00:00Z"
+ },
+ {
+  "id": "e_0248",
+  "tenantId": "t_nbt",
+  "type": "loan",
+  "refId": "l_nbt_01",
+  "term": null,
+  "createdAt": "2026-10-19T20:00:00Z"
+ },
+ {
+  "id": "e_0249",
+  "tenantId": "t_nbt",
+  "type": "loan",
+  "refId": "l_nbt_02",
+  "term": null,
+  "createdAt": "2026-10-19T01:00:00Z"
+ },
+ {
+  "id": "e_0250",
+  "tenantId": "t_nbt",
+  "type": "loan",
+  "refId": "l_nbt_03",
+  "term": null,
+  "createdAt": "2026-09-30T19:00:00Z"
+ },
+ {
+  "id": "e_0251",
+  "tenantId": "t_zut",
+  "type": "quiz",
+  "refId": "a_zut_c2201_0",
+  "term": null,
+  "createdAt": "2026-10-07T23:00:00Z"
+ },
+ {
+  "id": "e_0252",
+  "tenantId": "t_zut",
+  "type": "quiz",
+  "refId": "a_zut_c2201_1",
+  "term": null,
+  "createdAt": "2026-10-11T00:00:00Z"
+ },
+ {
+  "id": "e_0253",
+  "tenantId": "t_zut",
+  "type": "quiz",
+  "refId": "a_zut_c2201_2",
+  "term": null,
+  "createdAt": "2026-10-13T16:00:00Z"
+ },
+ {
+  "id": "e_0254",
+  "tenantId": "t_zut",
+  "type": "quiz",
+  "refId": "a_zut_c2201_3",
+  "term": null,
+  "createdAt": "2026-10-16T21:00:00Z"
+ },
+ {
+  "id": "e_0255",
+  "tenantId": "t_zut",
+  "type": "quiz",
+  "refId": "a_zut_c2201_4",
+  "term": null,
+  "createdAt": "2026-10-18T20:00:00Z"
+ },
+ {
+  "id": "e_0256",
+  "tenantId": "t_zut",
+  "type": "quiz",
+  "refId": "a_zut_c2205_0",
+  "term": null,
+  "createdAt": "2026-10-08T17:00:00Z"
+ },
+ {
+  "id": "e_0257",
+  "tenantId": "t_zut",
+  "type": "quiz",
+  "refId": "a_zut_c2205_1",
+  "term": null,
+  "createdAt": "2026-10-12T20:00:00Z"
+ },
+ {
+  "id": "e_0258",
+  "tenantId": "t_zut",
+  "type": "quiz",
+  "refId": "a_zut_c2205_2",
+  "term": null,
+  "createdAt": "2026-10-18T04:00:00Z"
+ },
+ {
+  "id": "e_0259",
+  "tenantId": "t_zut",
+  "type": "quiz",
+  "refId": "a_zut_o_0",
+  "term": null,
+  "createdAt": "2026-10-11T18:00:00Z"
+ },
+ {
+  "id": "e_0260",
+  "tenantId": "t_zut",
+  "type": "quiz",
+  "refId": "a_zut_o_1",
+  "term": null,
+  "createdAt": "2026-10-16T04:00:00Z"
+ },
+ {
+  "id": "e_0261",
+  "tenantId": "t_zut",
+  "type": "quiz",
+  "refId": "a_zut_o_2",
+  "term": null,
+  "createdAt": "2026-10-19T19:00:00Z"
+ },
+ {
+  "id": "e_0262",
+  "tenantId": "t_nbt",
+  "type": "quiz",
+  "refId": "a_nbt_m_0",
+  "term": null,
+  "createdAt": "2026-10-14T22:00:00Z"
+ },
+ {
+  "id": "e_0263",
+  "tenantId": "t_nbt",
+  "type": "quiz",
+  "refId": "a_nbt_m_1",
+  "term": null,
+  "createdAt": "2026-10-19T02:00:00Z"
+ }
+]

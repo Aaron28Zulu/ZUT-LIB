@@ -1,0 +1,66 @@
+[
+ {
+  "id": "c_ict1101",
+  "tenantId": "t_zut",
+  "departmentId": "d_zut_ict",
+  "code": "ICT 1101",
+  "name": "Introduction to Programming",
+  "yearLevel": 1
+ },
+ {
+  "id": "c_ict2201",
+  "tenantId": "t_zut",
+  "departmentId": "d_zut_ict",
+  "code": "ICT 2201",
+  "name": "Database Systems",
+  "yearLevel": 2
+ },
+ {
+  "id": "c_ict2205",
+  "tenantId": "t_zut",
+  "departmentId": "d_zut_ict",
+  "code": "ICT 2205",
+  "name": "Data Structures and Algorithms",
+  "yearLevel": 2
+ },
+ {
+  "id": "c_ict3301",
+  "tenantId": "t_zut",
+  "departmentId": "d_zut_ict",
+  "code": "ICT 3301",
+  "name": "Computer Networks",
+  "yearLevel": 3
+ },
+ {
+  "id": "c_bus1102",
+  "tenantId": "t_zut",
+  "departmentId": "d_zut_bus",
+  "code": "BUS 1102",
+  "name": "Principles of Accounting",
+  "yearLevel": 1
+ },
+ {
+  "id": "c_cmp110",
+  "tenantId": "t_nbt",
+  "departmentId": "d_nbt_cmp",
+  "code": "CMP 110",
+  "name": "Programming Fundamentals",
+  "yearLevel": 1
+ },
+ {
+  "id": "c_cmp210",
+  "tenantId": "t_nbt",
+  "departmentId": "d_nbt_cmp",
+  "code": "CMP 210",
+  "name": "Web Development",
+  "yearLevel": 2
+ },
+ {
+  "id": "c_een120",
+  "tenantId": "t_nbt",
+  "departmentId": "d_nbt_een",
+  "code": "EEN 120",
+  "name": "Circuit Theory",
+  "yearLevel": 1
+ }
+]

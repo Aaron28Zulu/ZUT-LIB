@@ -1,0 +1,16 @@
+[
+ {
+  "id": "fb_1",
+  "tenantId": "t_zut",
+  "userId": "u_zut_s03",
+  "message": "Please add ICT 3310 Software Engineering past papers.",
+  "createdAt": "2026-10-15T08:00:00Z"
+ },
+ {
+  "id": "fb_2",
+  "tenantId": "t_zut",
+  "userId": "u_zut_s07",
+  "message": "The QR collection was quick. Could loans be 10 days during exams?",
+  "createdAt": "2026-10-18T08:00:00Z"
+ }
+]

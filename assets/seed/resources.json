@@ -1,0 +1,838 @@
+[
+ {
+  "id": "r_ict1101_2021_final",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "title": "ICT 1101 Introduction to Programming - Final examination 2021",
+  "academicYear": 2021,
+  "semester": 1,
+  "paperType": "final",
+  "lecturer": "Mr B. Kalaba",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "Arrays",
+   "Control structures",
+   "Functions",
+   "Problem solving"
+  ],
+  "fileAsset": "assets/papers/r_ict1101_2021_final.pdf",
+  "hasMemo": false,
+  "summary": {
+   "overview": "4 sections covering Arrays, Control structures, Functions and Problem solving. Answer all questions; 180 minutes.",
+   "topics": [
+    "Arrays",
+    "Control structures",
+    "Functions",
+    "Problem solving"
+   ],
+   "questionTypes": [
+    "Multiple choice",
+    "Short answer",
+    "True/false",
+    "Structured / essay"
+   ],
+   "markDistribution": [
+    {
+     "section": "Question 1: Arrays",
+     "marks": 25
+    },
+    {
+     "section": "Question 2: Control structures",
+     "marks": 25
+    },
+    {
+     "section": "Question 3: Functions",
+     "marks": 25
+    },
+    {
+     "section": "Question 4: Problem solving",
+     "marks": 25
+    }
+   ]
+  },
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-06-08T08:00:00Z"
+ },
+ {
+  "id": "r_ict1101_2023_final",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "title": "ICT 1101 Introduction to Programming - Final examination 2023",
+  "academicYear": 2023,
+  "semester": 1,
+  "paperType": "final",
+  "lecturer": "Mr B. Kalaba",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "Arrays",
+   "Control structures",
+   "Problem solving"
+  ],
+  "fileAsset": "assets/papers/r_ict1101_2023_final.pdf",
+  "hasMemo": true,
+  "summary": {
+   "overview": "3 sections covering Arrays, Control structures and Problem solving. Answer all questions; 180 minutes.",
+   "topics": [
+    "Arrays",
+    "Control structures",
+    "Problem solving"
+   ],
+   "questionTypes": [
+    "Multiple choice",
+    "Short answer",
+    "True/false",
+    "Structured / essay"
+   ],
+   "markDistribution": [
+    {
+     "section": "Question 1: Arrays",
+     "marks": 34
+    },
+    {
+     "section": "Question 2: Control structures",
+     "marks": 33
+    },
+    {
+     "section": "Question 3: Problem solving",
+     "marks": 33
+    }
+   ]
+  },
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-03-11T08:00:00Z"
+ },
+ {
+  "id": "r_ict1101_2024_mid",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "title": "ICT 1101 Introduction to Programming - Mid-semester test 2024",
+  "academicYear": 2024,
+  "semester": 1,
+  "paperType": "mid",
+  "lecturer": "Ms C. Ngulube",
+  "durationMinutes": 90,
+  "totalMarks": 50,
+  "topics": [
+   "Arrays",
+   "Control structures",
+   "Functions",
+   "Problem solving"
+  ],
+  "fileAsset": "assets/papers/r_ict1101_2024_mid.pdf",
+  "hasMemo": false,
+  "summary": {
+   "overview": "4 sections covering Arrays, Control structures, Functions and Problem solving. Answer all questions; 90 minutes.",
+   "topics": [
+    "Arrays",
+    "Control structures",
+    "Functions",
+    "Problem solving"
+   ],
+   "questionTypes": [
+    "Multiple choice",
+    "True/false",
+    "Structured / essay"
+   ],
+   "markDistribution": [
+    {
+     "section": "Question 1: Arrays",
+     "marks": 14
+    },
+    {
+     "section": "Question 2: Control structures",
+     "marks": 12
+    },
+    {
+     "section": "Question 3: Functions",
+     "marks": 12
+    },
+    {
+     "section": "Question 4: Problem solving",
+     "marks": 12
+    }
+   ]
+  },
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-05-30T08:00:00Z"
+ },
+ {
+  "id": "r_ict2201_2019_final",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "title": "ICT 2201 Database Systems - Final examination 2019",
+  "academicYear": 2019,
+  "semester": 2,
+  "paperType": "final",
+  "lecturer": "Dr M. Sinkala",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "ER modelling",
+   "Normalisation",
+   "Relational model",
+   "Transactions"
+  ],
+  "fileAsset": "assets/papers/r_ict2201_2019_final.pdf",
+  "hasMemo": false,
+  "summary": {
+   "overview": "4 sections covering ER modelling, Normalisation, Relational model and Transactions. Answer all questions; 180 minutes.",
+   "topics": [
+    "ER modelling",
+    "Normalisation",
+    "Relational model",
+    "Transactions"
+   ],
+   "questionTypes": [
+    "Multiple choice",
+    "Short answer",
+    "True/false",
+    "Structured / essay"
+   ],
+   "markDistribution": [
+    {
+     "section": "Question 1: ER modelling",
+     "marks": 25
+    },
+    {
+     "section": "Question 2: Normalisation",
+     "marks": 25
+    },
+    {
+     "section": "Question 3: Relational model",
+     "marks": 25
+    },
+    {
+     "section": "Question 4: Transactions",
+     "marks": 25
+    }
+   ]
+  },
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-05-10T08:00:00Z"
+ },
+ {
+  "id": "r_ict2201_2021_supp",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "title": "ICT 2201 Database Systems - Supplementary 2021",
+  "academicYear": 2021,
+  "semester": 2,
+  "paperType": "supp",
+  "lecturer": "Dr M. Sinkala",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "Relational model",
+   "SQL",
+   "Transactions"
+  ],
+  "fileAsset": "assets/papers/r_ict2201_2021_supp.pdf",
+  "hasMemo": false,
+  "summary": {
+   "overview": "3 sections covering Relational model, SQL and Transactions. Answer all questions; 180 minutes.",
+   "topics": [
+    "Relational model",
+    "SQL",
+    "Transactions"
+   ],
+   "questionTypes": [
+    "Multiple choice",
+    "Short answer",
+    "True/false",
+    "Structured / essay"
+   ],
+   "markDistribution": [
+    {
+     "section": "Question 1: Relational model",
+     "marks": 34
+    },
+    {
+     "section": "Question 2: SQL",
+     "marks": 33
+    },
+    {
+     "section": "Question 3: Transactions",
+     "marks": 33
+    }
+   ]
+  },
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-06-24T08:00:00Z"
+ },
+ {
+  "id": "r_ict2201_2023_final",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "title": "ICT 2201 Database Systems - Final examination 2023",
+  "academicYear": 2023,
+  "semester": 2,
+  "paperType": "final",
+  "lecturer": "Dr M. Sinkala",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "ER modelling",
+   "Relational model",
+   "SQL",
+   "Transactions"
+  ],
+  "fileAsset": "assets/papers/r_ict2201_2023_final.pdf",
+  "hasMemo": true,
+  "summary": {
+   "overview": "4 sections covering ER modelling, Relational model, SQL and Transactions. Answer all questions; 180 minutes.",
+   "topics": [
+    "ER modelling",
+    "Relational model",
+    "SQL",
+    "Transactions"
+   ],
+   "questionTypes": [
+    "Multiple choice",
+    "Short answer",
+    "True/false",
+    "Structured / essay"
+   ],
+   "markDistribution": [
+    {
+     "section": "Question 1: ER modelling",
+     "marks": 25
+    },
+    {
+     "section": "Question 2: Relational model",
+     "marks": 25
+    },
+    {
+     "section": "Question 3: SQL",
+     "marks": 25
+    },
+    {
+     "section": "Question 4: Transactions",
+     "marks": 25
+    }
+   ]
+  },
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-08-31T08:00:00Z"
+ },
+ {
+  "id": "r_ict2201_2024_final",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "title": "ICT 2201 Database Systems - Final examination 2024",
+  "academicYear": 2024,
+  "semester": 2,
+  "paperType": "final",
+  "lecturer": "Mr K. Mwape",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "ER modelling",
+   "Normalisation",
+   "Transactions"
+  ],
+  "fileAsset": "assets/papers/r_ict2201_2024_final.pdf",
+  "hasMemo": true,
+  "summary": {
+   "overview": "3 sections covering ER modelling, Normalisation and Transactions. Answer all questions; 180 minutes.",
+   "topics": [
+    "ER modelling",
+    "Normalisation",
+    "Transactions"
+   ],
+   "questionTypes": [
+    "Multiple choice",
+    "Short answer",
+    "True/false",
+    "Structured / essay"
+   ],
+   "markDistribution": [
+    {
+     "section": "Question 1: ER modelling",
+     "marks": 34
+    },
+    {
+     "section": "Question 2: Normalisation",
+     "marks": 33
+    },
+    {
+     "section": "Question 3: Transactions",
+     "marks": 33
+    }
+   ]
+  },
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-01-20T08:00:00Z"
+ },
+ {
+  "id": "r_ict2205_2020_final",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "title": "ICT 2205 Data Structures and Algorithms - Final examination 2020",
+  "academicYear": 2020,
+  "semester": 1,
+  "paperType": "final",
+  "lecturer": "Mrs J. Chibwe",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "Complexity",
+   "Linked lists",
+   "Sorting"
+  ],
+  "fileAsset": "assets/papers/r_ict2205_2020_final.pdf",
+  "hasMemo": false,
+  "summary": {
+   "overview": "3 sections covering Complexity, Linked lists and Sorting. Answer all questions; 180 minutes.",
+   "topics": [
+    "Complexity",
+    "Linked lists",
+    "Sorting"
+   ],
+   "questionTypes": [
+    "Multiple choice",
+    "Short answer",
+    "True/false",
+    "Structured / essay"
+   ],
+   "markDistribution": [
+    {
+     "section": "Question 1: Complexity",
+     "marks": 34
+    },
+    {
+     "section": "Question 2: Linked lists",
+     "marks": 33
+    },
+    {
+     "section": "Question 3: Sorting",
+     "marks": 33
+    }
+   ]
+  },
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-01-16T08:00:00Z"
+ },
+ {
+  "id": "r_ict2205_2022_final",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "title": "ICT 2205 Data Structures and Algorithms - Final examination 2022",
+  "academicYear": 2022,
+  "semester": 1,
+  "paperType": "final",
+  "lecturer": "Mrs J. Chibwe",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "Linked lists",
+   "Sorting",
+   "Trees"
+  ],
+  "fileAsset": "assets/papers/r_ict2205_2022_final.pdf",
+  "hasMemo": true,
+  "summary": {
+   "overview": "3 sections covering Linked lists, Sorting and Trees. Answer all questions; 180 minutes.",
+   "topics": [
+    "Linked lists",
+    "Sorting",
+    "Trees"
+   ],
+   "questionTypes": [
+    "Multiple choice",
+    "Short answer",
+    "True/false",
+    "Structured / essay"
+   ],
+   "markDistribution": [
+    {
+     "section": "Question 1: Linked lists",
+     "marks": 34
+    },
+    {
+     "section": "Question 2: Sorting",
+     "marks": 33
+    },
+    {
+     "section": "Question 3: Trees",
+     "marks": 33
+    }
+   ]
+  },
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-07-13T08:00:00Z"
+ },
+ {
+  "id": "r_ict2205_2025_mid",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "title": "ICT 2205 Data Structures and Algorithms - Mid-semester test 2025",
+  "academicYear": 2025,
+  "semester": 1,
+  "paperType": "mid",
+  "lecturer": "Mrs J. Chibwe",
+  "durationMinutes": 90,
+  "totalMarks": 50,
+  "topics": [
+   "Linked lists",
+   "Stacks and queues",
+   "Trees"
+  ],
+  "fileAsset": "assets/papers/r_ict2205_2025_mid.pdf",
+  "hasMemo": false,
+  "summary": {
+   "overview": "3 sections covering Linked lists, Stacks and queues and Trees. Answer all questions; 90 minutes.",
+   "topics": [
+    "Linked lists",
+    "Stacks and queues",
+    "Trees"
+   ],
+   "questionTypes": [
+    "Multiple choice",
+    "Short answer",
+    "True/false",
+    "Structured / essay"
+   ],
+   "markDistribution": [
+    {
+     "section": "Question 1: Linked lists",
+     "marks": 18
+    },
+    {
+     "section": "Question 2: Stacks and queues",
+     "marks": 16
+    },
+    {
+     "section": "Question 3: Trees",
+     "marks": 16
+    }
+   ]
+  },
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-08-27T08:00:00Z"
+ },
+ {
+  "id": "r_ict3301_2022_final",
+  "tenantId": "t_zut",
+  "courseId": "c_ict3301",
+  "title": "ICT 3301 Computer Networks - Final examination 2022",
+  "academicYear": 2022,
+  "semester": 2,
+  "paperType": "final",
+  "lecturer": "Mr L. Mutale",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "IP addressing",
+   "Routing",
+   "TCP and UDP"
+  ],
+  "fileAsset": "assets/papers/r_ict3301_2022_final.pdf",
+  "hasMemo": false,
+  "summary": null,
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-06-16T08:00:00Z"
+ },
+ {
+  "id": "r_ict3301_2024_final",
+  "tenantId": "t_zut",
+  "courseId": "c_ict3301",
+  "title": "ICT 3301 Computer Networks - Final examination 2024",
+  "academicYear": 2024,
+  "semester": 2,
+  "paperType": "final",
+  "lecturer": "Mr L. Mutale",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "IP addressing",
+   "Network security",
+   "OSI model"
+  ],
+  "fileAsset": "assets/papers/r_ict3301_2024_final.pdf",
+  "hasMemo": false,
+  "summary": null,
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-07-12T08:00:00Z"
+ },
+ {
+  "id": "r_bus1102_2021_final",
+  "tenantId": "t_zut",
+  "courseId": "c_bus1102",
+  "title": "BUS 1102 Principles of Accounting - Final examination 2021",
+  "academicYear": 2021,
+  "semester": 1,
+  "paperType": "final",
+  "lecturer": "Mrs P. Nyirenda",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "Double entry",
+   "Final accounts",
+   "Trial balance"
+  ],
+  "fileAsset": "assets/papers/r_bus1102_2021_final.pdf",
+  "hasMemo": false,
+  "summary": null,
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-09-17T08:00:00Z"
+ },
+ {
+  "id": "r_bus1102_2023_assignment",
+  "tenantId": "t_zut",
+  "courseId": "c_bus1102",
+  "title": "BUS 1102 Principles of Accounting - Assignment 2023",
+  "academicYear": 2023,
+  "semester": 1,
+  "paperType": "assignment",
+  "lecturer": "Mrs P. Nyirenda",
+  "durationMinutes": null,
+  "totalMarks": 40,
+  "topics": [
+   "Double entry",
+   "Final accounts",
+   "Trial balance"
+  ],
+  "fileAsset": "assets/papers/r_bus1102_2023_assignment.pdf",
+  "hasMemo": false,
+  "summary": null,
+  "archived": false,
+  "uploadedBy": "u_zut_mary",
+  "uploadedAt": "2026-02-19T08:00:00Z"
+ },
+ {
+  "id": "r_cmp110_2020_final",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "title": "CMP 110 Programming Fundamentals - Final examination 2020",
+  "academicYear": 2020,
+  "semester": 1,
+  "paperType": "final",
+  "lecturer": "Mr T. Hamoonga",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "Data structures intro",
+   "Iteration",
+   "Programming basics"
+  ],
+  "fileAsset": "assets/papers/r_cmp110_2020_final.pdf",
+  "hasMemo": false,
+  "summary": {
+   "overview": "3 sections covering Data structures intro, Iteration and Programming basics. Answer all questions; 180 minutes.",
+   "topics": [
+    "Data structures intro",
+    "Iteration",
+    "Programming basics"
+   ],
+   "questionTypes": [
+    "Multiple choice",
+    "Short answer",
+    "True/false",
+    "Structured / essay"
+   ],
+   "markDistribution": [
+    {
+     "section": "Question 1: Data structures intro",
+     "marks": 34
+    },
+    {
+     "section": "Question 2: Iteration",
+     "marks": 33
+    },
+    {
+     "section": "Question 3: Programming basics",
+     "marks": 33
+    }
+   ]
+  },
+  "archived": false,
+  "uploadedBy": "u_nbt_grace",
+  "uploadedAt": "2026-07-29T08:00:00Z"
+ },
+ {
+  "id": "r_cmp110_2023_final",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "title": "CMP 110 Programming Fundamentals - Final examination 2023",
+  "academicYear": 2023,
+  "semester": 1,
+  "paperType": "final",
+  "lecturer": "Mr T. Hamoonga",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "Iteration",
+   "Operators and expressions",
+   "Programming basics"
+  ],
+  "fileAsset": "assets/papers/r_cmp110_2023_final.pdf",
+  "hasMemo": true,
+  "summary": {
+   "overview": "3 sections covering Iteration, Operators and expressions and Programming basics. Answer all questions; 180 minutes.",
+   "topics": [
+    "Iteration",
+    "Operators and expressions",
+    "Programming basics"
+   ],
+   "questionTypes": [
+    "Multiple choice",
+    "Short answer",
+    "True/false",
+    "Structured / essay"
+   ],
+   "markDistribution": [
+    {
+     "section": "Question 1: Iteration",
+     "marks": 34
+    },
+    {
+     "section": "Question 2: Operators and expressions",
+     "marks": 33
+    },
+    {
+     "section": "Question 3: Programming basics",
+     "marks": 33
+    }
+   ]
+  },
+  "archived": false,
+  "uploadedBy": "u_nbt_grace",
+  "uploadedAt": "2026-06-23T08:00:00Z"
+ },
+ {
+  "id": "r_cmp110_2024_mid",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "title": "CMP 110 Programming Fundamentals - Mid-semester test 2024",
+  "academicYear": 2024,
+  "semester": 2,
+  "paperType": "mid",
+  "lecturer": "Ms R. Phiri",
+  "durationMinutes": 90,
+  "totalMarks": 50,
+  "topics": [
+   "Iteration",
+   "Operators and expressions",
+   "Selection"
+  ],
+  "fileAsset": "assets/papers/r_cmp110_2024_mid.pdf",
+  "hasMemo": false,
+  "summary": {
+   "overview": "3 sections covering Iteration, Operators and expressions and Selection. Answer all questions; 90 minutes.",
+   "topics": [
+    "Iteration",
+    "Operators and expressions",
+    "Selection"
+   ],
+   "questionTypes": [
+    "Multiple choice",
+    "Short answer",
+    "True/false",
+    "Structured / essay"
+   ],
+   "markDistribution": [
+    {
+     "section": "Question 1: Iteration",
+     "marks": 18
+    },
+    {
+     "section": "Question 2: Operators and expressions",
+     "marks": 16
+    },
+    {
+     "section": "Question 3: Selection",
+     "marks": 16
+    }
+   ]
+  },
+  "archived": false,
+  "uploadedBy": "u_nbt_grace",
+  "uploadedAt": "2026-09-28T08:00:00Z"
+ },
+ {
+  "id": "r_cmp210_2022_final",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp210",
+  "title": "CMP 210 Web Development - Final examination 2022",
+  "academicYear": 2022,
+  "semester": 2,
+  "paperType": "final",
+  "lecturer": "Mr D. Banda",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "CSS layout",
+   "HTML",
+   "HTTP",
+   "JavaScript"
+  ],
+  "fileAsset": "assets/papers/r_cmp210_2022_final.pdf",
+  "hasMemo": false,
+  "summary": null,
+  "archived": false,
+  "uploadedBy": "u_nbt_grace",
+  "uploadedAt": "2026-02-23T08:00:00Z"
+ },
+ {
+  "id": "r_cmp210_2025_notes",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp210",
+  "title": "CMP 210 Web Development - Notes 2025",
+  "academicYear": 2025,
+  "semester": 1,
+  "paperType": "notes",
+  "lecturer": "Mr D. Banda",
+  "durationMinutes": null,
+  "totalMarks": null,
+  "topics": [
+   "CSS layout",
+   "HTML",
+   "HTTP",
+   "JavaScript"
+  ],
+  "fileAsset": "assets/papers/r_cmp210_2025_notes.pdf",
+  "hasMemo": false,
+  "summary": null,
+  "archived": false,
+  "uploadedBy": "u_nbt_grace",
+  "uploadedAt": "2026-01-29T08:00:00Z"
+ },
+ {
+  "id": "r_een120_2023_final",
+  "tenantId": "t_nbt",
+  "courseId": "c_een120",
+  "title": "EEN 120 Circuit Theory - Final examination 2023",
+  "academicYear": 2023,
+  "semester": 1,
+  "paperType": "final",
+  "lecturer": "Eng. S. Mulenga",
+  "durationMinutes": 180,
+  "totalMarks": 100,
+  "topics": [
+   "AC circuits",
+   "Ohm's law",
+   "Thevenin's theorem"
+  ],
+  "fileAsset": "assets/papers/r_een120_2023_final.pdf",
+  "hasMemo": false,
+  "summary": null,
+  "archived": false,
+  "uploadedBy": "u_nbt_grace",
+  "uploadedAt": "2026-02-27T08:00:00Z"
+ }
+]
