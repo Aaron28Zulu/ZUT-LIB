@@ -51,6 +51,21 @@ class _SignInScreenState extends State<SignInScreen> {
     }
   }
 
+  Future<void> _signInWithGoogle() async {
+    setState(() {
+      _busy = true;
+      _error = null;
+    });
+    try {
+      final user = await context.read<AppState>().auth.signInWithGoogle(widget.tenantId);
+      if (user != null && mounted) context.read<AppState>().runScheduledJobs();
+    } on AppException catch (e) {
+      if (mounted) setState(() => _error = e.message);
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final app = context.read<AppState>();
@@ -106,6 +121,14 @@ class _SignInScreenState extends State<SignInScreen> {
               onPressed: _busy ? null : () => _signIn(_email.text, _password.text),
               child: const Text('Sign in'),
             ),
+            if (app.auth.googleSignInAvailable && !isPlatform) ...[
+              const SizedBox(height: Space.s),
+              OutlinedButton.icon(
+                onPressed: _busy ? null : _signInWithGoogle,
+                icon: const Icon(AppIcons.signIn, size: 18),
+                label: const Text('Continue with Google'),
+              ),
+            ],
             if (!isPlatform) ...[
               const SizedBox(height: Space.s),
               TextButton(

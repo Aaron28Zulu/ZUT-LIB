@@ -7,9 +7,12 @@ import '../auth_service.dart';
 import 'mock_context.dart';
 
 class MockAuthService implements AuthService {
-  MockAuthService(this._ctx);
+  MockAuthService(this._ctx, {this.identity});
 
   final MockContext _ctx;
+
+  /// Google sign-in; null in the offline build.
+  final IdentityProvider? identity;
 
   static const _incorrect = 'Incorrect email or password';
 
@@ -50,6 +53,50 @@ class MockAuthService implements AuthService {
     if (user == null || user.passwordHash != hashPassword(password)) {
       throw const AuthException(_incorrect);
     }
+    return _startSession(user);
+  }
+
+  @override
+  bool get googleSignInAvailable => identity != null;
+
+  @override
+  Future<AppUser?> signInWithGoogle(String tenantId) async {
+    final identity = this.identity;
+    if (identity == null) {
+      throw const AuthException('Google sign-in is only available in the cloud version of the app.');
+    }
+    if (tenantId == platformTenantId) {
+      throw const AuthException('Platform administrators sign in with email and password.');
+    }
+    if (!_ctx.store.tenants.any((t) => t.id == tenantId)) {
+      throw const NotFoundException('This institution is no longer available.');
+    }
+    final google = await identity.signInWithGoogle();
+    if (google == null) return null;
+    final email = google.email.trim().toLowerCase();
+    // Lookup is scoped to the chosen tenant (FR-TEN-02), so a Google account
+    // used at one institution never opens an account at another.
+    final existing = _ctx.store.userByEmailInTenant(tenantId, email);
+    if (existing != null) return _startSession(existing);
+
+    // SRS-QUESTION: FR-AUTH-04 collects student number, department and year
+    // at registration. Google accounts start without them and are always
+    // students; staff roles are still granted only by an administrator.
+    final user = AppUser(
+      id: newId('u'),
+      tenantId: tenantId,
+      fullName: google.displayName.trim().isEmpty ? email.split('@').first : google.displayName.trim(),
+      email: email,
+      // No password hash matches an empty string, so password sign-in stays closed.
+      passwordHash: '',
+      role: Role.student,
+      roleGrantedAt: Clock.now(),
+    );
+    _ctx.store.users.add(user);
+    return _startSession(user);
+  }
+
+  AppUser _startSession(AppUser user) {
     if (!user.active) {
       throw const AuthException(
           'This account has been deactivated. Contact your institution administrator.');
@@ -106,6 +153,7 @@ class MockAuthService implements AuthService {
 
   @override
   Future<void> signOut() async {
+    await identity?.signOut();
     _ctx.currentUser = null;
     _ctx.store.commit();
   }
