@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../../core/theme.dart';
 import '../../state/app_state.dart';
 import '../../widgets/actions.dart';
+import '../../widgets/common.dart';
 
 /// FR-ADM-06
 class FeedbackScreen extends StatefulWidget {
@@ -28,7 +29,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
     final app = context.read<AppState>();
     return Scaffold(
       appBar: AppBar(title: const Text('Send feedback')),
-      body: ListView(
+      body: Readable(child: ListView(
         padding: const EdgeInsets.all(Space.l),
         children: [
           const Text('Tell your library what is missing or what could work better. Administrators at your institution read this.'),
@@ -53,7 +54,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
             child: const Text('Send'),
           ),
         ],
-      ),
+      )),
     );
   }
 }

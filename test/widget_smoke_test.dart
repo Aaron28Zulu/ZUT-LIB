@@ -6,6 +6,10 @@ import 'package:zutlib/core/clock.dart';
 import 'package:zutlib/data/storage.dart';
 import 'package:zutlib/services/mock/mock_notification_service.dart';
 import 'package:zutlib/state/app_state.dart';
+import 'package:zutlib/screens/common/paper_details_screen.dart';
+import 'package:zutlib/screens/student/home_tab.dart';
+import 'package:zutlib/screens/student/study_tab.dart';
+import 'package:zutlib/widgets/resource_tile.dart';
 
 /// Clicks through each role's screens on a phone-sized surface. Any layout
 /// overflow or exception fails the test (NFR-06 checks 1.3x text too).
@@ -22,11 +26,16 @@ Future<AppState> _pumpApp(WidgetTester tester, {double textScale = 1}) async {
   return app;
 }
 
+/// The outermost list inside [of]; shelves add horizontal scrollables below it.
+Finder _vertical([Finder? of]) =>
+    (of == null ? find.byType(Scrollable) : find.descendant(of: of, matching: find.byType(Scrollable))).first;
+
 Future<void> _signIn(WidgetTester tester, String institution, String quickLabel) async {
   if (find.text('Skip').evaluate().isNotEmpty) {
     await tester.tap(find.text('Skip'));
     await tester.pumpAndSettle();
   }
+  await tester.scrollUntilVisible(find.text(institution), 200, scrollable: _vertical());
   await tester.tap(find.text(institution));
   await tester.pumpAndSettle();
   final button = find.textContaining(quickLabel);
@@ -58,7 +67,7 @@ void main() {
     testWidgets('student screens render at ${scale}x text', (tester) async {
       await _pumpApp(tester, textScale: scale);
       await _signIn(tester, 'Zambia University College of Technology', 'Chanda Mwila');
-      expect(find.text('Recommended papers'), findsOneWidget);
+      expect(find.text('Recommended for you'), findsOneWidget);
 
       for (final tab in ['Search', 'Study', 'Loans', 'Profile', 'Home']) {
         await tester.tap(find.descendant(of: find.byType(NavigationBar), matching: find.text(tab)));
@@ -66,10 +75,15 @@ void main() {
       }
 
       // Paper details from a recommendation.
-      await tester.tap(find.byType(ListTile).first);
+      await tester.scrollUntilVisible(find.text('Your loans'), 200, scrollable: _vertical(find.byType(HomeTab)));
+      final card = find.byType(ResourceCard).first;
+      await tester.ensureVisible(card);
       await tester.pumpAndSettle();
-      await tester.scrollUntilVisible(find.text('Assistant summary'), 200);
-      expect(find.text('Assistant summary'), findsOneWidget);
+      await tester.tap(card);
+      await tester.pumpAndSettle();
+      final summary = find.text('About this paper');
+      await tester.scrollUntilVisible(summary, 200, scrollable: _vertical(find.byType(PaperDetailsScreen)));
+      expect(summary, findsOneWidget);
       await tester.pageBack();
       await tester.pumpAndSettle();
 
@@ -77,15 +91,23 @@ void main() {
       await tester.tap(find.descendant(of: find.byType(NavigationBar), matching: find.text('Study')));
       await tester.pumpAndSettle();
       for (final item in ['Practice quiz', 'Flashcards', 'Revision plan', 'Progress', 'Ask the assistant']) {
-        await tester.tap(find.text(item).first);
+        // `.last`: the progress row above the tools also reads "Revision plan".
+        final tool = find.descendant(of: find.byType(StudyTab), matching: find.text(item)).last;
+        await tester.ensureVisible(tool);
+        await tester.tap(tool);
         await tester.pumpAndSettle();
         await tester.pageBack();
         await tester.pumpAndSettle();
       }
 
-      // A full quiz.
-      await tester.tap(find.text('Practice quiz'));
+      // A full quiz. The tool list was scrolled down by the loop above.
+      final quizTool = find.descendant(of: find.byType(StudyTab), matching: find.text('Practice quiz'));
+      await tester.scrollUntilVisible(quizTool, -200, scrollable: _vertical(find.byType(StudyTab)));
+      await tester.ensureVisible(quizTool);
       await tester.pumpAndSettle();
+      await tester.tap(quizTool);
+      await tester.pumpAndSettle();
+      await tester.ensureVisible(find.text('Start quiz'));
       await tester.tap(find.text('Start quiz'));
       await tester.pumpAndSettle();
       for (var i = 0; i < 5; i++) {

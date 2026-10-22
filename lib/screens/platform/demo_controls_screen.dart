@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/format.dart';
 import '../../core/theme.dart';
 import '../../state/app_state.dart';
@@ -69,7 +70,7 @@ class DemoControlsScreen extends StatelessWidget {
         ),
         const SectionHeader('Data'),
         ListTile(
-          leading: Icon(Icons.restart_alt, color: Theme.of(context).colorScheme.error),
+          leading: Icon(AppIcons.reset, color: Theme.of(context).colorScheme.error),
           title: const Text('Reset demo data'),
           subtitle: const Text('Restore the seed state. Removes every loan, upload, quiz attempt and account created during the demo.'),
           onTap: () async {

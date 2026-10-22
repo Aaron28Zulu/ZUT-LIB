@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/format.dart';
 import '../../core/theme.dart';
 import '../../state/app_state.dart';
@@ -21,7 +22,7 @@ class RoleReviewScreen extends StatelessWidget {
           padding: EdgeInsets.all(Space.l),
           child: Text('Review who holds librarian and administrator roles. Revoke roles that are no longer needed.'),
         ),
-        if (staff.isEmpty) const EmptyState(icon: Icons.verified_user_outlined, message: 'No staff roles at this institution.'),
+        if (staff.isEmpty) const EmptyState(icon: AppIcons.roleReview, message: 'No staff roles at this institution.'),
         for (final u in staff)
           ListTile(
             title: Text(u.fullName),

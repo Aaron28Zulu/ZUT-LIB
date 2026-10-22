@@ -21,7 +21,7 @@ class SettingsScreen extends StatelessWidget {
     };
     return Scaffold(
       appBar: AppBar(title: const Text('Settings')),
-      body: ListView(
+      body: Readable(child: ListView(
         children: [
           if (categories.isNotEmpty) const SectionHeader('Notifications'),
           for (final c in categories)
@@ -40,7 +40,7 @@ class SettingsScreen extends StatelessWidget {
             ),
           ),
         ],
-      ),
+      )),
     );
   }
 }

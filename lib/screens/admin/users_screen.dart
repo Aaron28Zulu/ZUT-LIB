@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/format.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
@@ -28,16 +29,16 @@ class _UsersScreenState extends State<UsersScreen> {
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
         heroTag: 'add-user',
-        icon: const Icon(Icons.person_add_alt),
+        icon: const Icon(AppIcons.userAdd),
         label: const Text('Add user'),
         onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const _AddUserScreen())),
       ),
-      body: Column(
+      body: Readable(child: Column(
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(Space.l, Space.l, Space.l, Space.s),
             child: TextField(
-              decoration: const InputDecoration(prefixIcon: Icon(Icons.search), labelText: 'Search name, email or student number'),
+              decoration: const InputDecoration(prefixIcon: Icon(AppIcons.search), labelText: 'Search name, email or student number'),
               onChanged: (v) => setState(() => _query = v),
             ),
           ),
@@ -55,7 +56,7 @@ class _UsersScreenState extends State<UsersScreen> {
           ),
           Expanded(
             child: users.isEmpty
-                ? const EmptyState(icon: Icons.person_search_outlined, message: 'No users match.')
+                ? const EmptyState(icon: AppIcons.userSearch, message: 'No users match.')
                 : ListView.builder(
                     padding: const EdgeInsets.only(bottom: 88),
                     itemCount: users.length,
@@ -69,14 +70,14 @@ class _UsersScreenState extends State<UsersScreen> {
                           if (!u.active) 'Deactivated',
                           if (u.pendingRole != null) 'Becomes ${u.pendingRole!.label.toLowerCase()} at next sign-in',
                         ].join(' · ')),
-                        trailing: const Icon(Icons.chevron_right),
+                        trailing: const Icon(AppIcons.next),
                         onTap: () => _showUser(context, u.id),
                       );
                     },
                   ),
           ),
         ],
-      ),
+      )),
     );
   }
 
@@ -174,7 +175,7 @@ class _AddUserScreenState extends State<_AddUserScreen> {
     const gap = SizedBox(height: Space.m);
     return Scaffold(
       appBar: AppBar(title: const Text('Add user')),
-      body: ListView(
+      body: Readable(child: ListView(
         padding: const EdgeInsets.all(Space.l),
         children: [
           DropdownButtonFormField<Role>(
@@ -236,7 +237,7 @@ class _AddUserScreenState extends State<_AddUserScreen> {
             child: const Text('Add user'),
           ),
         ],
-      ),
+      )),
     );
   }
 }

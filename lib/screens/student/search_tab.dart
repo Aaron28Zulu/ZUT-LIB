@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
 import '../../services/resource_service.dart';
@@ -115,12 +116,12 @@ class _SearchTabState extends State<SearchTab> {
           child: SearchBar(
             controller: _controller,
             hintText: 'Course code, name or topic',
-            leading: const Icon(Icons.search),
+            leading: const Icon(AppIcons.search),
             trailing: [
               if (_controller.text.isNotEmpty)
                 IconButton(
                   tooltip: 'Clear search',
-                  icon: const Icon(Icons.close),
+                  icon: const Icon(AppIcons.close),
                   onPressed: () {
                     _controller.clear();
                     setState(() => _query = _query.copyWith(text: ''));
@@ -138,7 +139,7 @@ class _SearchTabState extends State<SearchTab> {
             spacing: Space.s,
             children: [
               ActionChip(
-                avatar: const Icon(Icons.account_tree_outlined, size: 18),
+                avatar: const Icon(AppIcons.courses, size: 18),
                 label: const Text('Browse'),
                 onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const BrowseScreen())),
               ),
@@ -187,7 +188,7 @@ class _SearchTabState extends State<SearchTab> {
                 initialValue: _query.sort,
                 onSelected: (s) => setState(() => _query = _query.copyWith(sort: s)),
                 itemBuilder: (_) => [for (final s in SortOrder.values) PopupMenuItem(value: s, child: Text(s.label))],
-                child: Chip(avatar: const Icon(Icons.sort, size: 18), label: Text(_query.sort.label)),
+                child: Chip(avatar: const Icon(AppIcons.sort, size: 18), label: Text(_query.sort.label)),
               ),
             ],
           ),
@@ -204,7 +205,7 @@ class _SearchTabState extends State<SearchTab> {
                     const SectionHeader('Recent searches'),
                     for (final term in recent)
                       ListTile(
-                        leading: const Icon(Icons.history),
+                        leading: const Icon(AppIcons.history),
                         title: Text(term),
                         onTap: () {
                           _controller.text = term;
@@ -212,12 +213,15 @@ class _SearchTabState extends State<SearchTab> {
                         },
                       ),
                     const SectionHeader('All papers'),
-                    for (final r in results) ResourceTile(r),
+                    for (final (i, r) in results.indexed) ...[
+                      if (i > 0) const Divider(indent: Space.l, endIndent: Space.l),
+                      ResourceTile(r),
+                    ],
                   ],
                 )
               : results.isEmpty
                   ? EmptyState(
-                      icon: Icons.search_off,
+                      icon: AppIcons.noResults,
                       message: 'No papers match your search.',
                       actionLabel: _query.hasFilters ? 'Clear filters' : null,
                       onAction: () => setState(() => _query = _query.clearFilters()),
@@ -226,10 +230,13 @@ class _SearchTabState extends State<SearchTab> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.fromLTRB(Space.l, Space.s, Space.l, Space.xs),
-                          child: Text('${results.length} ${results.length == 1 ? 'paper' : 'papers'}',
-                              style: Theme.of(context).textTheme.labelLarge),
+                          child: Text('${results.length} ${results.length == 1 ? 'result' : 'results'}',
+                              style: AppText.muted(context)),
                         ),
-                        for (final r in results) ResourceTile(r),
+                        for (final (i, r) in results.indexed) ...[
+                      if (i > 0) const Divider(indent: Space.l, endIndent: Space.l),
+                      ResourceTile(r),
+                    ],
                       ],
                     ),
         ),

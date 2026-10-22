@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/clock.dart';
 import '../../core/format.dart';
 import '../../core/permissions.dart';
@@ -73,7 +74,7 @@ class _LoansListScreenState extends State<LoansListScreen> {
         Expanded(
           child: loans.isEmpty
               ? EmptyState(
-                  icon: Icons.assignment_outlined,
+                  icon: AppIcons.loans,
                   message: _status == null ? 'No loans yet.' : 'No ${_status!.label.toLowerCase()} loans.',
                 )
               : ListView.separated(
@@ -98,10 +99,10 @@ class _LoansListScreenState extends State<LoansListScreen> {
     );
 
     final exportButton = canExport
-        ? IconButton(tooltip: 'Export loans as CSV', icon: const Icon(Icons.download_outlined), onPressed: _export)
+        ? IconButton(tooltip: 'Export loans as CSV', icon: const Icon(AppIcons.download), onPressed: _export)
         : null;
     if (widget.standalone) {
-      return Scaffold(appBar: AppBar(title: const Text('Loans'), actions: [?exportButton]), body: body);
+      return Scaffold(appBar: AppBar(title: const Text('Loans'), actions: [?exportButton]), body: Readable(child: body));
     }
     return Stack(
       children: [
@@ -113,7 +114,7 @@ class _LoansListScreenState extends State<LoansListScreen> {
             child: FloatingActionButton.extended(
               heroTag: 'export',
               onPressed: _export,
-              icon: const Icon(Icons.download_outlined),
+              icon: const Icon(AppIcons.download),
               label: const Text('Export CSV'),
             ),
           ),

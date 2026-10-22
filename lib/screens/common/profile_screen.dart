@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/format.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
@@ -33,13 +34,13 @@ class ProfileScreen extends StatelessWidget {
     final body = ListView(
       children: [
         ListTile(
-          leading: tenant != null ? TenantMark(tenant) : const Icon(Icons.admin_panel_settings_outlined),
+          leading: tenant != null ? TenantMark(tenant) : const Icon(AppIcons.admin),
           title: Text(u.fullName, style: Theme.of(context).textTheme.titleMedium),
           subtitle: Text('${u.role.label}${tenant != null ? ' · ${tenant.shortCode}' : ''}\n${u.email}'),
           isThreeLine: true,
           trailing: IconButton(
             tooltip: 'Edit name',
-            icon: const Icon(Icons.edit_outlined),
+            icon: const Icon(AppIcons.edit),
             onPressed: () async {
               final name = await promptText(context, title: 'Edit name', label: 'Full name', action: 'Save', initial: u.fullName);
               if (name != null && context.mounted) {
@@ -80,28 +81,28 @@ class ProfileScreen extends StatelessWidget {
           ),
           const Divider(),
           ListTile(
-            leading: const Icon(Icons.bookmark_border),
+            leading: const Icon(AppIcons.bookmark),
             title: const Text('Saved papers'),
             onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SavedScreen())),
           ),
           ListTile(
-            leading: const Icon(Icons.rate_review_outlined),
+            leading: const Icon(AppIcons.feedback),
             title: const Text('Send feedback'),
             onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const FeedbackScreen())),
           ),
         ],
         ListTile(
-          leading: const Icon(Icons.settings_outlined),
+          leading: const Icon(AppIcons.settings),
           title: const Text('Settings'),
           onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SettingsScreen())),
         ),
         ListTile(
-          leading: const Icon(Icons.logout),
+          leading: const Icon(AppIcons.signOut),
           title: const Text('Sign out'),
           onTap: () => app.auth.signOut(),
         ),
       ],
     );
-    return embedded ? body : Scaffold(appBar: AppBar(title: const Text('Profile')), body: body);
+    return embedded ? body : Scaffold(appBar: AppBar(title: const Text('Profile')), body: Readable(child: body));
   }
 }

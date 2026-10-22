@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pdfx/pdfx.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/theme.dart';
 import '../../services/resource_service.dart';
 import '../../state/app_state.dart';
@@ -62,7 +63,7 @@ class _PdfViewerScreenState extends State<PdfViewerScreen> {
     return Scaffold(
       appBar: AppBar(title: Text(widget.title, maxLines: 1, overflow: TextOverflow.ellipsis)),
       body: _error != null
-          ? EmptyState(icon: Icons.picture_as_pdf_outlined, message: _error!)
+          ? EmptyState(icon: AppIcons.pdf, message: _error!)
           : controller == null
               ? const Align(alignment: Alignment.topCenter, child: LinearProgressIndicator())
               : PdfViewPinch(
@@ -80,7 +81,7 @@ class _PdfViewerScreenState extends State<PdfViewerScreen> {
                   children: [
                     IconButton(
                       tooltip: 'Previous page',
-                      icon: const Icon(Icons.chevron_left),
+                      icon: const Icon(AppIcons.previous),
                       onPressed: _page > 1 ? () => _go(_page - 1) : null,
                     ),
                     Expanded(
@@ -88,7 +89,7 @@ class _PdfViewerScreenState extends State<PdfViewerScreen> {
                     ),
                     IconButton(
                       tooltip: 'Next page',
-                      icon: const Icon(Icons.chevron_right),
+                      icon: const Icon(AppIcons.next),
                       onPressed: _page < _pages ? () => _go(_page + 1) : null,
                     ),
                   ],

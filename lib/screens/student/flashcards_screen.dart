@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../core/app_icons.dart';
 import '../../core/theme.dart';
 import '../../models/models.dart';
 import '../../services/study_assistant_service.dart';
@@ -16,19 +17,19 @@ class FlashcardCoursePicker extends StatelessWidget {
     final courses = study.enrolledCourses().where((c) => study.flashcardCount(c.id) > 0).toList();
     return Scaffold(
       appBar: AppBar(title: const Text('Flashcards')),
-      body: courses.isEmpty
-          ? const EmptyState(icon: Icons.style_outlined, message: 'None of your courses has flashcards yet.')
+      body: Readable(child: courses.isEmpty
+          ? const EmptyState(icon: AppIcons.flashcards, message: 'None of your courses has flashcards yet.')
           : ListView(
               children: [
                 for (final c in courses)
                   ListTile(
                     title: Text(c.label),
                     subtitle: Text('${study.flashcardCount(c.id)} cards'),
-                    trailing: const Icon(Icons.chevron_right),
+                    trailing: const Icon(AppIcons.next),
                     onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => FlashcardsScreen(course: c))),
                   ),
               ],
-            ),
+            )),
     );
   }
 }
@@ -69,9 +70,9 @@ class _FlashcardsScreenState extends State<FlashcardsScreen> {
     final t = Theme.of(context).textTheme;
     return Scaffold(
       appBar: AppBar(title: Text(widget.course.code)),
-      body: card == null
+      body: Readable(child: card == null
           ? EmptyState(
-              icon: Icons.check_circle_outline,
+              icon: AppIcons.done,
               message: 'Session complete. You reviewed ${_queue.reviewed} cards.',
               actionLabel: 'Done',
               onAction: () => Navigator.pop(context),
@@ -81,21 +82,39 @@ class _FlashcardsScreenState extends State<FlashcardsScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text('${card.topic} · ${_queue.remaining} left', style: AppText.overline(context)),
-                  const SizedBox(height: Space.m),
+                  Text('${card.topic.toUpperCase()} · ${_queue.remaining} LEFT', style: AppText.overline(context)),
+                  const SizedBox(height: Space.s),
+                  ClipRRect(
+                    borderRadius: Radii.tagRadius,
+                    child: LinearProgressIndicator(
+                      value: _queue.reviewed / (_queue.reviewed + _queue.remaining),
+                      semanticsLabel: 'Session progress',
+                    ),
+                  ),
+                  const SizedBox(height: Space.l),
                   Expanded(
                     child: Card(
                       child: InkWell(
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: Radii.panelRadius,
                         onTap: () => setState(() => _showBack = !_showBack),
                         child: Padding(
                           padding: const EdgeInsets.all(Space.xl),
                           child: Center(
                             child: SingleChildScrollView(
-                              child: Text(
-                                _showBack ? card.back : card.front,
-                                textAlign: TextAlign.center,
-                                style: _showBack ? t.bodyLarge : t.headlineSmall,
+                              child: Column(
+                                children: [
+                                  Text(_showBack ? 'ANSWER' : 'TERM', style: AppText.overline(context)),
+                                  const SizedBox(height: Space.m),
+                                  Text(
+                                    _showBack ? card.back : card.front,
+                                    textAlign: TextAlign.center,
+                                    style: _showBack ? t.bodyLarge : t.headlineSmall,
+                                  ),
+                                  if (!_showBack) ...[
+                                    const SizedBox(height: Space.l),
+                                    Text('Tap the card to turn it over', style: t.bodySmall),
+                                  ],
+                                ],
                               ),
                             ),
                           ),
@@ -117,7 +136,7 @@ class _FlashcardsScreenState extends State<FlashcardsScreen> {
                     ),
                 ],
               ),
-            ),
+            )),
     );
   }
 }
