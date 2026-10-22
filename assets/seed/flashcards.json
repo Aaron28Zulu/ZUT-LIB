@@ -1,0 +1,442 @@
+[
+ {
+  "id": "f_c_ict2201_000",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "Candidate key",
+  "back": "A minimal set of attributes that uniquely identifies a tuple; the primary key is chosen from these.",
+  "topic": "Relational model"
+ },
+ {
+  "id": "f_c_ict2201_001",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "Cardinality of a relation",
+  "back": "The number of tuples (rows) it contains.",
+  "topic": "Relational model"
+ },
+ {
+  "id": "f_c_ict2201_002",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "Referential integrity",
+  "back": "Every foreign key value must match an existing primary key value or be NULL.",
+  "topic": "Relational model"
+ },
+ {
+  "id": "f_c_ict2201_003",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "WHERE vs HAVING",
+  "back": "WHERE filters rows before grouping; HAVING filters groups after aggregation.",
+  "topic": "SQL"
+ },
+ {
+  "id": "f_c_ict2201_004",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "INNER JOIN",
+  "back": "Returns only rows with matching values in both tables.",
+  "topic": "SQL"
+ },
+ {
+  "id": "f_c_ict2201_005",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "DDL examples",
+  "back": "CREATE, ALTER, DROP, TRUNCATE.",
+  "topic": "SQL"
+ },
+ {
+  "id": "f_c_ict2201_006",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "DML examples",
+  "back": "SELECT, INSERT, UPDATE, DELETE.",
+  "topic": "SQL"
+ },
+ {
+  "id": "f_c_ict2201_007",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "Functional dependency",
+  "back": "A -> B means each value of A determines exactly one value of B.",
+  "topic": "Normalisation"
+ },
+ {
+  "id": "f_c_ict2201_008",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "Partial dependency",
+  "back": "A non-key attribute depends on part of a composite primary key. Removed in 2NF.",
+  "topic": "Normalisation"
+ },
+ {
+  "id": "f_c_ict2201_009",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "Update anomaly",
+  "back": "The same fact stored in several rows must be changed in all of them, or data becomes inconsistent.",
+  "topic": "Normalisation"
+ },
+ {
+  "id": "f_c_ict2201_010",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "Weak entity",
+  "back": "An entity whose key depends on a related (owner) entity.",
+  "topic": "ER modelling"
+ },
+ {
+  "id": "f_c_ict2201_011",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "Multivalued attribute",
+  "back": "An attribute that can hold several values, such as phone numbers; mapped to its own table.",
+  "topic": "ER modelling"
+ },
+ {
+  "id": "f_c_ict2201_012",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "ACID",
+  "back": "Atomicity, Consistency, Isolation, Durability.",
+  "topic": "Transactions"
+ },
+ {
+  "id": "f_c_ict2201_013",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "Two-phase locking",
+  "back": "A growing phase acquires locks, a shrinking phase releases them; guarantees serialisability.",
+  "topic": "Transactions"
+ },
+ {
+  "id": "f_c_ict2201_014",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2201",
+  "front": "Rollback",
+  "back": "Undo all changes made by the current transaction.",
+  "topic": "Transactions"
+ },
+ {
+  "id": "f_c_ict2205_015",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "O(n log n)",
+  "back": "Typical of efficient comparison sorts such as merge sort and heap sort.",
+  "topic": "Complexity"
+ },
+ {
+  "id": "f_c_ict2205_016",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "Space complexity",
+  "back": "How much extra memory an algorithm needs as input size grows.",
+  "topic": "Complexity"
+ },
+ {
+  "id": "f_c_ict2205_017",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "Amortised analysis",
+  "back": "Average cost per operation over a sequence, e.g. dynamic array append is O(1) amortised.",
+  "topic": "Complexity"
+ },
+ {
+  "id": "f_c_ict2205_018",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "Linked list vs array",
+  "back": "Lists give O(1) insert at known position but O(n) access; arrays give O(1) access but costly inserts.",
+  "topic": "Linked lists"
+ },
+ {
+  "id": "f_c_ict2205_019",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "Sentinel node",
+  "back": "A dummy node that simplifies edge cases at the head or tail.",
+  "topic": "Linked lists"
+ },
+ {
+  "id": "f_c_ict2205_020",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "Circular queue",
+  "back": "A queue in a fixed array where the rear wraps to the start to reuse space.",
+  "topic": "Stacks and queues"
+ },
+ {
+  "id": "f_c_ict2205_021",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "Stack overflow",
+  "back": "Pushing onto a full stack, or recursion too deep for the call stack.",
+  "topic": "Stacks and queues"
+ },
+ {
+  "id": "f_c_ict2205_022",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "Priority queue",
+  "back": "Dequeues the element with the highest priority; usually built on a heap.",
+  "topic": "Stacks and queues"
+ },
+ {
+  "id": "f_c_ict2205_023",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "BST property",
+  "back": "Every key in the left subtree is smaller, every key in the right subtree is larger.",
+  "topic": "Trees"
+ },
+ {
+  "id": "f_c_ict2205_024",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "Heap property (max-heap)",
+  "back": "Every parent is greater than or equal to its children.",
+  "topic": "Trees"
+ },
+ {
+  "id": "f_c_ict2205_025",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "Tree height",
+  "back": "Number of edges on the longest path from root to a leaf.",
+  "topic": "Trees"
+ },
+ {
+  "id": "f_c_ict2205_026",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "Stable sort",
+  "back": "Keeps equal elements in their original relative order.",
+  "topic": "Sorting"
+ },
+ {
+  "id": "f_c_ict2205_027",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "In-place sort",
+  "back": "Uses O(1) extra memory beyond the input, e.g. heap sort.",
+  "topic": "Sorting"
+ },
+ {
+  "id": "f_c_ict2205_028",
+  "tenantId": "t_zut",
+  "courseId": "c_ict2205",
+  "front": "Pivot",
+  "back": "The element quick sort partitions around.",
+  "topic": "Sorting"
+ },
+ {
+  "id": "f_c_ict1101_029",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Type casting",
+  "back": "Converting a value from one data type to another, e.g. int to float.",
+  "topic": "Variables and types"
+ },
+ {
+  "id": "f_c_ict1101_030",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Scope",
+  "back": "The part of a program where a variable can be used.",
+  "topic": "Variables and types"
+ },
+ {
+  "id": "f_c_ict1101_031",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Modulus operator",
+  "back": "% returns the remainder after division.",
+  "topic": "Variables and types"
+ },
+ {
+  "id": "f_c_ict1101_032",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Infinite loop",
+  "back": "A loop whose condition never becomes false.",
+  "topic": "Control structures"
+ },
+ {
+  "id": "f_c_ict1101_033",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Nested loop",
+  "back": "A loop inside another loop; total iterations multiply.",
+  "topic": "Control structures"
+ },
+ {
+  "id": "f_c_ict1101_034",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Sentinel value",
+  "back": "A special input value that signals the end of data entry.",
+  "topic": "Control structures"
+ },
+ {
+  "id": "f_c_ict1101_035",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Pass by value",
+  "back": "The function receives a copy; changes do not affect the caller's variable.",
+  "topic": "Functions"
+ },
+ {
+  "id": "f_c_ict1101_036",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Pass by reference",
+  "back": "The function receives a reference; changes affect the caller's variable.",
+  "topic": "Functions"
+ },
+ {
+  "id": "f_c_ict1101_037",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Return statement",
+  "back": "Ends the function and sends a value back to the caller.",
+  "topic": "Functions"
+ },
+ {
+  "id": "f_c_ict1101_038",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Array",
+  "back": "A fixed-size, ordered collection of elements of the same type stored contiguously.",
+  "topic": "Arrays"
+ },
+ {
+  "id": "f_c_ict1101_039",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Traversal",
+  "back": "Visiting each element of a collection once, usually with a loop.",
+  "topic": "Arrays"
+ },
+ {
+  "id": "f_c_ict1101_040",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Syntax error",
+  "back": "Code that breaks the language's grammar; the program will not compile or run.",
+  "topic": "Problem solving"
+ },
+ {
+  "id": "f_c_ict1101_041",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Dry run",
+  "back": "Tracing an algorithm by hand with sample values to check its logic.",
+  "topic": "Problem solving"
+ },
+ {
+  "id": "f_c_ict1101_042",
+  "tenantId": "t_zut",
+  "courseId": "c_ict1101",
+  "front": "Decomposition",
+  "back": "Breaking a problem into smaller, manageable sub-problems.",
+  "topic": "Problem solving"
+ },
+ {
+  "id": "f_c_cmp110_043",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "front": "Source code",
+  "back": "Human-readable instructions written in a programming language.",
+  "topic": "Programming basics"
+ },
+ {
+  "id": "f_c_cmp110_044",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "front": "Debugging",
+  "back": "Finding and fixing errors in a program.",
+  "topic": "Programming basics"
+ },
+ {
+  "id": "f_c_cmp110_045",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "front": "Interpreter",
+  "back": "Translates and executes a program one statement at a time.",
+  "topic": "Programming basics"
+ },
+ {
+  "id": "f_c_cmp110_046",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "front": "Operator precedence",
+  "back": "The order in which operators are evaluated, e.g. * before +.",
+  "topic": "Operators and expressions"
+ },
+ {
+  "id": "f_c_cmp110_047",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "front": "Relational operators",
+  "back": "<, >, <=, >=, ==, != compare values and give a boolean.",
+  "topic": "Operators and expressions"
+ },
+ {
+  "id": "f_c_cmp110_048",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "front": "Nested if",
+  "back": "An if statement inside another if or else branch.",
+  "topic": "Selection"
+ },
+ {
+  "id": "f_c_cmp110_049",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "front": "Boolean expression",
+  "back": "An expression that evaluates to true or false.",
+  "topic": "Selection"
+ },
+ {
+  "id": "f_c_cmp110_050",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "front": "Accumulator",
+  "back": "A variable that collects a running total inside a loop.",
+  "topic": "Iteration"
+ },
+ {
+  "id": "f_c_cmp110_051",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "front": "Loop invariant",
+  "back": "A condition that holds before and after every iteration.",
+  "topic": "Iteration"
+ },
+ {
+  "id": "f_c_cmp110_052",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "front": "List",
+  "back": "An ordered, resizable collection that allows duplicates.",
+  "topic": "Data structures intro"
+ },
+ {
+  "id": "f_c_cmp110_053",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "front": "Set",
+  "back": "An unordered collection with no duplicate elements.",
+  "topic": "Data structures intro"
+ },
+ {
+  "id": "f_c_cmp110_054",
+  "tenantId": "t_nbt",
+  "courseId": "c_cmp110",
+  "front": "Map",
+  "back": "A collection of key-value pairs with unique keys.",
+  "topic": "Data structures intro"
+ }
+]

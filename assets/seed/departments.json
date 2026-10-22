@@ -1,0 +1,32 @@
+[
+ {
+  "id": "d_zut_ict",
+  "tenantId": "t_zut",
+  "name": "Information and Communication Technology",
+  "code": "ICT"
+ },
+ {
+  "id": "d_zut_bus",
+  "tenantId": "t_zut",
+  "name": "Business Studies",
+  "code": "BUS"
+ },
+ {
+  "id": "d_zut_eng",
+  "tenantId": "t_zut",
+  "name": "Engineering",
+  "code": "ENG"
+ },
+ {
+  "id": "d_nbt_cmp",
+  "tenantId": "t_nbt",
+  "name": "Computing",
+  "code": "CMP"
+ },
+ {
+  "id": "d_nbt_een",
+  "tenantId": "t_nbt",
+  "name": "Electrical Engineering",
+  "code": "EEN"
+ }
+]

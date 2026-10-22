@@ -1,0 +1,18 @@
+[
+ {
+  "id": "t_zut",
+  "name": "Zambia University College of Technology",
+  "shortCode": "ZUT",
+  "themeColour": "#1B5E20",
+  "logoAsset": null,
+  "createdAt": "2025-09-15T08:00:00Z"
+ },
+ {
+  "id": "t_nbt",
+  "name": "Northbridge Technical College",
+  "shortCode": "NBT",
+  "themeColour": "#0D47A1",
+  "logoAsset": null,
+  "createdAt": "2026-04-03T08:00:00Z"
+ }
+]

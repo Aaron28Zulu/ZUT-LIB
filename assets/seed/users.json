@@ -1,0 +1,668 @@
+[
+ {
+  "id": "u_zut_chanda",
+  "tenantId": "t_zut",
+  "fullName": "Chanda Mwila",
+  "email": "student@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300101",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 2,
+  "enrolledCourseIds": [
+   "c_ict2201",
+   "c_ict2205",
+   "c_ict1101"
+  ],
+  "examDates": {
+   "c_ict2201": "2026-10-29T08:00:00Z",
+   "c_ict2205": "2026-11-05T08:00:00Z",
+   "c_ict1101": "2026-11-12T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00",
+   "20:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-06-22T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_natasha",
+  "tenantId": "t_zut",
+  "fullName": "Natasha Banda",
+  "email": "student2@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300102",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 2,
+  "enrolledCourseIds": [],
+  "examDates": {},
+  "studyTimePreferences": [],
+  "active": true,
+  "roleGrantedAt": "2026-06-22T08:00:00Z",
+  "profileComplete": false,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_mary",
+  "tenantId": "t_zut",
+  "fullName": "Mary Phiri",
+  "email": "librarian@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "librarian",
+  "studentNumber": null,
+  "departmentId": null,
+  "yearOfStudy": null,
+  "enrolledCourseIds": [],
+  "examDates": {},
+  "studyTimePreferences": [],
+  "active": true,
+  "roleGrantedAt": "2026-01-13T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_joseph",
+  "tenantId": "t_zut",
+  "fullName": "Joseph Tembo",
+  "email": "admin@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "institutionAdmin",
+  "studentNumber": null,
+  "departmentId": null,
+  "yearOfStudy": null,
+  "enrolledCourseIds": [],
+  "examDates": {},
+  "studyTimePreferences": [],
+  "active": true,
+  "roleGrantedAt": "2025-09-25T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_nbt_mutale",
+  "tenantId": "t_nbt",
+  "fullName": "Mutale Zulu",
+  "email": "student@northbridge.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "NB24017",
+  "departmentId": "d_nbt_cmp",
+  "yearOfStudy": 1,
+  "enrolledCourseIds": [
+   "c_cmp110",
+   "c_cmp210"
+  ],
+  "examDates": {
+   "c_cmp110": "2026-11-01T08:00:00Z",
+   "c_cmp210": "2026-11-09T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "07:00",
+   "19:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-07-22T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_nbt_grace",
+  "tenantId": "t_nbt",
+  "fullName": "Grace Lungu",
+  "email": "librarian@northbridge.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "librarian",
+  "studentNumber": null,
+  "departmentId": null,
+  "yearOfStudy": null,
+  "enrolledCourseIds": [],
+  "examDates": {},
+  "studyTimePreferences": [],
+  "active": true,
+  "roleGrantedAt": "2026-04-13T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_platform",
+  "tenantId": "platform",
+  "fullName": "Platform Admin",
+  "email": "platform@zutlib.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "platformAdmin",
+  "studentNumber": null,
+  "departmentId": null,
+  "yearOfStudy": null,
+  "enrolledCourseIds": [],
+  "examDates": {},
+  "studyTimePreferences": [],
+  "active": true,
+  "roleGrantedAt": "2025-09-15T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s00",
+  "tenantId": "t_zut",
+  "fullName": "Bwalya Musonda",
+  "email": "bwalya.00@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300000",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 2,
+  "enrolledCourseIds": [
+   "c_ict2205",
+   "c_ict2201"
+  ],
+  "examDates": {
+   "c_ict2205": "2026-10-30T08:00:00Z",
+   "c_ict2201": "2026-11-19T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-09-15T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s01",
+  "tenantId": "t_zut",
+  "fullName": "Mwansa Kabwe",
+  "email": "mwansa.01@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300001",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 2,
+  "enrolledCourseIds": [
+   "c_ict2201",
+   "c_ict3301"
+  ],
+  "examDates": {
+   "c_ict2201": "2026-11-01T08:00:00Z",
+   "c_ict3301": "2026-11-19T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-08-21T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s02",
+  "tenantId": "t_zut",
+  "fullName": "Thandiwe Daka",
+  "email": "thandiwe.02@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300002",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 1,
+  "enrolledCourseIds": [
+   "c_ict2201",
+   "c_bus1102"
+  ],
+  "examDates": {
+   "c_ict2201": "2026-10-31T08:00:00Z",
+   "c_bus1102": "2026-11-17T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-05-06T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s03",
+  "tenantId": "t_zut",
+  "fullName": "Kelvin Chileshe",
+  "email": "kelvin.03@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300003",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 2,
+  "enrolledCourseIds": [
+   "c_bus1102",
+   "c_ict2201"
+  ],
+  "examDates": {
+   "c_bus1102": "2026-11-10T08:00:00Z",
+   "c_ict2201": "2026-10-30T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-04-04T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s04",
+  "tenantId": "t_zut",
+  "fullName": "Ruth Sakala",
+  "email": "ruth.04@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300004",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 1,
+  "enrolledCourseIds": [
+   "c_ict1101",
+   "c_bus1102"
+  ],
+  "examDates": {
+   "c_ict1101": "2026-11-10T08:00:00Z",
+   "c_bus1102": "2026-11-14T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-08-26T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s05",
+  "tenantId": "t_zut",
+  "fullName": "Emmanuel Ngoma",
+  "email": "emmanuel.05@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300005",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 3,
+  "enrolledCourseIds": [
+   "c_bus1102",
+   "c_ict3301"
+  ],
+  "examDates": {
+   "c_bus1102": "2026-11-18T08:00:00Z",
+   "c_ict3301": "2026-11-13T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-09-07T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s06",
+  "tenantId": "t_zut",
+  "fullName": "Precious Mulenga",
+  "email": "precious.06@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300006",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 3,
+  "enrolledCourseIds": [
+   "c_ict1101",
+   "c_ict2205"
+  ],
+  "examDates": {
+   "c_ict1101": "2026-10-31T08:00:00Z",
+   "c_ict2205": "2026-11-15T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-08-18T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s07",
+  "tenantId": "t_zut",
+  "fullName": "Brian Mumba",
+  "email": "brian.07@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300007",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 3,
+  "enrolledCourseIds": [
+   "c_bus1102",
+   "c_ict2201"
+  ],
+  "examDates": {
+   "c_bus1102": "2026-11-06T08:00:00Z",
+   "c_ict2201": "2026-11-11T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-05-23T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s08",
+  "tenantId": "t_zut",
+  "fullName": "Esther Lungu",
+  "email": "esther.08@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300008",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 1,
+  "enrolledCourseIds": [
+   "c_ict2205",
+   "c_ict1101"
+  ],
+  "examDates": {
+   "c_ict2205": "2026-11-08T08:00:00Z",
+   "c_ict1101": "2026-11-13T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-04-04T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s09",
+  "tenantId": "t_zut",
+  "fullName": "Moses Kunda",
+  "email": "moses.09@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300009",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 3,
+  "enrolledCourseIds": [
+   "c_ict1101",
+   "c_ict2205"
+  ],
+  "examDates": {
+   "c_ict1101": "2026-11-07T08:00:00Z",
+   "c_ict2205": "2026-11-13T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-08-18T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s10",
+  "tenantId": "t_zut",
+  "fullName": "Faith Chanda",
+  "email": "faith.10@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300010",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 3,
+  "enrolledCourseIds": [
+   "c_ict2205",
+   "c_ict1101"
+  ],
+  "examDates": {
+   "c_ict2205": "2026-11-11T08:00:00Z",
+   "c_ict1101": "2026-11-04T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-06-05T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s11",
+  "tenantId": "t_zut",
+  "fullName": "Daniel Siame",
+  "email": "daniel.11@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300011",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 1,
+  "enrolledCourseIds": [
+   "c_ict2201",
+   "c_bus1102"
+  ],
+  "examDates": {
+   "c_ict2201": "2026-11-16T08:00:00Z",
+   "c_bus1102": "2026-11-11T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-06-10T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s12",
+  "tenantId": "t_zut",
+  "fullName": "Mercy Zimba",
+  "email": "mercy.12@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300012",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 2,
+  "enrolledCourseIds": [
+   "c_ict3301",
+   "c_ict1101"
+  ],
+  "examDates": {
+   "c_ict3301": "2026-11-06T08:00:00Z",
+   "c_ict1101": "2026-11-19T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-06-13T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_zut_s13",
+  "tenantId": "t_zut",
+  "fullName": "Joshua Mwale",
+  "email": "joshua.13@zut.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "2300013",
+  "departmentId": "d_zut_ict",
+  "yearOfStudy": 2,
+  "enrolledCourseIds": [
+   "c_bus1102",
+   "c_ict3301"
+  ],
+  "examDates": {
+   "c_bus1102": "2026-11-15T08:00:00Z",
+   "c_ict3301": "2026-11-19T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-04-09T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_nbt_s14",
+  "tenantId": "t_nbt",
+  "fullName": "Grace Nkonde",
+  "email": "grace.14@northbridge.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "NB24014",
+  "departmentId": "d_nbt_cmp",
+  "yearOfStudy": 1,
+  "enrolledCourseIds": [
+   "c_een120",
+   "c_cmp210"
+  ],
+  "examDates": {
+   "c_een120": "2026-11-07T08:00:00Z",
+   "c_cmp210": "2026-10-30T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-07-06T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_nbt_s15",
+  "tenantId": "t_nbt",
+  "fullName": "Patrick Chola",
+  "email": "patrick.15@northbridge.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "NB24015",
+  "departmentId": "d_nbt_cmp",
+  "yearOfStudy": 2,
+  "enrolledCourseIds": [
+   "c_cmp210",
+   "c_cmp110"
+  ],
+  "examDates": {
+   "c_cmp210": "2026-11-08T08:00:00Z",
+   "c_cmp110": "2026-11-07T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-09-02T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_nbt_s16",
+  "tenantId": "t_nbt",
+  "fullName": "Agnes Tembo",
+  "email": "agnes.16@northbridge.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "NB24016",
+  "departmentId": "d_nbt_cmp",
+  "yearOfStudy": 1,
+  "enrolledCourseIds": [
+   "c_cmp210",
+   "c_een120"
+  ],
+  "examDates": {
+   "c_cmp210": "2026-10-30T08:00:00Z",
+   "c_een120": "2026-11-15T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-09-13T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_nbt_s17",
+  "tenantId": "t_nbt",
+  "fullName": "Victor Simwanza",
+  "email": "victor.17@northbridge.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "NB24017",
+  "departmentId": "d_nbt_cmp",
+  "yearOfStudy": 2,
+  "enrolledCourseIds": [
+   "c_cmp210",
+   "c_cmp110"
+  ],
+  "examDates": {
+   "c_cmp210": "2026-11-12T08:00:00Z",
+   "c_cmp110": "2026-11-08T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-07-31T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_nbt_s18",
+  "tenantId": "t_nbt",
+  "fullName": "Lydia Mbewe",
+  "email": "lydia.18@northbridge.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "NB24018",
+  "departmentId": "d_nbt_cmp",
+  "yearOfStudy": 3,
+  "enrolledCourseIds": [
+   "c_cmp210",
+   "c_cmp110"
+  ],
+  "examDates": {
+   "c_cmp210": "2026-10-29T08:00:00Z",
+   "c_cmp110": "2026-11-19T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": true,
+  "roleGrantedAt": "2026-08-31T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ },
+ {
+  "id": "u_nbt_s19",
+  "tenantId": "t_nbt",
+  "fullName": "Samuel Kasonde",
+  "email": "samuel.19@northbridge.demo",
+  "passwordHash": "2eb707ca6289c46f53eb003e78ad5c5c3b6d4a7ab834a9b3cb49a51533cea0e2",
+  "role": "student",
+  "studentNumber": "NB24019",
+  "departmentId": "d_nbt_cmp",
+  "yearOfStudy": 2,
+  "enrolledCourseIds": [
+   "c_cmp210",
+   "c_cmp110"
+  ],
+  "examDates": {
+   "c_cmp210": "2026-10-28T08:00:00Z",
+   "c_cmp110": "2026-11-09T08:00:00Z"
+  },
+  "studyTimePreferences": [
+   "18:00"
+  ],
+  "active": false,
+  "roleGrantedAt": "2026-04-26T08:00:00Z",
+  "profileComplete": true,
+  "notificationPrefs": {}
+ }
+]

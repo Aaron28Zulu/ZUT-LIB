@@ -1,0 +1,266 @@
+[
+ {
+  "id": "pc_ict1101_2021_final_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict1101_2021_final",
+  "copyNumber": 1,
+  "shelfLocation": "A4-10",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict1101_2021_final_2",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict1101_2021_final",
+  "copyNumber": 2,
+  "shelfLocation": "B3-01",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict1101_2023_final_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict1101_2023_final",
+  "copyNumber": 1,
+  "shelfLocation": "A1-07",
+  "status": "onLoan"
+ },
+ {
+  "id": "pc_ict1101_2024_mid_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict1101_2024_mid",
+  "copyNumber": 1,
+  "shelfLocation": "A5-07",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict2201_2019_final_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict2201_2019_final",
+  "copyNumber": 1,
+  "shelfLocation": "A6-10",
+  "status": "onLoan"
+ },
+ {
+  "id": "pc_ict2201_2021_supp_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict2201_2021_supp",
+  "copyNumber": 1,
+  "shelfLocation": "A1-09",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict2201_2023_final_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict2201_2023_final",
+  "copyNumber": 1,
+  "shelfLocation": "A3-07",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict2201_2023_final_2",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict2201_2023_final",
+  "copyNumber": 2,
+  "shelfLocation": "B5-02",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict2201_2023_final_3",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict2201_2023_final",
+  "copyNumber": 3,
+  "shelfLocation": "A2-09",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict2201_2024_final_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict2201_2024_final",
+  "copyNumber": 1,
+  "shelfLocation": "A6-10",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict2201_2024_final_2",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict2201_2024_final",
+  "copyNumber": 2,
+  "shelfLocation": "B6-09",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict2205_2020_final_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict2205_2020_final",
+  "copyNumber": 1,
+  "shelfLocation": "A3-07",
+  "status": "onLoan"
+ },
+ {
+  "id": "pc_ict2205_2020_final_2",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict2205_2020_final",
+  "copyNumber": 2,
+  "shelfLocation": "B1-08",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict2205_2022_final_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict2205_2022_final",
+  "copyNumber": 1,
+  "shelfLocation": "A1-06",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict2205_2025_mid_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict2205_2025_mid",
+  "copyNumber": 1,
+  "shelfLocation": "A3-05",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict3301_2022_final_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict3301_2022_final",
+  "copyNumber": 1,
+  "shelfLocation": "A3-02",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict3301_2022_final_2",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict3301_2022_final",
+  "copyNumber": 2,
+  "shelfLocation": "B5-08",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict3301_2022_final_3",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict3301_2022_final",
+  "copyNumber": 3,
+  "shelfLocation": "A3-03",
+  "status": "available"
+ },
+ {
+  "id": "pc_ict3301_2024_final_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict3301_2024_final",
+  "copyNumber": 1,
+  "shelfLocation": "A6-05",
+  "status": "reserved"
+ },
+ {
+  "id": "pc_ict3301_2024_final_2",
+  "tenantId": "t_zut",
+  "resourceId": "r_ict3301_2024_final",
+  "copyNumber": 2,
+  "shelfLocation": "B2-02",
+  "status": "available"
+ },
+ {
+  "id": "pc_bus1102_2021_final_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_bus1102_2021_final",
+  "copyNumber": 1,
+  "shelfLocation": "A4-11",
+  "status": "available"
+ },
+ {
+  "id": "pc_bus1102_2021_final_2",
+  "tenantId": "t_zut",
+  "resourceId": "r_bus1102_2021_final",
+  "copyNumber": 2,
+  "shelfLocation": "B5-01",
+  "status": "available"
+ },
+ {
+  "id": "pc_bus1102_2023_assignment_1",
+  "tenantId": "t_zut",
+  "resourceId": "r_bus1102_2023_assignment",
+  "copyNumber": 1,
+  "shelfLocation": "A4-01",
+  "status": "available"
+ },
+ {
+  "id": "pc_cmp110_2020_final_1",
+  "tenantId": "t_nbt",
+  "resourceId": "r_cmp110_2020_final",
+  "copyNumber": 1,
+  "shelfLocation": "A6-07",
+  "status": "available"
+ },
+ {
+  "id": "pc_cmp110_2020_final_2",
+  "tenantId": "t_nbt",
+  "resourceId": "r_cmp110_2020_final",
+  "copyNumber": 2,
+  "shelfLocation": "B1-06",
+  "status": "available"
+ },
+ {
+  "id": "pc_cmp110_2023_final_1",
+  "tenantId": "t_nbt",
+  "resourceId": "r_cmp110_2023_final",
+  "copyNumber": 1,
+  "shelfLocation": "A4-09",
+  "status": "available"
+ },
+ {
+  "id": "pc_cmp110_2024_mid_1",
+  "tenantId": "t_nbt",
+  "resourceId": "r_cmp110_2024_mid",
+  "copyNumber": 1,
+  "shelfLocation": "A2-04",
+  "status": "available"
+ },
+ {
+  "id": "pc_cmp110_2024_mid_2",
+  "tenantId": "t_nbt",
+  "resourceId": "r_cmp110_2024_mid",
+  "copyNumber": 2,
+  "shelfLocation": "B2-09",
+  "status": "available"
+ },
+ {
+  "id": "pc_cmp110_2024_mid_3",
+  "tenantId": "t_nbt",
+  "resourceId": "r_cmp110_2024_mid",
+  "copyNumber": 3,
+  "shelfLocation": "A6-01",
+  "status": "available"
+ },
+ {
+  "id": "pc_cmp210_2022_final_1",
+  "tenantId": "t_nbt",
+  "resourceId": "r_cmp210_2022_final",
+  "copyNumber": 1,
+  "shelfLocation": "A5-03",
+  "status": "onLoan"
+ },
+ {
+  "id": "pc_cmp210_2022_final_2",
+  "tenantId": "t_nbt",
+  "resourceId": "r_cmp210_2022_final",
+  "copyNumber": 2,
+  "shelfLocation": "B2-09",
+  "status": "available"
+ },
+ {
+  "id": "pc_cmp210_2022_final_3",
+  "tenantId": "t_nbt",
+  "resourceId": "r_cmp210_2022_final",
+  "copyNumber": 3,
+  "shelfLocation": "A1-06",
+  "status": "available"
+ },
+ {
+  "id": "pc_een120_2023_final_1",
+  "tenantId": "t_nbt",
+  "resourceId": "r_een120_2023_final",
+  "copyNumber": 1,
+  "shelfLocation": "A3-01",
+  "status": "available"
+ }
+]

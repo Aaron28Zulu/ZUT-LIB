@@ -1,0 +1,35 @@
+[
+ {
+  "id": "n_seed_1",
+  "tenantId": "t_zut",
+  "userId": "u_zut_chanda",
+  "category": "loan",
+  "title": "Copy collected",
+  "body": "ICT 2205 Final examination 2020 is due back in 4 days.",
+  "targetRoute": "loan:l_zut_03",
+  "read": true,
+  "createdAt": "2026-10-17T20:00:00Z"
+ },
+ {
+  "id": "n_seed_2",
+  "tenantId": "t_zut",
+  "userId": "u_zut_chanda",
+  "category": "newResource",
+  "title": "New paper for ICT 2201",
+  "body": "ICT 2201 Database Systems - Final examination 2024 is now available.",
+  "targetRoute": "resource:r_ict2201_2024_final",
+  "read": false,
+  "createdAt": "2026-10-14T08:00:00Z"
+ },
+ {
+  "id": "n_seed_3",
+  "tenantId": "t_zut",
+  "userId": "u_zut_s02",
+  "category": "loan",
+  "title": "Loan overdue",
+  "body": "ICT 2201 Final examination 2019 was due 4 days ago. Return it to the library.",
+  "targetRoute": "loan:l_zut_05",
+  "read": false,
+  "createdAt": "2026-10-16T08:00:00Z"
+ }
+]
