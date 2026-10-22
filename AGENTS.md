@@ -14,7 +14,9 @@ such as `FR-BOR-06` or `NFR-07` come from that document. Use them in code commen
 PR descriptions and issues so work stays traceable.
 
 Everything runs offline. All backend behaviour is mocked behind abstract service
-interfaces. All data is fictional seed data in `assets/seed/`.
+interfaces. All data is fictional seed data in `assets/seed/`. An opt-in cloud build
+(`--dart-define=BACKEND=firebase`) saves the same data to Firestore; see
+`docs/ARCHITECTURE.md`, "Cloud mode". The offline build must keep working.
 
 ## Repository map
 

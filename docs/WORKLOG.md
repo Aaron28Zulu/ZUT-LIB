@@ -9,6 +9,16 @@ Newest entry at the top. Keep entries short and factual.
 
 ## Entries
 
+### 2026-10-22 - cloud mode with Firestore and Google sign-in (Claude)
+
+- Done: `--dart-define=BACKEND=firebase` build flag, Firestore-backed storage, Google
+  sign-in through Firebase Auth, rules file, tests for the Google sign-in paths.
+  `flutter analyze` clean, `flutter test` green, `flutter build web` compiles.
+- Not verified yet: a real Firebase project. Needs `flutterfire configure` on the dev
+  machine, then a cloud run on Android (SHA-1 registered) and web.
+- Open: SRS-QUESTION in `mock_auth_service.dart` on Google accounts without a student
+  number or department.
+
 ### 2026-10-22 - initial scaffold (Claude)
 
 - Done: Flutter project, agent docs, mock backend behind service interfaces, seed
